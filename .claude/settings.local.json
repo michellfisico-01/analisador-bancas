@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(git add CLAUDE.md)",
+      "PowerShell(python --version)",
+      "PowerShell(py -0p 2>$null)",
+      "PowerShell(foreach \\($c in @\\(\"python3\", \"conda\", \"uv\"\\)\\) { $cmd = Get-Command $c -ErrorAction SilentlyContinue; if \\($cmd\\) { \"$c -> $\\($cmd.Source\\)\" } }; Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\\\\Python\" -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Name)",
+      "PowerShell(uv --version)",
+      "PowerShell(uv python list --only-installed)",
+      "PowerShell(uv venv --python 3.14 .venv)",
+      "PowerShell(uv pip install -r requirements.txt --python .venv)",
+      "WebFetch(domain:www.cebraspe.org.br)",
+      "WebSearch",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\inspeciona_bundle.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_api.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_concursos.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -c \"import json,pathlib; p=pathlib.Path\\(r'C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad'\\); d=json.loads\\(\\(p/'evento_pf_21.json'\\).read_text\\(encoding='utf-8'\\)\\); [print\\(json.dumps\\(a, ensure_ascii=False\\)\\) for a in d['arquivosGabarito']]\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\lista_arquivos.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_final.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_dprf13.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\lista_editais.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -c \"import json,pathlib; p=pathlib.Path\\(r'C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad'\\); d=json.loads\\(\\(p/'evento_prf_18.json'\\).read_text\\(encoding='utf-8'\\)\\); [print\\(a['dataArquivoObj'], a['nomeArquivo']\\) for a in d['arquivosGabarito'] if '440' in a['nomeArquivo']]\")",
+      "PowerShell(foreach \\($f in @\\(\"src\\\\__init__.py\", \"src\\\\coleta\\\\__init__.py\", \"src\\\\extracao\\\\__init__.py\", \"src\\\\classificacao\\\\__init__.py\", \"src\\\\analise\\\\__init__.py\", \"src\\\\plano\\\\__init__.py\", \"tests\\\\__init__.py\"\\)\\) { if \\(-not \\(Test-Path $f\\)\\) { New-Item -ItemType File $f | Out-Null } }; ls src, tests -Recurse -Name)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/ -q)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.coleta.download)",
+      "PowerShell(git add -A)"
+    ]
+  }
+}

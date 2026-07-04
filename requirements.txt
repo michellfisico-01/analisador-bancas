@@ -1,0 +1,5 @@
+# Dependências do Analisador Preditivo de Bancas
+# Fase 1 — coleta e extração
+requests>=2.32        # download dos PDFs oficiais
+pdfplumber>=0.11      # extração de texto e tabelas dos PDFs
+pytest>=8.0           # testes das funções frágeis (extração)

@@ -1,0 +1,145 @@
+{
+  "descricao": "Manifesto de coleta do piloto: provas objetivas, gabaritos DEFINITIVOS e editais de abertura dos concursos PF/PRF (CEBRASPE), 2013 em diante. Fonte: documentos publicos no CDN oficial do CEBRASPE, enumerados via API oficial (apis.cebraspe.org.br/cebraspe/eventos/{slug}).",
+  "atualizado_em": "2026-07-04",
+  "concursos": [
+    {
+      "slug": "dprf_13",
+      "banca": "CEBRASPE",
+      "orgao": "PRF",
+      "nome": "PRF 2013",
+      "ano_prova": 2013,
+      "formato": "certo_errado",
+      "observacao": "Era CESPE/UnB; arquivos migrados para o CDN novo. Slug oficial DPRF_13.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/DPRF_13/arquivos/ED_1_DPRF_AGENTE_2013_ABERTURA.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Policial Rodoviário Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/DPRF_13/arquivos/DPRF13_001_01.pdf",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/DPRF_13/arquivos/Gab_Definitivo_DPRF13_001_01.PDF"
+        }
+      ]
+    },
+    {
+      "slug": "pf_18",
+      "banca": "CEBRASPE",
+      "orgao": "PF",
+      "nome": "PF 2018",
+      "ano_prova": 2018,
+      "formato": "certo_errado",
+      "observacao": "Concurso com 14 cargos; o piloto usa apenas os cargos 12 (Agente), 13 (Escrivao) e 14 (Papiloscopista). Delegado e Perito ficam fora por decisao de escopo.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/ED_1_DPF_2018___ABT.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Agente de Polícia Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/MATRIZ_408_DGPPF012__PAG_9.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/GAB_DEFINITIVO_408_DGPPF012__PAG_9.PDF"
+        },
+        {
+          "cargo": "Escrivão de Polícia Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/MATRIZ_408_DGPPF013__PAG_8.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/GAB_DEFINITIVO_408_DGPPF013__PAG_8.PDF"
+        },
+        {
+          "cargo": "Papiloscopista Policial Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/MATRIZ_408_DGPPF014__PAG_9.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_18/arquivos/GAB_DEFINITIVO_408_DGPPF014__PAG_9.PDF"
+        }
+      ]
+    },
+    {
+      "slug": "prf_18",
+      "banca": "CEBRASPE",
+      "orgao": "PRF",
+      "nome": "PRF 2018/19",
+      "ano_prova": 2019,
+      "formato": "certo_errado",
+      "observacao": "Edital publicado em 2018, prova objetiva aplicada em 2019 (datas dos arquivos oficiais: fev/2019). Provas do curso de formacao NAO entram (nao sao o concurso em si).",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/ED_1_PRF_2018_ABT.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Policial Rodoviário Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF"
+        }
+      ]
+    },
+    {
+      "slug": "pf_21",
+      "banca": "CEBRASPE",
+      "orgao": "PF",
+      "nome": "PF 2021",
+      "ano_prova": 2021,
+      "formato": "certo_errado",
+      "observacao": "Cargo 1 (Delegado) fora por decisao de escopo.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/ED_1_DPF_2021_ABT.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Agente de Polícia Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/CARGO_2_AGENTE_DE_POLCIA_FEDERAL.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/GAB_DEFINITIVO_MATRIZ_577_PF_002_00.PDF"
+        },
+        {
+          "cargo": "Escrivão de Polícia Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/CARGO_3_ESCRIVO_DE_POLCIA_FEDERAL.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/GAB_DEFINITIVO_MATRIZ_577_PF_003_00.PDF"
+        },
+        {
+          "cargo": "Papiloscopista Policial Federal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/CARGO_4_PAPILOSCOPISTA_POLICIAL_FEDERAL.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pf_21/arquivos/GAB_DEFINITIVO_MATRIZ_577_PF_004_00.PDF"
+        }
+      ]
+    },
+    {
+      "slug": "prf_21",
+      "banca": "CEBRASPE",
+      "orgao": "PRF",
+      "nome": "PRF 2021",
+      "ano_prova": 2021,
+      "formato": "certo_errado",
+      "observacao": "Caderno principal cobre os itens 9-120 (112 itens); itens 1-8 sao lingua estrangeira, fora das disciplinas piloto. Provas do curso de formacao NAO entram.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/ED_1_PRF_2021_ABERTURA.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Policial Rodoviário Federal",
+          "itens_esperados": 112,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_001_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF"
+        }
+      ]
+    }
+  ]
+}
