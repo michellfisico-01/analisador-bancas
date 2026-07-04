@@ -1,0 +1,40 @@
+{
+  "descricao": "Onde encontrar o conteúdo programático do cargo do piloto em cada edital de abertura. As páginas são 1-indexadas e generosas; os marcadores de início/fim recortam o trecho exato.",
+  "secoes": [
+    {
+      "slug": "pf_21",
+      "cargo_referencia": "Agente de Polícia Federal",
+      "paginas": [51, 54],
+      "inicio": "24\\.2\\.3\\s+CARGO 2: AGENTE",
+      "fim": "24\\.2\\.4\\s+CARGO 3"
+    },
+    {
+      "slug": "pf_18",
+      "cargo_referencia": "Agente de Polícia Federal",
+      "paginas": [59, 62],
+      "inicio": "24\\.2\\.4\\s+CARGO 12: AGENTE",
+      "fim": "24\\.2\\.5\\s+CARGO 13"
+    },
+    {
+      "slug": "prf_21",
+      "cargo_referencia": "Policial Rodoviário Federal",
+      "paginas": [37, 41],
+      "inicio": "24\\.2 CONHECIMENTOS",
+      "fim": "CRONOGRAMA PREVISTO"
+    },
+    {
+      "slug": "prf_18",
+      "cargo_referencia": "Policial Rodoviário Federal",
+      "paginas": [37, 41],
+      "inicio": "23\\.2 CONHECIMENTOS",
+      "fim": "CRONOGRAMA PREVISTO"
+    },
+    {
+      "slug": "dprf_13",
+      "cargo_referencia": "Policial Rodoviário Federal",
+      "paginas": [25, 28],
+      "inicio": "CONHECIMENTOS B[ÁA]SICOS",
+      "fim": "CRONOGRAMA PREVISTO|Atividade Data"
+    }
+  ]
+}

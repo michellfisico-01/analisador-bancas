@@ -1,0 +1,754 @@
+{
+  "slug": "prf_18",
+  "cargo_referencia": "Policial Rodoviário Federal",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Emprego das classes de palavras"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Regência verbal e nominal"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescrita de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Significação das palavras"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Reorganização da estrutura de orações e de períodos do texto"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Reescrita de textos de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Correspondência oficial (conforme Manual de Redação da Presidência da República)"
+      }
+    ],
+    "RACIOCÍNIO LÓGICO-MATEMÁTICO": [
+      {
+        "numero": "1",
+        "titulo": "Modelagem de situações-problema por meio de equações do 1º e 2º graus e sistemas lineares"
+      },
+      {
+        "numero": "2",
+        "titulo": "Noção de função",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Análise gráfica"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Funções afim, quadrática, exponencial e logarítmica"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Aplicações"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Taxas de variação de grandezas",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Razão e proporção com aplicações"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Regra de três simples e composta"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Porcentagem"
+      },
+      {
+        "numero": "5",
+        "titulo": "Regularidades e padrões em sequências",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Sequências numéricas"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Progressão aritmética e progressão geométrica"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Noções básicas de contagem e probabilidade"
+      },
+      {
+        "numero": "7",
+        "titulo": "Descrição e análise de dados",
+        "filhos": [
+          {
+            "numero": "7.1",
+            "titulo": "Leitura e interpretação de tabelas e gráficos apresentados em diferentes linguagens e representações"
+          },
+          {
+            "numero": "7.2",
+            "titulo": "Cálculo de médias e análise de desvios de conjuntos de dados"
+          }
+        ]
+      },
+      {
+        "numero": "8",
+        "titulo": "Noções básicas de teoria dos conjuntos"
+      },
+      {
+        "numero": "9",
+        "titulo": "Análise e interpretação de diferentes representações de figuras planas, como desenhos, mapas e plantas",
+        "filhos": [
+          {
+            "numero": "9.1",
+            "titulo": "Utilização de escalas"
+          },
+          {
+            "numero": "9.2",
+            "titulo": "Visualização de figuras espaciais em diferentes posições"
+          },
+          {
+            "numero": "9.3",
+            "titulo": "Representações bidimensionais de projeções, planificações e cortes"
+          }
+        ]
+      },
+      {
+        "numero": "10",
+        "titulo": "Métrica",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Áreas e volumes"
+          },
+          {
+            "numero": "10.2",
+            "titulo": "Estimativas"
+          },
+          {
+            "numero": "10.3",
+            "titulo": "Aplicações"
+          }
+        ]
+      }
+    ],
+    "INFORMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Conceito de internet e intranet"
+      },
+      {
+        "numero": "2",
+        "titulo": "Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Noções de sistema operacional (ambiente Linux e Windows)"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Acesso a distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Redes de computadores"
+      },
+      {
+        "numero": "4",
+        "titulo": "Conceitos de proteção e segurança",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Noções de vírus, worms e pragas virtuais"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Aplicativos para segurança (antivírus, firewall, anti-spyware etc.)"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Computação na nuvem (cloud computing)"
+      }
+    ],
+    "NOÇÕES DE FÍSICA": [
+      {
+        "numero": "1",
+        "titulo": "Cinemática escalar, cinemática vetorial"
+      },
+      {
+        "numero": "2",
+        "titulo": "Movimento circular"
+      },
+      {
+        "numero": "3",
+        "titulo": "Leis de Newton e suas aplicações"
+      },
+      {
+        "numero": "4",
+        "titulo": "Trabalho"
+      },
+      {
+        "numero": "5",
+        "titulo": "Potência"
+      },
+      {
+        "numero": "6",
+        "titulo": "Energia cinética, energia potencial, atrito"
+      },
+      {
+        "numero": "7",
+        "titulo": "Conservação de energia e suas transformações"
+      },
+      {
+        "numero": "8",
+        "titulo": "Quantidade de movimento e conservação da quantidade de movimento, impulso"
+      },
+      {
+        "numero": "9",
+        "titulo": "Colisões"
+      }
+    ],
+    "ÉTICA NO SERVIÇO PÚBLICO": [
+      {
+        "numero": "1",
+        "titulo": "Ética e moral"
+      },
+      {
+        "numero": "2",
+        "titulo": "Ética, princípios e valores"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ética e democracia: exercício da cidadania"
+      },
+      {
+        "numero": "4",
+        "titulo": "Ética e função pública"
+      },
+      {
+        "numero": "5",
+        "titulo": "Ética no setor público",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Decreto nº 1.171/ 1994 (Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal)"
+          }
+        ]
+      }
+    ],
+    "GEOPOLÍTICA BRASILEIRA": [
+      {
+        "numero": "1",
+        "titulo": "O Brasil político: nação e território",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Organização do Estado Brasileiro"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A divisão inter-regional do trabalho e da produção no Brasil"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "A estrutura urbana brasileira e as grandes metrópoles"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Distribuição espacial da população no Brasil e movimentos migratórios internos"
+      },
+      {
+        "numero": "3",
+        "titulo": "A evolução da estrutura fundiária e problemas demográficos no campo"
+      },
+      {
+        "numero": "4",
+        "titulo": "Integração entre indústria e estrutura urbana, rede de transportes e setor agrícola no Brasil"
+      },
+      {
+        "numero": "5",
+        "titulo": "Geografia e gestão ambiental",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Macrodivisão natural do espaço brasileiro: biomas, domínios e ecossistemas"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Política e gestão ambiental no Brasil"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "O Brasil e a questão cultural"
+      },
+      {
+        "numero": "7",
+        "titulo": "A integração do Brasil ao processo de internacionalização da economia"
+      },
+      {
+        "numero": "8",
+        "titulo": "O século XX: urbanização da sociedade e cultura de massas. HISTÓRIA DA PRF (disponível no endereço https://www.prf.gov.br/agencia/policia-rodoviaria-federal- historia-em-detalhes/): 1 Polícia Rodoviária Federal: história em detalhes. 2 Grandes eventos esportivos. 3 Atualidade. 4 Tecnologia. 5 Trânsito. 6 Capacitação. 7 Ação especializada. 8 Áreas especializadas. BLOCO II"
+      }
+    ],
+    "LEGISLAÇÃO DE TRÂNSITO": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 9.503/1997 e suas alterações (institui o Código de Trânsito Brasileiro — CTB)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Decreto nº 4.711/2003(dispõe sobre a Coordenação do Sistema Nacional de Trânsito — SNT)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Resoluções do Conselho Nacional de Trânsito (CONTRAN) e suas alterações: 04/1998; 14/1998; 24/1998; 26/1998; 32/1998; 36/1998; 92/1999; 110/2000; 160/2004; 197/2006; 205/2006; 210/2006; 211/2006; 216/2006; 227/2007 (exceto os seus anexos); 231/2007; 242/2007; 253/2007; 254/2007; 258/2007; 268/2008; 273/2008; 277/2008; 289/2008; 290/2008; 292/2008; 349/2010; 356/2010; 360/2010; 371/2010 (exceto as fichas); 396/2011; 432/2013; 441/2013; 453/2013; 471/2013; 508/2014; 520/2015; 525/2015; 552/2015; 561/2015 (exceto as fichas); 573/2015; 598/2016; 619/2016; 624/2016; 643/2016; 720/2017; 723/2018; 735/2018. BLOCO III"
+      }
+    ],
+    "NOÇÕES DE DIREITO ADMINISTRATIVO": [
+      {
+        "numero": "1",
+        "titulo": "Noções de organização administrativa",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Centralização, descentralização, concentração e desconcentração"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Administração direta e indireta"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Autarquias, fundações, empresas públicas e sociedades de economia mista"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Ato administrativo",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Conceito, requisitos, atributos, classificação e espécies"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Agentes públicos",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Legislação pertinente",
+            "filhos": [
+              {
+                "numero": "3.1.1",
+                "titulo": "Lei nº 8.112/1990 e suas alterações"
+              },
+              {
+                "numero": "3.1.2",
+                "titulo": "Disposições constitucionais aplicáveis"
+              }
+            ]
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Disposições doutrinárias",
+            "filhos": [
+              {
+                "numero": "3.2.1",
+                "titulo": "Conceito"
+              },
+              {
+                "numero": "3.2.2",
+                "titulo": "Espécies"
+              },
+              {
+                "numero": "3.2.3",
+                "titulo": "Cargo, emprego e função pública"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Poderes administrativos",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Hierárquico, disciplinar, regulamentar e de polícia"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Uso e abuso do poder"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Licitação",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Princípios"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Contratação direta: dispensa e inexigibilidade"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Modalidades"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Tipos"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Procedimento"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Controle da Administração Pública",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Controle exercido pela Administração Pública"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Controle judicial"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Controle legislativo"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Responsabilidade civil do Estado",
+        "filhos": [
+          {
+            "numero": "7.1",
+            "titulo": "Responsabilidade civil do Estado no direito brasileiro",
+            "filhos": [
+              {
+                "numero": "7.1.1",
+                "titulo": "Responsabilidade por ato comissivo do Estado"
+              },
+              {
+                "numero": "7.1.2",
+                "titulo": "Responsabilidade por omissão do Estado"
+              }
+            ]
+          },
+          {
+            "numero": "7.2",
+            "titulo": "Requisitos para a demonstração da responsabilidade do Estado"
+          },
+          {
+            "numero": "7.3",
+            "titulo": "Causas excludentes e atenuantes da responsabilidade do Estado"
+          }
+        ]
+      },
+      {
+        "numero": "8",
+        "titulo": "Regime jurídico-administrativo",
+        "filhos": [
+          {
+            "numero": "8.1",
+            "titulo": "Conceito"
+          },
+          {
+            "numero": "8.2",
+            "titulo": "Princípios expressos e implícitos da Administração Pública"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Direitos e garantias fundamentais: direitos e deveres individuais e coletivos; direito à vida, à liberdade, à igualdade, à segurança e à propriedade; direitos sociais; nacionalidade; cidadania e direitos políticos; partidos políticos; garantias constitucionais individuais; garantias dos direitos coletivos, sociais e políticos"
+      },
+      {
+        "numero": "2",
+        "titulo": "Poder Executivo: forma e sistema de governo; chefia de Estado e chefia de governo"
+      },
+      {
+        "numero": "3",
+        "titulo": "Defesa do Estado e das instituições democráticas: segurança pública; organização da segurança pública"
+      },
+      {
+        "numero": "4",
+        "titulo": "Ordem social: base e objetivos da ordem social; seguridade social; meio ambiente; família, criança, adolescente, idoso, índio"
+      }
+    ],
+    "NOÇÕES DE DIREITO PENAL E DE DIREITO PROCESSUAL PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Princípios básicos"
+      },
+      {
+        "numero": "2",
+        "titulo": "Aplicação da lei penal",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "A lei penal no tempo e no espaço"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Tempo e lugar do crime"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Territorialidade e extraterritorialidade da lei penal"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "O fato típico e seus elementos",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Crime consumado e tentado"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Ilicitude e causas de exclusão"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Excesso punível"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Crimes contra a pessoa"
+      },
+      {
+        "numero": "5",
+        "titulo": "Crimes contra o patrimônio"
+      },
+      {
+        "numero": "6",
+        "titulo": "Crimes contra a fé pública"
+      },
+      {
+        "numero": "7",
+        "titulo": "Crimes contra a Administração Pública"
+      },
+      {
+        "numero": "8",
+        "titulo": "Inquérito policial",
+        "filhos": [
+          {
+            "numero": "8.1",
+            "titulo": "Histórico, natureza, conceito, finalidade, características, fundamento, titularidade, grau de cognição, valor probatório, formas de instauração, notitia criminis, delatio criminis, procedimentos investigativos, indiciamento, garantias do investigado; conclusão"
+          }
+        ]
+      },
+      {
+        "numero": "9",
+        "titulo": "Prova",
+        "filhos": [
+          {
+            "numero": "9.1",
+            "titulo": "Preservação de local de crime"
+          },
+          {
+            "numero": "9.2",
+            "titulo": "Requisitos e ônus da prova"
+          },
+          {
+            "numero": "9.3",
+            "titulo": "Nulidade da prova"
+          },
+          {
+            "numero": "9.4",
+            "titulo": "Documentos de prova"
+          },
+          {
+            "numero": "9.5",
+            "titulo": "Reconhecimento de pessoas e coisas"
+          },
+          {
+            "numero": "9.6",
+            "titulo": "Acareação"
+          },
+          {
+            "numero": "9.7",
+            "titulo": "Indícios"
+          },
+          {
+            "numero": "9.8",
+            "titulo": "Busca e apreensão"
+          }
+        ]
+      },
+      {
+        "numero": "10",
+        "titulo": "Prisão em flagrante"
+      }
+    ],
+    "LEGISLAÇÃO ESPECIAL": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 10.826/2003 e suas alterações (Estatuto do Desarmamento)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Lei nº 5.553/1968 (apresentação e uso de documentos de identificação pessoal)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 4.898/1965 (direito de representação e processo de responsabilidade administrativa, civil e penal, nos casos de abuso de autoridade)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Lei nº 9.455/1997 (definição dos crimes de tortura) 5 Lei nº 8.069/1990 e suas alterações (Estatuto da Criança e do Adolescente): Título II, Capítulos I e II, Título III, Capítulo II, Seção III, Título V e Título VII"
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 11.343/2006 (Sistema Nacional de Políticas Públicas sobre Drogas)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 9.605/1998 e suas alterações (Lei dos Crimes contra o Meio Ambiente): Capítulos III e V"
+      },
+      {
+        "numero": "8",
+        "titulo": "Decretos nº 5.948/2006, nº 6.347/2008 e nº 7901/2013 (tráfico de pessoas)"
+      }
+    ],
+    "DIREITOS HUMANOS E CIDADANIA": [
+      {
+        "numero": "1",
+        "titulo": "Teoria geral dos direitos humanos",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Conceito, terminologia, estrutura normativa, fundamentação"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Afirmação histórica dos direitos humanos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Direitos humanos e responsabilidade do Estado"
+      },
+      {
+        "numero": "4",
+        "titulo": "Direitos humanos na Constituição Federal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Política Nacional de Direitos Humanos"
+      },
+      {
+        "numero": "6",
+        "titulo": "A Constituição brasileira e os tratados internacionais de direitos humanos. RENATO ANTONIO BORGES DIAS DIRETOR-GERAL DO DEPARTAMENTO DE POLÍCIA RODOVIÁRIA FEDERAL ANEXO I MODELO DE PARECER DE EQUIPE MULTIPROFISSIONAL E INTERDISCIPLINAR PARA SOLICITAÇÃO PARA CONCORRER ÀS VAGAS DESTINADAS AOS CANDIDATOS COM DEFICIÊNCIA E PARA A AVALIAÇÃO BIOPSICOSSOCIAL Atestamos para fins de participação em concurso público, que o Senhor(a)______________________________________________________________, portador (a) do documento de identidade nº _______________________________, e considerado(a) pessoa com deficiência à luz da legislação brasileira por apresentar a(s) seguinte(s) condição(ões) _________________________________________________________________________ _________________________________________________________________________ ______________________________________________CID-10 _________. Por oportuno, declaramos que o candidato apresenta os seguintes impedimentos nas funções e nas estruturas do corpo _________________________________________________________________________ _________________________________________________________________________ __________________________________________________________________; que devem ser considerados os fatores socioambientais _________________________________________________________________________ _________________________________________________________________________ __________________________________________________________________; que apresenta as seguintes limitações no desempenho de atividades_________________________________________________________________ _________________________________________________________________________ __________________________________________________________________ e as seguintes restrições de participação _________________________________________________________________________ _________________________________________________________________________ __________________________________. Assinatura e carimbo com Assinatura e carimbo com Assinatura e carimbo com CRM do médico registro da profissão do registro da profissão do membro de equipe membro de equipe multiprofissional e multiprofissional e interdisciplinar interdisciplinar Cidade/UF, ____ de _____________ de 201__. ANEXO II DECLARAÇÃO – PRF 2018 Eu, [nome completo do(a) candidato(a)], inscrito(a) no CPF sob o [número do CPF do(a) candidato(a)], declaro, para fins de isenção de pagamento de taxa de inscrição no concurso público, ser membro de família de baixa renda, nos termos do Decreto nº 6.135, de 26 de junho de 2007 e que, em função de minha condição financeira, não posso pagar a taxa de inscrição em concurso público. Declaro estar ciente de que, de acordo com o inciso I do art. 4º do referido Decreto, família é a unidade nuclear composta por um ou mais indivíduos, eventualmente ampliada por outros indivíduos que contribuam para o rendimento ou tenham suas despesas atendidas por aquela unidade familiar, todos moradores em um mesmo domicílio, definido como o local que serve de moradia à família. Declaro, ainda, saber que, de acordo com o inciso II do art. 4º do Decreto nº 6.135/2007, família de baixa renda, sem prejuízo do disposto no inciso I, é aquela com renda familiar mensal per capita de até meio salário mínimo; ou a que possua renda familiar mensal de até três salários mínimos. Declaro, também, ter conhecimento de que a renda familiar mensal é a soma dos rendimentos brutos auferidos por todos os membros da família, não sendo incluídos no cálculo aqueles percebidos dos programas descritos no inciso IV do art. 4º do Decreto nº 6.135, de 26 de junho de 2007. Declaro saber que renda familiar per capita é obtida pela razão entre a renda familiar mensal e o total de indivíduos na família. Declaro, por fim, que, em função de minha condição financeira, não posso pagar a taxa de inscrição em concurso público e estar ciente das penalidades por emitir declaração falsa previstas no parágrafo único do art. 10 do Decreto nº 83.936, de 6 de setembro de 1979. Por ser verdade, firmo o presente para que surtam seus efeitos legais. [CIDADE], [DIA] DE [MÊS] DE [ANO]. __________________________________________________________ [Nome/Assinatura do(a) candidato(a)] OBS.: Preencher os dados [DESTACADOS] acima. 41"
+      }
+    ]
+  }
+}

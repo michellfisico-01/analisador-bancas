@@ -1,0 +1,814 @@
+{
+  "slug": "dprf_13",
+  "cargo_referencia": "Policial Rodoviário Federal",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Emprego das letras"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Emprego da acentuação gráfica"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego/correlação de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescritura de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Retextualização de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      }
+    ],
+    "MATEMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Números inteiros, racionais e reais",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Problemas de contagem"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Sistema legal de medidas"
+      },
+      {
+        "numero": "3",
+        "titulo": "Razões e proporções; divisão proporcional",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Regras de três simples e composta"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Porcentagens"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Equações e inequações de 1º e 2º graus",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Sistemas lineares"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Funções",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Gráficos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Sequências numéricas"
+      },
+      {
+        "numero": "7",
+        "titulo": "Progressão aritmética e geométrica"
+      },
+      {
+        "numero": "8",
+        "titulo": "Noções de probabilidade e estatística"
+      },
+      {
+        "numero": "9",
+        "titulo": "Raciocínio lógico: problemas aritméticos"
+      }
+    ],
+    "NOÇÕES DE DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Constituição da República Federativa do Brasil de 1988",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Princípios fundamentais"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Aplicabilidade das normas constitucionais",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Normas de eficácia plena, contida e limitada"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Normas programáticas"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Direitos e garantias fundamentais",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Direitos e deveres individuais e coletivos, direitos sociais, direitos de nacionalidade, direitos políticos, partidos políticos"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Organização político-administrativa do Estado",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Estado federal brasileiro, União, estados, Distrito Federal, municípios e territórios"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Administração pública",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Disposições gerais, servidores públicos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Poder executivo",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Atribuições e responsabilidades do presidente da República"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Poder judiciário",
+        "filhos": [
+          {
+            "numero": "7.1",
+            "titulo": "Disposições gerais"
+          },
+          {
+            "numero": "7.2",
+            "titulo": "Órgãos do poder judiciário",
+            "filhos": [
+              {
+                "numero": "7.2.1",
+                "titulo": "Organização e competências, Conselho Nacional de Justiça",
+                "filhos": [
+                  {
+                    "numero": "7.2.1.1",
+                    "titulo": "Composição e competências"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "8",
+        "titulo": "Funções essenciais à justiça",
+        "filhos": [
+          {
+            "numero": "8.1",
+            "titulo": "Ministério público, advocacia pública"
+          },
+          {
+            "numero": "8.2",
+            "titulo": "Defensoria pública"
+          }
+        ]
+      }
+    ],
+    "ÉTICA NO SERVIÇO PÚBLICO": [
+      {
+        "numero": "1",
+        "titulo": "Ética e moral"
+      },
+      {
+        "numero": "2",
+        "titulo": "Ética, princípios e valores"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ética e democracia: exercício da cidadania"
+      },
+      {
+        "numero": "4",
+        "titulo": "Ética e função pública"
+      },
+      {
+        "numero": "5",
+        "titulo": "Ética no Setor Público",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Decreto nº 1.171/ 1994 (Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal)"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE INFORMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Noções de sistema operacional Windows"
+      },
+      {
+        "numero": "2",
+        "titulo": "Edição de textos, planilhas e apresentações (ambiente BrOffice)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Redes de computadores",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Conceitos básicos, ferramentas, aplicativos e procedimentos de Internet e intranet"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Programas de navegação (Mozilla Firefox e Google Chrome)"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Programas de correio eletrônico (Mozilla Thunderbird)"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Sítios de busca e pesquisa na Internet"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Grupos de discussão"
+          },
+          {
+            "numero": "3.7",
+            "titulo": "Computação na nuvem (cloud computing)"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Conceitos de organização e de gerenciamento de informações, arquivos, pastas e programas"
+      },
+      {
+        "numero": "5",
+        "titulo": "Segurança da informação",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Procedimentos de segurança"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Noções de vírus, worms e pragas virtuais"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Aplicativos para segurança (antivírus, firewall, anti-spyware etc.)"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Procedimentos de backup"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Armazenamento de dados na nuvem (cloud storage). 22.2.1.1 CONHECIMENTOS ESPECÍFICOS"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO ADMINISTRATIVO": [
+      {
+        "numero": "1",
+        "titulo": "Estado, governo e administração pública: conceitos, elementos, poderes, natureza, fins e princípios"
+      },
+      {
+        "numero": "2",
+        "titulo": "Direito administrativo: conceito, fontes e princípios"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ato administrativo",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Conceito, requisitos, atributos, classificação e espécies"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Invalidação, anulação e revogação"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Prescrição"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Agentes administrativos",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Investidura e exercício da função pública"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Direitos e deveres dos funcionários públicos; regimes jurídicos"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Processo administrativo: conceito, princípios, fases e modalidades"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Lei nº 8.112/1990 e alterações"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Poderes da administração: vinculado, discricionário, hierárquico, disciplinar e regulamentar"
+      },
+      {
+        "numero": "6",
+        "titulo": "Princípios básicos da administração",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Responsabilidade civil da administração: evolução doutrinária e reparação do dano"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Enriquecimento ilícito e uso e abuso de poder"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Improbidade administrativa: sanções penais e civis — Lei nº 8.429/1992 e alterações"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Serviços públicos: conceito, classificação, regulamentação, formas e competência de prestação"
+      },
+      {
+        "numero": "8",
+        "titulo": "Organização administrativa",
+        "filhos": [
+          {
+            "numero": "8.1",
+            "titulo": "Administração direta e indireta, centralizada e descentralizada"
+          },
+          {
+            "numero": "8.2",
+            "titulo": "Autarquias, fundações, empresas públicas e sociedades de economia mista"
+          }
+        ]
+      },
+      {
+        "numero": "9",
+        "titulo": "Controle e responsabilização da administração",
+        "filhos": [
+          {
+            "numero": "9.1",
+            "titulo": "Controle administrativo"
+          },
+          {
+            "numero": "9.2",
+            "titulo": "Controle judicial"
+          },
+          {
+            "numero": "9.3",
+            "titulo": "Controle legislativo"
+          },
+          {
+            "numero": "9.4",
+            "titulo": "Responsabilidade civil do Estado"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei penal",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Princípios da legalidade e da anterioridade"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A lei penal no tempo e no espaço"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Tempo e lugar do crime"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Lei penal excepcional, especial e temporária"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Territorialidade e extraterritorialidade da lei penal"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "Pena cumprida no estrangeiro"
+          },
+          {
+            "numero": "1.7",
+            "titulo": "Eficácia da sentença estrangeira"
+          },
+          {
+            "numero": "1.8",
+            "titulo": "Contagem de prazo"
+          },
+          {
+            "numero": "1.9",
+            "titulo": "Interpretação da lei penal"
+          },
+          {
+            "numero": "1.10",
+            "titulo": "Analogia"
+          },
+          {
+            "numero": "1.11",
+            "titulo": "Irretroatividade da lei penal"
+          },
+          {
+            "numero": "1.12",
+            "titulo": "Conflito aparente de normas penais"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "O fato típico e seus elementos",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Crime consumado e tentado"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Pena da tentativa"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Concurso de crimes"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Ilicitude e causas de exclusão"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Excesso punível"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Culpabilidade",
+            "filhos": [
+              {
+                "numero": "2.6.1",
+                "titulo": "Elementos e causas de exclusão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Imputabilidade penal"
+      },
+      {
+        "numero": "4",
+        "titulo": "Concurso de pessoas"
+      },
+      {
+        "numero": "5",
+        "titulo": "Crimes contra a pessoa"
+      },
+      {
+        "numero": "6",
+        "titulo": "Crimes contra o patrimônio"
+      },
+      {
+        "numero": "7",
+        "titulo": "Crimes contra a fé pública"
+      },
+      {
+        "numero": "8",
+        "titulo": "Crimes contra a administração pública"
+      },
+      {
+        "numero": "9",
+        "titulo": "Lei nº 8.072/1990 (delitos hediondos)"
+      },
+      {
+        "numero": "10",
+        "titulo": "Disposições constitucionais aplicáveis ao direito penal"
+      },
+      {
+        "numero": "11",
+        "titulo": "Crimes contra a Dignidade Sexual"
+      }
+    ],
+    "NOÇÕES DE DIREITO PROCESSUAL PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei processual no tempo, no espaço e em relação às pessoas",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Disposições preliminares do Código de Processo Penal"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Inquérito policial"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ação penal"
+      },
+      {
+        "numero": "4",
+        "titulo": "Competência"
+      },
+      {
+        "numero": "5",
+        "titulo": "Prova"
+      },
+      {
+        "numero": "6",
+        "titulo": "Juiz, ministério público, acusado, defensor, assistentes e auxiliares da justiça, atos de terceiros"
+      },
+      {
+        "numero": "7",
+        "titulo": "Prisão e liberdade provisória",
+        "filhos": [
+          {
+            "numero": "7.1",
+            "titulo": "Lei nº 7.960/1989 (prisão temporária)"
+          }
+        ]
+      },
+      {
+        "numero": "8",
+        "titulo": "Processo e julgamento dos crimes de responsabilidade dos funcionários públicos"
+      },
+      {
+        "numero": "9",
+        "titulo": "Habeas corpus e seu processo"
+      },
+      {
+        "numero": "10",
+        "titulo": "Disposições constitucionais aplicáveis ao direito processual penal"
+      }
+    ],
+    "LEGISLAÇÃO ESPECIAL": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 10.826/2003 e alterações (Estatuto do Desarmamento)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Lei nº 7.716/1989 e alterações (crimes resultantes de preconceitos de raça ou de cor)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 5.553/1968 (apresentação e uso de documentos de identificação pessoal)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Lei nº 4.898/1965 (direito de representação e processo de responsabilidade administrativa, civil e penal, nos casos de abuso de autoridade)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 9.455/1997 (definição dos crimes de tortura)"
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 8.069/1990 (Estatuto da Criança e do Adolescente), Título II, Capítulos I e II, Título III, Capítulo II, Seção III, Título V e Título VII"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 10.741/2003 e alterações (Estatuto do Idoso)"
+      },
+      {
+        "numero": "8",
+        "titulo": "Lei nº 9.034/1995 e alterações (crime organizado). 12 Lei nº 9.099/1995 e alterações (juizados especiais cíveis e criminais), Capítulo III,. 13 Lei nº 10.259/2001 e alterações (juizados especiais cíveis e criminais no âmbito da Justiça Federal). 15 Lei nº 11.340/2006 (Maria da Penha – violência doméstica e familiar contra a mulher). 16 Lei nº 11.343/2006 (sistema nacional de políticas públicas sobre drogas). 17 Decreto-Lei nº 3.688/1941 (Lei das contravenções penais). 18 Lei nº 9.605/1998 e alterações (Lei dos crimes contra o meio ambiente), Capítulos III e V . 19 Decretos nº 5.948/2006, nº 6.347/2008 e nº 7901/2013 (Tráfico de pessoas)"
+      }
+    ],
+    "DIREITOS HUMANOS E CIDADANIA": [
+      {
+        "numero": "1",
+        "titulo": "Teoria geral dos direitos humanos",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Conceito, terminologia, estrutura normativa, fundamentação"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Afirmação histórica dos direitos humanos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Direitos humanos e responsabilidade do Estado"
+      },
+      {
+        "numero": "4",
+        "titulo": "Direitos humanos na Constituição Federal"
+      },
+      {
+        "numero": "6",
+        "titulo": "Institucionalização dos direitos e garantias fundamentais"
+      },
+      {
+        "numero": "7",
+        "titulo": "Política nacional de direitos humanos"
+      },
+      {
+        "numero": "8",
+        "titulo": "Programas nacionais de direitos humanos"
+      },
+      {
+        "numero": "9",
+        "titulo": "Globalização e direitos humanos"
+      },
+      {
+        "numero": "10",
+        "titulo": "As três vertentes da proteção internacional da pessoa humana",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Direitos humanos, direito humanitário e direito dos refugiados. 11. A Constituição brasileira e os tratados internacionais de direitos humanos"
+          }
+        ]
+      },
+      {
+        "numero": "12",
+        "titulo": "Aplicações da perspectiva sociológica a temas e problemas contemporâneos da sociedade brasileira: a questão da igualdade jurídica e dos direitos de cidadania, o pluralismo jurídico, acesso à justiça. 13. Práticas judiciárias e policiais no espaço público"
+      },
+      {
+        "numero": "14",
+        "titulo": "Administração institucional de conflitos no espaço público"
+      }
+    ],
+    "LEGISLAÇÃO RELATIVA AO DPRF": [
+      {
+        "numero": "1",
+        "titulo": "Mecânica",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Cinemática escalar, cinemática vetorial"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Movimento circular"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Leis de Newton e suas aplicações"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Trabalho"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Potência"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "Energia cinética, energia potencial, atrito"
+          },
+          {
+            "numero": "1.7",
+            "titulo": "Conservação de energia e suas transformações"
+          },
+          {
+            "numero": "1.8",
+            "titulo": "Quantidade de movimento e conservação da quantidade de movimento, impulso"
+          },
+          {
+            "numero": "1.9",
+            "titulo": "Colisões"
+          },
+          {
+            "numero": "1.10",
+            "titulo": "Estática dos corpos rígidos"
+          },
+          {
+            "numero": "1.11",
+            "titulo": "Estática dos fluidos"
+          },
+          {
+            "numero": "1.12",
+            "titulo": "Princípios de Pascal, Arquimedes e Stevin"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Ondulatória",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Movimento harmônico simples"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Oscilações livres, amortecidas e forçadas. 2.3. Ondas. 2.3.1 Ondas sonoras, efeito doppler e ondas eletromagnéticas. 2.3.2 Frequências naturais e ressonância. 3. Óptica geométrica: reflexão e refração da luz. 3.1 Instrumentos ópticos: características e aplicações. MARIA ALICE NASCIMENTO SOUZA DIRETORA-GERAL DO DEPARTAMENTO DE POLÍCIA RODOVIÁRIA FEDERAL 28"
+          }
+        ]
+      }
+    ]
+  }
+}
