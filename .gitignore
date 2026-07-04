@@ -1,0 +1,18 @@
+# Ambiente virtual e caches Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Dados brutos (PDFs grandes) e banco — versionamos código, não dados
+data/raw/
+data/processed/*.db
+data/processed/*.sqlite
+
+# Segredos
+.env
+
+# Sistema operacional / editor
+Thumbs.db
+.vscode/
+.idea/
