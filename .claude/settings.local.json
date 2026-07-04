@@ -23,7 +23,18 @@
       "PowerShell(foreach \\($f in @\\(\"src\\\\__init__.py\", \"src\\\\coleta\\\\__init__.py\", \"src\\\\extracao\\\\__init__.py\", \"src\\\\classificacao\\\\__init__.py\", \"src\\\\analise\\\\__init__.py\", \"src\\\\plano\\\\__init__.py\", \"tests\\\\__init__.py\"\\)\\) { if \\(-not \\(Test-Path $f\\)\\) { New-Item -ItemType File $f | Out-Null } }; ls src, tests -Recurse -Name)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/ -q)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.coleta.download)",
-      "PowerShell(git add -A)"
+      "PowerShell(git add -A)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_pdfs.py\" gab_pf21)",
+      "PowerShell($s = \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_pdfs.py\"; foreach \\($a in @\\(\"gab_dprf13\",\"gab_pf18\",\"gab_prf18\",\"gab_prf21\"\\)\\) { & \".venv\\\\Scripts\\\\python.exe\" $s $a })",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" $s prova_pf21)",
+      "PowerShell($s = \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_pdfs.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_layout.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_layout2.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_fontes.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.extracao.pipeline)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\debug_segmentacao.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\debug_prf18.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\debug_prf18b.py\")"
     ]
   }
 }

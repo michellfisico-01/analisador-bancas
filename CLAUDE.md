@@ -36,7 +36,7 @@ carreiras jurídicas de entrada.
 ## Fases do projeto
 
 - **Fase 0** — Setup e decisões de recorte ✅ concluída em 2026-07-04
-- **Fase 1** — Coleta (download PDFs oficiais) e extração (segmentação questão a questão, ← **PRÓXIMA**
+- **Fase 1** — ✅ concluída em 2026-07-04 — Coleta (download PDFs oficiais) e extração (segmentação questão a questão,
   com texto motivador; SQLite; relatório de qualidade da extração por prova)
 - **Fase 2** — Taxonomia a partir dos editais PF/PRF (revisada pelo usuário antes de usar)
   + classificação em 2 níveis (tópico e subtópico) por duas abordagens comparáveis:
@@ -62,6 +62,36 @@ carreiras jurídicas de entrada.
   distorceria o perfil estatístico dos cargos de entrada).
 - (Fase 0, 2026-07-04) **Classificação LLM aprovada**: usuário tem chave da API Anthropic.
   Chave vai em `.env` (nunca commitada). Usuário controla custo escolhendo modelo e lote.
+- (Fase 1, 2026-07-04) **Fonte de enumeração de arquivos**: API oficial
+  `apis.cebraspe.org.br/cebraspe/eventos/{slug}` (mesma que o site usa); downloads pelo
+  CDN oficial `cdn.cebraspe.org.br`. PRF 2013 usa slug legado `DPRF_13`.
+- (Fase 1, 2026-07-04) **Ambiente Python via uv** (não havia Python clássico na máquina);
+  `.venv/` criado com CPython 3.14, deps via `uv pip install -r requirements.txt`.
+- (Fase 1, 2026-07-04) **Segmentação dos cadernos** usa 3 sinais: layout (recuo das
+  linhas), tipografia (número de item tem fonte >= 7pt; numeração de linha de texto
+  motivador tem 5-6pt) e sequência estrita (só aceita o próximo número esperado).
+
+## Limitações conhecidas (Fase 1)
+
+- **Status 'alterada' não detectável**: o gabarito definitivo do CEBRASPE só marca
+  anulados (X). Detectar gabarito alterado exigiria o preliminar, que a banca tira do ar.
+  O schema suporta o status; a detecção fica para quando houver fonte.
+- **Itens só-figura** (ex.: PRF 2019 itens 24-26, vistas de sólidos em RLM) recebem
+  placeholder "[item com conteúdo gráfico não extraível do PDF]". Irrelevante para as
+  disciplinas piloto (Direito não tem itens só-figura nessas provas).
+- **Fórmulas matemáticas** com subscritos saem truncadas (afeta itens de RLM/Física,
+  fora das disciplinas piloto).
+- Coluna `disciplina` dos itens ainda NULL — o mapeamento item→disciplina é o primeiro
+  passo da Fase 2 (junto com a taxonomia dos editais).
+
+## Estado dos dados (Fase 1)
+
+- 23 PDFs oficiais em `data/raw/` (9 provas, 9 gabaritos definitivos, 5 editais).
+- `data/processed/bancas.db`: 5 concursos, 9 provas, **1.072 itens** (45 anulados),
+  342 textos motivadores. Extração 9/9 sem divergência vs gabarito definitivo
+  (ver `relatorios/qualidade_extracao.md`).
+- Pipelines idempotentes: `python -m src.coleta.download` e
+  `python -m src.extracao.pipeline` podem rodar de novo sem duplicar nada.
 
 ## Estrutura de pastas
 
