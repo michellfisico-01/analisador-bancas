@@ -35,8 +35,8 @@ carreiras jurídicas de entrada.
 
 ## Fases do projeto
 
-- **Fase 0** — Setup e decisões de recorte ← **EM ANDAMENTO**
-- **Fase 1** — Coleta (download PDFs oficiais) e extração (segmentação questão a questão,
+- **Fase 0** — Setup e decisões de recorte ✅ concluída em 2026-07-04
+- **Fase 1** — Coleta (download PDFs oficiais) e extração (segmentação questão a questão, ← **PRÓXIMA**
   com texto motivador; SQLite; relatório de qualidade da extração por prova)
 - **Fase 2** — Taxonomia a partir dos editais PF/PRF (revisada pelo usuário antes de usar)
   + classificação em 2 níveis (tópico e subtópico) por duas abordagens comparáveis:
@@ -54,7 +54,14 @@ carreiras jurídicas de entrada.
 ## Decisões tomadas
 
 - (Fase 0, 2026-07-04) Estrutura de pastas criada; git inicializado.
-- _As decisões de recorte (anos, concursos) serão registradas aqui após resposta do usuário._
+- (Fase 0, 2026-07-04) **Recorte temporal: 2013 em diante.** Concursos do piloto:
+  PRF 2013, PF 2018, PRF 2018/19, PF 2021, PRF 2021. PF 2012 e PF 2014 (Delegado)
+  ficam de fora (legislação/estilo defasados).
+- (Fase 0, 2026-07-04) **Cargos do piloto: Agente, Escrivão e Papiloscopista PF +
+  Policial Rodoviário Federal.** Delegado excluído (perfil jurídico muito mais profundo
+  distorceria o perfil estatístico dos cargos de entrada).
+- (Fase 0, 2026-07-04) **Classificação LLM aprovada**: usuário tem chave da API Anthropic.
+  Chave vai em `.env` (nunca commitada). Usuário controla custo escolhendo modelo e lote.
 
 ## Estrutura de pastas
 
