@@ -60,7 +60,12 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\confere_disciplinas.py\" 2>&1)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.descritiva)",
       "PowerShell(uv pip install tabulate --python .venv 2>&1)",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.preditivo)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.preditivo)",
+      "PowerShell(uv pip install reportlab --python .venv 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao PRF --semanas 12 --horas-semana 20)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao GERAL --semanas 16 --horas-semana 15)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/test_plano.py::test_cronograma_cobre_todas_as_semanas -q 2>&1)"
     ]
   }
 }

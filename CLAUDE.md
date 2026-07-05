@@ -70,7 +70,13 @@ carreiras jurídicas de entrada.
   sinal legislativo com curadoria manual (`config/eventos_legislativos.json`).
   Pendências da fase: usuário revisar os eventos legislativos sugeridos
   (marcados com `revisado: false`) e análise qualitativa de "pegadinhas".
-- **Fase 4** — Gerador de plano de estudos (ciclos de estudo), exportação Markdown e PDF.
+- **Fase 4** — ✅ concluída em 2026-07-05 — Gerador de plano de estudos
+  (`python -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20`):
+  ciclos semanais alternando disciplinas, horas ∝ peso da disciplina no órgão
+  × probabilidade do tópico no ranking, 20% de revisão contínua, cauda de
+  tópicos improváveis sem bloco dedicado, alertas legislativos no plano.
+  Exporta Markdown + PDF (reportlab) em `relatorios/planos/`. Escopo: só as
+  3 disciplinas piloto (demais disciplinas do edital ficam para a Fase 6).
 - **Fase 5** — Dashboard web local (Streamlit vs React: decisão do usuário), só após
   fases anteriores validadas.
 - **Fase 6** — Expansão: FGV, FCC, múltipla escolha, demais disciplinas.
