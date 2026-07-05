@@ -26,7 +26,8 @@ SELECT i.id            AS item_id,
        i.numero        AS numero,
        i.disciplina    AS disciplina,
        i.gabarito      AS gabarito,
-       i.status        AS status
+       i.status        AS status,
+       i.texto         AS texto
 FROM itens i
 JOIN provas p    ON p.id = i.prova_id
 JOIN concursos c ON c.id = p.concurso_id
