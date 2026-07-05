@@ -1,6 +1,6 @@
 # Métricas do classificador local (Camada 2)
 
-Gerado em 2026-07-04 23:53. Validação cruzada estratificada
+Gerado em 2026-07-05 00:01. Validação cruzada estratificada
 sobre o conjunto de treino (rótulos da Camada 1 com confiança >= 0.75 +
 revisões manuais). Reexecutar após cada rodada de revisão:
 `python -m src.classificacao.modelo`.
@@ -12,25 +12,25 @@ Previsões gravadas nesta execução: 0 (limiar 0.6).
 ```
                               precision    recall  f1-score   support
 
-               Contabilidade       1.00      1.00      1.00        58
-      Direito Administrativo       0.90      0.80      0.84        44
-      Direito Constitucional       0.89      0.89      0.89       104
-               Direito Penal       0.85      0.79      0.82        52
-    Direito Processual Penal       0.70      0.82      0.76        17
-            Direitos Humanos       1.00      1.00      1.00        13
-                 Estatística       0.95      1.00      0.97        35
-                      Física       1.00      0.89      0.94        27
-                 Geopolítica       1.00      0.86      0.92         7
-                 Informática       0.95      0.96      0.95       187
-   Legislação Penal Especial       0.89      0.74      0.81        23
-      Legislação de Trânsito       0.82      1.00      0.90        49
-           Língua Portuguesa       0.96      0.96      0.96       171
-Raciocínio Lógico-Matemático       1.00      0.95      0.97        75
-    Ética no Serviço Público       0.88      1.00      0.93         7
+               Contabilidade       0.96      1.00      0.98        90
+      Direito Administrativo       0.93      0.62      0.75        40
+      Direito Constitucional       0.91      0.86      0.88       111
+               Direito Penal       0.80      0.80      0.80        40
+    Direito Processual Penal       0.70      0.84      0.76        25
+            Direitos Humanos       1.00      1.00      1.00        18
+                 Estatística       1.00      1.00      1.00        56
+                      Física       1.00      0.93      0.96        27
+                 Geopolítica       1.00      1.00      1.00         5
+                 Informática       0.97      0.98      0.98       229
+   Legislação Penal Especial       0.83      0.79      0.81        19
+      Legislação de Trânsito       0.80      0.94      0.87        52
+           Língua Portuguesa       0.99      1.00      1.00       182
+Raciocínio Lógico-Matemático       1.00      0.97      0.98        86
+    Ética no Serviço Público       0.78      1.00      0.88         7
 
-                    accuracy                           0.93       869
-                   macro avg       0.92      0.91      0.91       869
-                weighted avg       0.93      0.93      0.93       869
+                    accuracy                           0.94       987
+                   macro avg       0.91      0.92      0.91       987
+                weighted avg       0.94      0.94      0.94       987
 
 ```
 

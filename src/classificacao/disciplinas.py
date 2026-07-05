@@ -231,7 +231,13 @@ def mapear(con) -> dict[str, int]:
 
     discordantes = 0
     for _chave, ids in blocos.items():
-        votos = Counter(voto_item[i] for i in ids if voto_item[i] and voto_proprio[i])
+        tem_voto_proprio = any(voto_item[i] and voto_proprio[i] for i in ids)
+        if tem_voto_proprio:
+            # com sinal em texto próprio no bloco, TODOS os votos contam —
+            # os votos via motivador diluem falsos positivos isolados
+            votos = Counter(voto_item[i] for i in ids if voto_item[i])
+        else:
+            votos = Counter()
         if not votos:
             # Nenhum item do bloco tem sinal no próprio texto. O motivador só
             # pode decidir sozinho para disciplinas NÃO jurídicas: as provas

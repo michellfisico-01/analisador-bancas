@@ -55,7 +55,9 @@
       "PowerShell(uv pip uninstall anthropic python-dotenv --python .venv 2>&1)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.modelo)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\debug_modelo.py\")",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/ -q 2>&1)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/ -q 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.ordem_edital)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\confere_disciplinas.py\" 2>&1)"
     ]
   }
 }

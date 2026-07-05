@@ -1,6 +1,6 @@
 # Comparativo das abordagens de classificação
 
-Gerado em 2026-07-04 23:53. Total de itens: 1072.
+Gerado em 2026-07-05 00:01. Total de itens: 1072.
 
 ## Cobertura por método
 
@@ -23,19 +23,19 @@ _O modelo local ainda não foi treinado — rode `python -m src.classificacao.mo
 
 | Disciplina | Itens |
 |---|---:|
-| (sem disciplina — fila de revisão) | 203 |
-| Informática | 187 |
-| Língua Portuguesa | 171 |
-| Direito Constitucional | 104 |
-| Raciocínio Lógico-Matemático | 75 |
-| Contabilidade | 58 |
-| Direito Penal | 52 |
-| Legislação de Trânsito | 49 |
-| Direito Administrativo | 44 |
-| Estatística | 35 |
+| Informática | 229 |
+| Língua Portuguesa | 182 |
+| Direito Constitucional | 111 |
+| Contabilidade | 90 |
+| Raciocínio Lógico-Matemático | 86 |
+| (sem disciplina — fila de revisão) | 85 |
+| Estatística | 56 |
+| Legislação de Trânsito | 52 |
+| Direito Penal | 40 |
+| Direito Administrativo | 40 |
 | Física | 27 |
-| Legislação Penal Especial | 23 |
-| Direito Processual Penal | 17 |
-| Direitos Humanos | 13 |
+| Direito Processual Penal | 25 |
+| Legislação Penal Especial | 19 |
+| Direitos Humanos | 18 |
 | Ética no Serviço Público | 7 |
-| Geopolítica | 7 |
+| Geopolítica | 5 |
