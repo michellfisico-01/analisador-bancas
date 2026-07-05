@@ -1,0 +1,758 @@
+{
+  "slug": "pc_df_20_agente",
+  "cargo_referencia": "Agente de Policia Civil (DF)",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Emprego das classes de palavras"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Regência verbal e nominal"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescrita de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Significação das palavras"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Reorganização da estrutura de orações e de períodos do texto"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Reescrita de textos de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      }
+    ],
+    "LÍNGUA INGLESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão de textos escritos em língua inglesa e itens gramaticais relevantes para o entendimento dos sentidos dos textos"
+      }
+    ],
+    "CONHECIMENTOS SOBRE O DISTRITO FEDERAL": [
+      {
+        "numero": "1",
+        "titulo": "Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), instituída pela Lei Complementar nº 94/1998 e suas alterações"
+      }
+    ],
+    "LEGISLAÇÃO": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 8.112/1990 e suas alterações. Lei nº 4.878/1965 (Regime Jurídico dos Funcionários Policiais Civis da União e do DF)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Decreto-Lei nº 2.266/1985 (criação da carreira PCDF, cargos, valores e vencimentos)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 9.264/1996 (desmembramento e reorganização da PCDF, remuneração de seus cargos)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Decreto nº 30.490/2009 (Regimento Interno da PCDF)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei Orgânica do Distrito Federal",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Capítulo V, Seção I ― Da Polícia Civil"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 13.869/2019"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 8.429/1992"
+      }
+    ],
+    "MATEMÁTICA E RACIOCÍNIO LÓGICO": [
+      {
+        "numero": "1",
+        "titulo": "Princípios de contagem"
+      },
+      {
+        "numero": "2",
+        "titulo": "Razões e proporções"
+      },
+      {
+        "numero": "3",
+        "titulo": "Regras de três simples"
+      },
+      {
+        "numero": "4",
+        "titulo": "Porcentagens"
+      },
+      {
+        "numero": "5",
+        "titulo": "Equações de 1º e de 2º graus"
+      },
+      {
+        "numero": "6",
+        "titulo": "Sequências numéricas"
+      },
+      {
+        "numero": "7",
+        "titulo": "Progressões aritméticas e geométricas"
+      },
+      {
+        "numero": "8",
+        "titulo": "Funções e gráficos"
+      },
+      {
+        "numero": "9",
+        "titulo": "Estruturas lógicas"
+      },
+      {
+        "numero": "10",
+        "titulo": "Lógica de argumentação",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Analogias, inferências, deduções e conclusões"
+          }
+        ]
+      },
+      {
+        "numero": "11",
+        "titulo": "Lógica sentencial (ou proposicional)",
+        "filhos": [
+          {
+            "numero": "11.1",
+            "titulo": "Proposições simples e compostas"
+          },
+          {
+            "numero": "11.2",
+            "titulo": "Tabelas-verdade"
+          },
+          {
+            "numero": "11.3",
+            "titulo": "Equivalências"
+          },
+          {
+            "numero": "11.4",
+            "titulo": "Leis de De Morgan"
+          },
+          {
+            "numero": "11.5",
+            "titulo": "Diagramas lógicos"
+          }
+        ]
+      },
+      {
+        "numero": "12",
+        "titulo": "Lógica de primeira ordem"
+      },
+      {
+        "numero": "13",
+        "titulo": "Princípios de contagem e probabilidade"
+      },
+      {
+        "numero": "14",
+        "titulo": "Operações com conjuntos"
+      },
+      {
+        "numero": "15",
+        "titulo": "Raciocínio logico envolvendo problemas aritméticos, geométricos e matriciais"
+      }
+    ],
+    "ATUALIDADES (SOMENTE PARA A PROVA DISCURSIVA)": [
+      {
+        "numero": "1",
+        "titulo": "Tópicos relevantes e atuais de diversas áreas, tais como segurança, transportes, política, economia, sociedade, educação, saúde, cultura, tecnologia, energia, relações internacionais, desenvolvimento sustentável e ecologia, suas inter-relações e suas vinculações históricas. 22.2.3 CONHECIMENTOS ESPECÍFICOS"
+      }
+    ],
+    "NOÇÕES DE DIREITO ADMINISTRATIVO": [
+      {
+        "numero": "1",
+        "titulo": "Noção de organização administrativa",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Centralização, descentralização, concentração e desconcentração"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Administração direta e indireta"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Autarquias, fundações, empresas públicas e sociedade de economia mista"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Ato administrativo",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Conceito, requisitos, atributos, classificação e espécies"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Agente público",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Legislação pertinente",
+            "filhos": [
+              {
+                "numero": "3.1.1",
+                "titulo": "Lei nº 8.112/1990 e suas alterações"
+              },
+              {
+                "numero": "3.1.2",
+                "titulo": "Disposições constitucionais aplicáveis"
+              },
+              {
+                "numero": "3.1.3",
+                "titulo": "Cargo, emprego e função pública. 4. Poderes administrativos. 4.1. Hierárquico, disciplinar, regulamentar e de polícia. 4.2 Uso e abuso do poder"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Licitações",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Princípios"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Contratação direta, dispensa e inexigibilidade"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Modalidades, tipos e procedimentos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Controle da administração pública",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Controle judicial"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Controle legislativo. 7. Responsabilidade civil do Estado. 7.1 Responsabilidade por ato comissivo do Estado. 7.2 Responsabilidade por omissão do Estado. 7.3 Requisitos para a demonstração da responsabilidade do Estado. 7.4 Causas excludentes e atenuantes da responsabilidade do Estado"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Constituição Federal de 1988",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Direitos e Garantias Fundamentais"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Título V, Capítulo III ― Da Segurança Pública"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei penal",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Princípios"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A lei penal no tempo e no espaço"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Tempo e lugar do crime"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Lei penal excepcional, especial e temporária"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Contagem de prazo"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "Irretroatividade da lei penal"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Crimes contra a pessoa"
+      },
+      {
+        "numero": "3",
+        "titulo": "Crimes contra o patrimônio"
+      },
+      {
+        "numero": "4",
+        "titulo": "Crimes contra a administração pública"
+      },
+      {
+        "numero": "5",
+        "titulo": "Disposições constitucionais aplicáveis ao direito penal"
+      }
+    ],
+    "NOÇÕES DE DIREITO PROCESSUAL PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Disposições preliminares do Código de Processo Penal"
+      },
+      {
+        "numero": "2",
+        "titulo": "Inquérito policial",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Histórico, natureza, conceito, finalidade, características, fundamento, titularidade, grau de cognição, valor probatório, formas de instauração, notitia criminis, delatio criminis, procedimentos investigativos, indiciamento, garantias do investigado, conclusão"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Prisão e liberdade provisória"
+      },
+      {
+        "numero": "4",
+        "titulo": "Disposições constitucionais aplicáveis ao direito processual penal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 9.099/1995"
+      }
+    ],
+    "NOÇÕES DE DIREITOS HUMANOS": [
+      {
+        "numero": "1",
+        "titulo": "Teoria geral dos direitos humanos",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Conceitos, terminologia, estrutura normativa, fundamentação"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Afirmação histórica dos direitos humanos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Direitos humanos e responsabilidade do Estado"
+      },
+      {
+        "numero": "4",
+        "titulo": "Direitos humanos na Constituição Federal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Política Nacional de Direitos Humanos"
+      },
+      {
+        "numero": "6",
+        "titulo": "A Constituição brasileira e os tratados internacionais de direitos humanos"
+      }
+    ],
+    "INFORMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Fundamentos de computação",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Organização e arquitetura de computadores"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Componentes de um computador (hardware e software)"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Sistemas de entrada, saída e armazenamento"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Princípios de sistemas operacionais"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Tecnologias de virtualização de plataformas: emuladores, máquinas virtuais, paravirtualização"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Redes de comunicação",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Introdução a redes (computação/telecomunicações)"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Redes de computadores: locais, metropolitanas e de longa distância"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Noções de terminologia e aplicações, topologias, modelos de arquitetura (OSI/ISO e TCP/IP) e protocolos"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Noções de redes privadas virtuais (VPN)"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Noções de computação em nuvem"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Noções de vírus, worms e pragas virtuais"
+          },
+          {
+            "numero": "2.7",
+            "titulo": "Aplicativos para segurança (antivírus, firewall, anti-spyware etc)"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a Internet/intranet",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisas e de redes sociais"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Acesso a distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Programas de navegação (Microsoft Internet Explorer, Mozilla Firefox e Google Chrome)"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Sistemas operacionais",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Noções de sistema operacional Windows: Windows 10"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Noções de sistema operacional GNU Linux. Características do sistema operacional GNU Linux"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Noções de sistemas operacionais embarcados/móveis: Android e iOS. 5. Edição de textos, planilhas e apresentações (ambientes Microsoft e LibreOffice)"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Noções de mineração de dados",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Noções e características"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Noções de aprendizado de máquina"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Noções de bigdata: conceito, premissas, aplicação"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Noções de aplicação python e R"
+      },
+      {
+        "numero": "8",
+        "titulo": "API (application programming interface)"
+      },
+      {
+        "numero": "9",
+        "titulo": "Metadados de arquivos"
+      },
+      {
+        "numero": "10",
+        "titulo": "Teoria da informação",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Conceitos de informação, dados, representação de dados, conhecimentos, segurança e inteligência. 11. Banco de dados. 11.1 Base de dados, documentação e prototipação. 11.2 Modelagem conceitual: abstração, modelo entidade-relacionamento, análise funcional e administração de dados. 11.3 Dados estruturados e não estruturados. 11.4 Banco de dados relacionais: conceitos básicos e características. 11.5 Chaves e relacionamentos"
+          }
+        ]
+      }
+    ],
+    "ESTATÍSTICA": [
+      {
+        "numero": "1",
+        "titulo": "Estatística descritiva e análise exploratória de dados: gráficos, diagramas, tabelas, medidas descritivas (posição, dispersão, assimetria e curtose)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Probabilidade",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Definições básicas e axiomas"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Probabilidade condicional e independência"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Variáveis aleatórias discretas e contínuas"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Distribuição de probabilidades"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Função de probabilidade"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Função densidade de probabilidade"
+          },
+          {
+            "numero": "2.7",
+            "titulo": "Esperança e momentos"
+          },
+          {
+            "numero": "2.8",
+            "titulo": "Distribuições especiais"
+          },
+          {
+            "numero": "2.9",
+            "titulo": "Distribuições condicionais e independência"
+          },
+          {
+            "numero": "2.10",
+            "titulo": "Transformação de variáveis"
+          },
+          {
+            "numero": "2.11",
+            "titulo": "Leis dos grandes números"
+          },
+          {
+            "numero": "2.12",
+            "titulo": "Teorema central do limite"
+          },
+          {
+            "numero": "2.13",
+            "titulo": "Amostras aleatórias"
+          },
+          {
+            "numero": "2.14",
+            "titulo": "Distribuições amostrais"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Inferência estatística",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Estimação pontual: métodos de estimação, propriedades dos estimadores, suficiência"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Estimação intervalar: intervalos de confiança, intervalos de credibilidade"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Testes de hipóteses: hipóteses simples e compostas, níveis de significância e potência de um teste, teste t de Student, teste qui-quadrado"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Análise de regressão linear",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Critérios de mínimos quadrados e de máxima verossimilhança"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Modelos de regressão linear"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Inferência sobre os parâmetros do modelo"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Análise de variância"
+          },
+          {
+            "numero": "4.5",
+            "titulo": "Análise de resíduos"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Técnicas de amostragem: amostragem aleatória simples, estratificada, sistemática e por conglomerados",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Tamanho amostral"
+          }
+        ]
+      }
+    ],
+    "CONTABILIDADE": [
+      {
+        "numero": "1",
+        "titulo": "Conceitos, objetivos e finalidades da contabilidade"
+      },
+      {
+        "numero": "2",
+        "titulo": "Patrimônio: componentes, equação fundamental do patrimônio, situação líquida, representação gráfica"
+      },
+      {
+        "numero": "3",
+        "titulo": "Atos e fatos administrativos: conceitos, fatos permutativos, modificativos e mistos"
+      },
+      {
+        "numero": "4",
+        "titulo": "Contas: conceitos, contas de débitos, contas de créditos e saldos"
+      },
+      {
+        "numero": "5",
+        "titulo": "Plano de contas: conceitos, elenco de contas, função e funcionamento das contas"
+      },
+      {
+        "numero": "6",
+        "titulo": "Escrituração: conceitos, lançamentos contábeis, elementos essenciais, fórmulas de lançamentos, livros de escrituração, métodos e processos, regime de competência e regime de caixa"
+      },
+      {
+        "numero": "7",
+        "titulo": "Contabilização de operações contábeis diversas: juros, descontos, tributos, aluguéis, variação monetária/cambial, folha de pagamento, compras, vendas e provisões, depreciações e baixa de bens"
+      },
+      {
+        "numero": "8",
+        "titulo": "Balancete de verificação: conceitos, modelos e técnicas de elaboração"
+      },
+      {
+        "numero": "9",
+        "titulo": "Balanço patrimonial: conceitos, objetivo, composição"
+      },
+      {
+        "numero": "10",
+        "titulo": "Demonstração de resultado de exercício: conceito, objetivo, composição"
+      },
+      {
+        "numero": "11",
+        "titulo": "Lei nº 6.404/1976 e suas alterações, legislação complementar e pronunciamentos do Comitê de Pronunciamentos Contábeis (CPC)"
+      },
+      {
+        "numero": "12",
+        "titulo": "Norma Brasileira de Contabilidade - NBC TSP Estrutura Conceitual, de 23 de setembro de 2016. GLÁUCIA CRISTINA DA SILVA Diretora da Escola Superior de Polícia Civil do Distrito Federal ANEXO I"
+      }
+    ]
+  }
+}

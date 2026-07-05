@@ -96,6 +96,18 @@ ANCORAS_GROSSO: dict[str, list[str]] = {
         "código de processo penal", "termo circunstanciado", "audiência de custódia",
         "provas ilícitas", "indiciamento", "acareação", "polícia judiciária",
     ],
+    "Execução Penal": [
+        "lei de execução penal", "lei nº 7.210", "execução penal",
+        "regime disciplinar diferenciado", "remição da pena", "detração",
+        "progressão de regime", "regressão de regime", "livramento condicional",
+        "estabelecimento penal", "penitenciária federal", "juízo da execução",
+        "falta grave", "preso provisório", "trabalho do preso",
+    ],
+    "Legislação Institucional": [
+        "lei orgânica do distrito federal", "organização básica da polícia civil",
+        "regimento interno", "departamento penitenciário nacional",
+        "estatuto dos policiais civis", "carreira de polícia civil",
+    ],
 }
 
 
@@ -125,6 +137,14 @@ MAPA_EDITAL_CANONICO: list[tuple[str, list[str]]] = [
     ("ESPANHOLA", ["Língua Estrangeira"]),
     ("DPRF", ["Outros"]),
     ("CIDADANIA", ["Direitos Humanos"]),
+    # expansão Fase 6a (PCDF/DEPEN)
+    ("EXECUÇÃO PENAL", ["Execução Penal"]),
+    ("PENITENCIÁRIO NACIONAL", ["Legislação Institucional"]),
+    ("DISTRITO FEDERAL", ["Realidade do DF"]),
+    ("ATUALIDADES", ["Atualidades"]),
+    # "LEGISLAÇÃO" genérica por último: só casa se nenhuma variante
+    # específica (ESPECIAL, TRÂNSITO, DPRF...) tiver casado antes
+    ("LEGISLAÇÃO", ["Legislação Institucional"]),
 ]
 
 
@@ -150,6 +170,7 @@ def disciplinas_do_edital(slug: str) -> set[str]:
 DISCIPLINAS_JURIDICAS = {
     "Direito Constitucional", "Direito Administrativo", "Direito Penal",
     "Direito Processual Penal", "Legislação Penal Especial", "Direitos Humanos",
+    "Execução Penal",
 }
 
 

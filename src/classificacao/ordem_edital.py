@@ -156,8 +156,11 @@ def main() -> int:
     print(f"Preenchidos pelo modelo restrito aos candidatos:        {c['modelo_restrito']}")
     print(f"Sem decisão (continuam NULL, fila de revisão):          {c['sem_decisao']}")
     print(f"Vizinhos violam a ordem do edital (não inferido):       {c['ordem_violada']}")
-    restam, = con.execute("SELECT COUNT(*) FROM itens WHERE disciplina IS NULL").fetchone()
-    print(f"\nItens ainda sem disciplina: {restam}/1072")
+    restam, total = con.execute(
+        "SELECT SUM(CASE WHEN disciplina IS NULL THEN 1 ELSE 0 END), COUNT(*) "
+        "FROM itens"
+    ).fetchone()
+    print(f"\nItens ainda sem disciplina: {restam}/{total}")
     return 0
 
 

@@ -1,0 +1,432 @@
+{
+  "slug": "pc_df_19_escrivao",
+  "cargo_referencia": "Escrivao de Policia Civil (DF)",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Emprego das classes de palavras"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Regência verbal e nominal"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescrita de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Significação das palavras"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Reorganização da estrutura de orações e de períodos do texto"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Reescrita de textos de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      }
+    ],
+    "LÍNGUA INGLESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão de textos escritos em língua inglesa e itens gramaticais relevantes para o entendimento dos sentidos dos textos"
+      }
+    ],
+    "CONHECIMENTOS SOBRE O DISTRITO FEDERAL": [
+      {
+        "numero": "1",
+        "titulo": "Realidade étnica, social, histórica, geográfica, cultural, política e econômica do Distrito Federal e da Região Integrada de Desenvolvimento do Distrito Federal e Entorno (RIDE), instituída pela Lei Complementar nº 94/1998 e suas alterações"
+      }
+    ],
+    "LEGISLAÇÃO": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 8.112/1990 e suas alterações. Lei nº 4.878/1965 (Regime Jurídico dos Funcionários Policiais Civis da União e do DF)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Decreto-Lei nº 2.266/1985 (criação da carreira PCDF, cargos, valores e vencimentos)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 9.264/1996 (desmembramento e reorganização da PCDF, remuneração de seus cargos)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Decreto nº 30.490/2009 (Regimento Interno da PCDF)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei Orgânica do Distrito Federal",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Capítulo V, Seção I ― Da Polícia Civil"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 13.869/2019"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 8.429/1992"
+      }
+    ],
+    "ATUALIDADES (SOMENTE PARA A PROVA DISCURSIVA)": [
+      {
+        "numero": "1",
+        "titulo": "Tópicos relevantes e atuais de diversas áreas, tais como segurança, transportes, política, economia, sociedade, educação, saúde, cultura, tecnologia, energia, relações internacionais, desenvolvimento sustentável e ecologia, suas inter-relações e suas vinculações históricas. 23.2.3 CONHECIMENTOS ESPECÍFICOS"
+      }
+    ],
+    "NOÇÕES DE DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Constituição Federal de 1988",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Direitos e Garantias Fundamentais"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Título V, Capítulo III ― Da Segurança Pública"
+          }
+        ]
+      }
+    ],
+    "NOÇÕES DE DIREITO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei penal",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Princípios"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A lei penal no tempo e no espaço"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Tempo e lugar do crime"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Lei penal excepcional, especial e temporária"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Contagem de prazo"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "Irretroatividade da lei penal"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Crimes contra a pessoa"
+      },
+      {
+        "numero": "3",
+        "titulo": "Crimes contra o patrimônio"
+      },
+      {
+        "numero": "4",
+        "titulo": "Crimes contra a administração pública"
+      },
+      {
+        "numero": "5",
+        "titulo": "Disposições constitucionais aplicáveis ao direito penal"
+      }
+    ],
+    "NOÇÕES DE DIREITO PROCESSUAL PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Disposições preliminares do Código de Processo Penal"
+      },
+      {
+        "numero": "2",
+        "titulo": "Inquérito policial",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Histórico, natureza, conceito, finalidade, características, fundamento, titularidade, grau de cognição, valor probatório, formas de instauração, notitia criminis, delatio criminis, procedimentos investigativos, indiciamento, garantias do investigado; conclusão"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Prisão e liberdade provisória"
+      },
+      {
+        "numero": "4",
+        "titulo": "Disposições constitucionais aplicáveis ao direito processual penal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 9.099/1995"
+      }
+    ],
+    "NOÇÕES DE DIREITOS HUMANOS": [
+      {
+        "numero": "1",
+        "titulo": "Teoria geral dos direitos humanos",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Conceitos, terminologia, estrutura normativa, fundamentação"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Afirmação histórica dos direitos humanos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Direitos humanos e responsabilidade do Estado"
+      },
+      {
+        "numero": "4",
+        "titulo": "Direitos humanos na Constituição Federal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Política Nacional de Direitos Humanos"
+      },
+      {
+        "numero": "6",
+        "titulo": "A Constituição brasileira e os tratados internacionais de direitos humanos"
+      }
+    ],
+    "INFORMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Conceito de internet e intranet"
+      },
+      {
+        "numero": "2",
+        "titulo": "Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Noções de sistema operacional (ambiente Windows)"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Acesso à distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Edição de textos, planilhas e apresentações (ambientes Microsoft Office)"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Redes de computadores"
+      },
+      {
+        "numero": "4",
+        "titulo": "Conceitos de proteção e segurança",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Noções de vírus, worms e pragas virtuais"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Aplicativos para segurança (antivírus, firewall, anti-spyware etc.)"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Redes de comunicação",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Introdução a redes (computação/telecomunicações)"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Noções básicas de transmissão de dados",
+            "filhos": [
+              {
+                "numero": "5.2.1",
+                "titulo": "Tipos de enlace, códigos, modos e meios de transmissão"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Metadados de arquivos"
+      }
+    ],
+    "MATEMÁTICA E RACIOCÍNIO LÓGICO": [
+      {
+        "numero": "1",
+        "titulo": "Princípios de contagem"
+      },
+      {
+        "numero": "2",
+        "titulo": "Razões e proporções"
+      },
+      {
+        "numero": "3",
+        "titulo": "Regras de três simples"
+      },
+      {
+        "numero": "4",
+        "titulo": "Porcentagens"
+      },
+      {
+        "numero": "5",
+        "titulo": "Equações de 1º e de 2º graus"
+      },
+      {
+        "numero": "6",
+        "titulo": "Sequências numéricas"
+      },
+      {
+        "numero": "7",
+        "titulo": "Progressões aritméticas e geométricas"
+      },
+      {
+        "numero": "8",
+        "titulo": "Funções e gráficos"
+      },
+      {
+        "numero": "9",
+        "titulo": "Estruturas lógicas"
+      },
+      {
+        "numero": "10",
+        "titulo": "Lógica de argumentação",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Analogias, inferências, deduções e conclusões"
+          }
+        ]
+      },
+      {
+        "numero": "11",
+        "titulo": "Lógica sentencial (ou proposicional)",
+        "filhos": [
+          {
+            "numero": "11.1",
+            "titulo": "Proposições simples e compostas"
+          },
+          {
+            "numero": "11.2",
+            "titulo": "Tabelas-verdade"
+          },
+          {
+            "numero": "11.3",
+            "titulo": "Equivalências"
+          },
+          {
+            "numero": "11.4",
+            "titulo": "Leis de De Morgan"
+          },
+          {
+            "numero": "11.5",
+            "titulo": "Diagramas lógicos"
+          }
+        ]
+      },
+      {
+        "numero": "12",
+        "titulo": "Lógica de primeira ordem"
+      },
+      {
+        "numero": "13",
+        "titulo": "Princípios de contagem e probabilidade"
+      },
+      {
+        "numero": "14",
+        "titulo": "Operações com conjuntos"
+      },
+      {
+        "numero": "15",
+        "titulo": "Raciocínio logico envolvendo problemas aritméticos, geométricos e matriciais. GLÁUCIA CRISTINA DA SILVA Diretora da Escola Superior de Polícia Civil do Distrito Federal ANEXO I MODELO DE LAUDO PARA AVALIAÇÃO BIOPSICOSSOCIAL (candidatos que se declararam com deficiência) Atesto, para fins de participação em concurso público, que o(a) Senhor(a)____________________________________________________________________________, portador(a) do documento de identidade nº ______________________, é considerado(a) pessoa com deficiência à luz da legislação brasileira por apresentar a(s) seguinte(s) condição(ões) ________________________________________________________________________________________ ____________________________________________________________________________________, CID-10 ________________, que resulta(m) no comprometimento das seguintes funções/funcionalidades ________________________________________________________________________________________ ____________________________________________________________________________________. Informo, ainda, a provável causa do comprometimento________________________________________________________________________ ________________________________________________________________________________________ _____. Cidade/UF, ____ de _________ de 20__. Assinatura e carimbo do(a) Médico(a) ANEXO II DECLARAÇÃO – CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA NO CARGO DE ESCRIVÃO DE POLÍCIA DA CARREIRA DE POLÍCIA CIVIL DO DISTRITO FEDERAL (PCDF) Eu, [nome completo do(a) candidato(a)], inscrito(a) no CPF sob o [número do CPF do(a) candidato(a)], declaro, para fins de isenção de pagamento de taxa de inscrição no concurso público da Polícia Federal, ser membro de família de baixa renda, nos termos do Decreto nº 6.135, de 26 de junho de 2007, e da Lei n º 13.656, de 30 de abril de 2018, e que, em função de minha condição financeira, não posso pagar a taxa de inscrição em concurso público. Declaro estar ciente de que, de acordo com o inciso I do artigo 4º do referido Decreto, família é a unidade nuclear composta por um ou mais indivíduos, eventualmente ampliada por outros indivíduos que contribuam para o rendimento ou tenham suas despesas atendidas por aquela unidade familiar, todos moradores em um mesmo domicílio, definido como o local que serve de moradia à família. Declaro, ainda, saber que, de acordo com o inciso II do artigo 4º do Decreto nº 6.135/2007, família de baixa renda, sem prejuízo do disposto no inciso I, é aquela com renda familiar mensal per capita de até meio salário mínimo; ou a que possua renda familiar mensal de até três salários mínimos. Declaro, também, ter conhecimento de que a renda familiar mensal é a soma dos rendimentos brutos auferidos por todos os membros da família, não sendo incluídos no cálculo aqueles percebidos dos programas descritos no inciso IV do artigo 4º do Decreto nº 6.135, de 26 de junho de 2007. Declaro saber que renda familiar per capita é obtida pela razão entre a renda familiar mensal e o total de indivíduos na família. Declaro, por fim, estar ciente das penalidades por emitir declaração falsa previstas no parágrafo único do artigo 10 do Decreto nº 83.936, de 6 de setembro de 1979, e do artigo 2º da Lei n º 13.656, de 30 de abril de 2018. Por ser verdade, firmo o presente para que surtam seus efeitos legais. [CIDADE], [DIA] DE [MÊS] DE [ANO]. __________________________________________________________ [Nome/Assinatura do(a) candidato(a)] OBS.: Preencher os dados [DESTACADOS] acima. ANEXO III LAUDO DESCRITIVO E CONCLUSIVO DE AVALIAÇÃO CLÍNICA PSIQUIÁTRICA Atesto, para os devidos fins, que o(a) candidato(a)______________________________________________, examinado(a) por mim nesta data, apresenta as seguintes condições psíquicas: - consciência: ____________________________________________________________________________; - orientação: _____________________________________________________________________________; - atenção: _______________________________________________________________________________; - pensamento (curso, forma e conteúdo): ______________________________________________________; - comportamento: ________________________________________________________________________; - humor/afeto: ___________________________________________________________________________; - coerência: _____________________________________________________________________________; - relevância do pensamento: ________________________________________________________________; - conteúdo ideativo: _______________________________________________________________________; - sensopercepção: ________________________________________________________________________; - hiperatividade: _________________________________________________________________________; - encadeamento de ideias: _________________________________________________________________; - memória recente: _______________________________________________________________________; - memória remota: ________________________________________________________________________; - cognição/inteligência: ____________________________________________________________________; - capacidade de tirocínio e juízo crítico: _______________________________________________________; - linguagem: _____________________________________________________________________________; - uso (ou não) de medicamentos psicotrópicos (psicofármacos): ____________________________________. Conclusão: Cidade/UF, __ de_________________ de 201_. Atenciosamente, Assinatura legível do Profissional com número do CRM (e informação de ser especialista em Psiquiatria) 48"
+      }
+    ]
+  }
+}

@@ -119,6 +119,82 @@
       ]
     },
     {
+      "slug": "pc_df_19_escrivao",
+      "banca": "CEBRASPE",
+      "orgao": "PCDF",
+      "nome": "PCDF Escrivão 2019/21",
+      "ano_prova": 2021,
+      "formato": "certo_errado",
+      "observacao": "Expansao CEBRASPE (Fase 6a). Prova aplicada em 2021. Caderno unico (boneca com justificativa); gabaritos definitivos separados em basicos (CB1) e especificos (001) — o pipeline mescla.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/pc_df_19_escrivao/arquivos/ED_1_2019_PCDF_ESCRIVAO_19_ABERTURA.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Escrivão de Polícia Civil (DF)",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pc_df_19_escrivao/arquivos/MATRIZ_519_PCDF_001_00_BONECA_COMJUSTIFICATIVA.PDF",
+          "gabarito_definitivo_urls": [
+            "https://cdn.cebraspe.org.br/concursos/pc_df_19_escrivao/arquivos/GAB_DEFINITIVO_MATRIZ_519_PCDF_CB1_00.PDF",
+            "https://cdn.cebraspe.org.br/concursos/pc_df_19_escrivao/arquivos/GAB_DEFINITIVO_MATRIZ_519_PCDF_001_00.PDF"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pc_df_20_agente",
+      "banca": "CEBRASPE",
+      "orgao": "PCDF",
+      "nome": "PCDF Agente 2020/21",
+      "ano_prova": 2021,
+      "formato": "certo_errado",
+      "observacao": "Expansao CEBRASPE (Fase 6a). Prova aplicada em 2021. LIMITACAO: o caderno de conhecimentos basicos e PDF escaneado (imagem, sem texto extraivel); so os ESPECIFICOS (70 itens, onde esta todo o Direito) entram no banco. OCR local (tesseract) registrado como melhoria futura.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/pc_df_20_agente/arquivos/ED_1_2020_PCDF_AGENTE_20_ABERTURA.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Agente de Polícia Civil (DF) — específicos",
+          "itens_esperados": 70,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/pc_df_20_agente/arquivos/PCDF_AGENTE_001_COMJUSTIFICATIVA.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/pc_df_20_agente/arquivos/GAB_DEFINITIVO_MATRIZ_550_PCDF_AGENTE_001_00.PDF"
+        }
+      ]
+    },
+    {
+      "slug": "depen_20",
+      "banca": "CEBRASPE",
+      "orgao": "DEPEN",
+      "nome": "DEPEN 2020/21 (Policial Penal Federal)",
+      "ano_prova": 2021,
+      "formato": "certo_errado",
+      "observacao": "Expansao CEBRASPE (Fase 6a). Cargo 8: Agente Federal de Execucao Penal. Cargo de NIVEL MEDIO (unico do concurso; excecao documentada ao recorte, mantida por ser carreira policial federal alvo). Gabaritos: basicos CB2 (1-30), especificos 008 (31-80), complementares CG2 (81-120) — o pipeline mescla.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/depen_20/arquivos/ED_1_DEPEN_2020_ABT.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Agente Federal de Execução Penal",
+          "itens_esperados": 120,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/depen_20/arquivos/MATRIZ_541_DEPEN_008_00.PDF",
+          "gabarito_definitivo_urls": [
+            "https://cdn.cebraspe.org.br/concursos/depen_20/arquivos/GAB_DEFINITIVO_MATRIZ_541_DEPEN_CB2_00.PDF",
+            "https://cdn.cebraspe.org.br/concursos/depen_20/arquivos/GAB_DEFINITIVO_MATRIZ_541_DEPEN_CG2_00.PDF",
+            "https://cdn.cebraspe.org.br/concursos/depen_20/arquivos/GAB_DEFINITIVO_MATRIZ_541_DEPEN_008_00.PDF"
+          ]
+        }
+      ]
+    },
+    {
       "slug": "prf_21",
       "banca": "CEBRASPE",
       "orgao": "PRF",

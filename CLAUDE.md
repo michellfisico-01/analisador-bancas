@@ -88,7 +88,18 @@ carreiras jurídicas de entrada.
   plano interativo com download em Markdown/PDF. Arquivo na raiz segue a
   convenção do Streamlit Community Cloud para publicação gratuita futura.
   Verificado no navegador: 4 abas renderizam sem erros de console.
-- **Fase 6** — Expansão: FGV, FCC, múltipla escolha, demais disciplinas.
+- **Fase 6** — Expansão. **6a (mais CEBRASPE certo/errado, escolhida pelo usuário
+  em 2026-07-05) EM ANDAMENTO**: PCDF Escrivão 2019/21 (120 itens), PCDF Agente
+  2020/21 (70 itens de específicos) e DEPEN 2020/21 Policial Penal (120 itens)
+  coletados, extraídos e classificados — dataset total: 1.382 itens, 12 provas,
+  8 concursos. Disciplinas canônicas novas: Execução Penal, Legislação
+  Institucional, Realidade do DF, Atualidades. Notas: (1) caderno de básicos
+  do PCDF Agente é PDF escaneado — fora do banco até haver OCR local
+  (tesseract, melhoria futura); (2) DEPEN Agente é cargo de NÍVEL MÉDIO
+  (único do concurso) — exceção documentada ao recorte, mantida por ser
+  carreira policial federal alvo; (3) ABIN 2017 ADIADA até verificar peso de
+  Direito no programa. Pendente 6a: revisão manual dos ~114 itens sem
+  disciplina. FGV/FCC/múltipla escolha seguem futuras.
 
 ## Decisões tomadas
 
@@ -172,12 +183,17 @@ carreiras jurídicas de entrada.
 - Coluna `disciplina` dos itens ainda NULL — o mapeamento item→disciplina é o primeiro
   passo da Fase 2 (junto com a taxonomia dos editais).
 
-## Estado dos dados (Fase 1)
+## Estado dos dados (atualizado na Fase 6a, 2026-07-05)
 
-- 23 PDFs oficiais em `data/raw/` (9 provas, 9 gabaritos definitivos, 5 editais).
-- `data/processed/bancas.db`: 5 concursos, 9 provas, **1.072 itens** (45 anulados),
-  342 textos motivadores. Extração 9/9 sem divergência vs gabarito definitivo
-  (ver `relatorios/qualidade_extracao.md`).
+- 37 PDFs oficiais em `data/raw/` (12 provas, 13 gabaritos definitivos, 8 editais).
+- `data/processed/bancas.db`: 8 concursos, 12 provas, **1.382 itens**,
+  ~92% com disciplina. Extração 12/12 provas ativas sem divergência vs
+  gabarito definitivo (ver `relatorios/qualidade_extracao.md`).
+- Um caderno pode ter VÁRIOS gabaritos definitivos (campo
+  `gabarito_definitivo_urls` no manifesto; o pipeline mescla e recusa
+  sobreposição de numeração).
+- Reprocessar a extração PRESERVA revisões manuais (reancoradas por número
+  do item) e descarta classificações de regras/modelo (regeneráveis).
 - Pipelines idempotentes: `python -m src.coleta.download` e
   `python -m src.extracao.pipeline` podem rodar de novo sem duplicar nada.
 

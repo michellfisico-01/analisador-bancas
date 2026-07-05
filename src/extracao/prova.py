@@ -39,8 +39,15 @@ RE_BLOCO = re.compile(r"^BLOCO\s+([IVX]+)$")
 # Fim da parte objetiva: título em CAIXA ALTA (itens podem citar a prova
 # discursiva em minúsculas no meio do texto — isso não pode encerrar nada)
 RE_FIM_OBJETIVA = re.compile(r"PROVA\s+DISCURSIVA")
-# Capa do caderno (só existe em alguns anos): página inteira a ignorar
-RE_CAPA = re.compile(r"LEIA COM ATEN[ÇC][ÃA]O AS INSTRU[ÇC][ÕO]ES", re.I)
+# Capa do caderno (só existe em alguns anos): página inteira a ignorar.
+# Dois sinais: o título "LEIA COM ATENÇÃO..." (às vezes com glifos duplicados
+# pela fonte da capa) OU o texto da primeira instrução numerada, que é o que
+# de fato engana o parser (a lista 1..7 da capa vira falsos itens).
+RE_CAPA = re.compile(
+    r"LEIA COM ATEN[ÇC][ÃA]O AS INSTRU[ÇC][ÕO]ES"
+    r"|Ao receber este caderno de provas,\s*confira",
+    re.I,
+)
 
 # Limiares de recuo (pt) em relação à margem esquerda da coluna
 RECUO_CONTINUACAO_MIN = 8.0

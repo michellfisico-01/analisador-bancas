@@ -67,7 +67,14 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao GERAL --semanas 16 --horas-semana 15)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/test_plano.py::test_cronograma_cobre_todas_as_semanas -q 2>&1)",
       "PowerShell(uv pip install streamlit --python .venv 2>&1)",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.pegadinhas)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.pegadinhas)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_expansao.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\lista_expansao.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/test_manifesto.py -q 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\inspeciona_novos.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\inspeciona_depen.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\mapeia_editais_novos.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20 2>&1)"
     ]
   }
 }

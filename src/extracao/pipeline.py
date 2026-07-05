@@ -50,10 +50,17 @@ class QualidadeProva:
         )
 
 
-def _mapa_arquivos() -> dict[tuple[str, str, str], Path]:
-    """Indexa os destinos locais dos PDFs por (slug, tipo, cargo)."""
+def _mapa_arquivos() -> dict[tuple[str, str, str], list[Path]]:
+    """Indexa os destinos locais dos PDFs por (slug, tipo, cargo).
+
+    O valor é LISTA: um caderno pode ter vários gabaritos definitivos
+    (básicos/complementares/específicos), que o pipeline mescla.
+    """
     docs = listar_documentos(carregar_manifesto())
-    return {(d.concurso, d.tipo, d.cargo or ""): d.destino for d in docs}
+    mapa: dict[tuple[str, str, str], list[Path]] = {}
+    for d in docs:
+        mapa.setdefault((d.concurso, d.tipo, d.cargo or ""), []).append(d.destino)
+    return mapa
 
 
 def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProva:
@@ -62,10 +69,19 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
     q = QualidadeProva(
         concurso=slug, cargo=nome_cargo, itens_esperados=cargo["itens_esperados"]
     )
-    pdf_prova = arquivos[(slug, "prova", nome_cargo)]
-    pdf_gab = arquivos[(slug, "gabarito", nome_cargo)]
+    pdf_prova = arquivos[(slug, "prova", nome_cargo)][0]
+    pdfs_gab = arquivos[(slug, "gabarito", nome_cargo)]
 
-    gabarito = extrair_gabarito(pdf_gab)
+    gabarito: dict[int, str] = {}
+    for pdf_gab in pdfs_gab:
+        parcial = extrair_gabarito(pdf_gab)
+        duplicados = set(parcial) & set(gabarito)
+        if duplicados:
+            raise ValueError(
+                f"{pdf_gab.name}: itens {sorted(duplicados)[:5]}... aparecem em "
+                "mais de um gabarito do mesmo caderno"
+            )
+        gabarito.update(parcial)
     q.itens_gabarito = len(gabarito)
     q.anulados = sum(1 for r in gabarito.values() if r == "X")
 
@@ -94,7 +110,19 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
     antiga = cur.execute(
         "SELECT id FROM provas WHERE concurso_id=? AND cargo=?", (concurso_id, nome_cargo)
     ).fetchone()
+    rotulos_manuais: list[tuple] = []
     if antiga:
+        # revisões manuais sobrevivem ao reprocessamento (re-ancoradas pelo
+        # número do item); classificações de regras/modelo são regeneráveis
+        rotulos_manuais = cur.execute(
+            "SELECT i.numero, c.topico, c.subtopico FROM classificacoes c "
+            "JOIN itens i ON i.id = c.item_id "
+            "WHERE i.prova_id = ? AND c.metodo = 'manual'", (antiga[0],)
+        ).fetchall()
+        cur.execute(
+            "DELETE FROM classificacoes WHERE item_id IN "
+            "(SELECT id FROM itens WHERE prova_id=?)", (antiga[0],)
+        )
         cur.execute("DELETE FROM itens WHERE prova_id=?", (antiga[0],))
         cur.execute("DELETE FROM textos_motivadores WHERE prova_id=?", (antiga[0],))
         cur.execute("DELETE FROM provas WHERE id=?", (antiga[0],))
@@ -103,7 +131,8 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
         "INSERT INTO provas (concurso_id, cargo, formato, arquivo_prova, "
         "arquivo_gabarito, itens_esperados) VALUES (?,?,?,?,?,?)",
         (concurso_id, nome_cargo, concurso["formato"],
-         str(pdf_prova), str(pdf_gab), cargo["itens_esperados"]),
+         str(pdf_prova), ";".join(str(p) for p in pdfs_gab),
+         cargo["itens_esperados"]),
     )
     prova_id = cur.lastrowid
 
@@ -126,6 +155,16 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
             )
             if motivador_id is None:
                 q.itens_sem_motivador += 1
+
+    # reancora as revisões manuais preservadas nos itens recriados
+    for numero, topico, subtopico in rotulos_manuais:
+        cur.execute(
+            "INSERT INTO classificacoes (item_id, metodo, topico, subtopico, "
+            "confianca, revisado) "
+            "SELECT id, 'manual', ?, ?, 1.0, 1 FROM itens "
+            "WHERE prova_id = ? AND numero = ?",
+            (topico, subtopico, prova_id, numero),
+        )
     con.commit()
     return q
 

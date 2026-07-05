@@ -1,0 +1,612 @@
+{
+  "slug": "depen_20",
+  "cargo_referencia": "Agente Federal de Execucao Penal",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Emprego das classes de palavras"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Regência verbal e nominal"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescrita de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Significação das palavras"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Reorganização da estrutura de orações e de períodos do texto"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Reescrita de textos de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Correspondência oficial (conforme Manual de Redação da Presidência da República) 7.1 Padrão Ofício"
+      }
+    ],
+    "ÉTICA NO SERVIÇO PÚBLICO": [
+      {
+        "numero": "1",
+        "titulo": "Ética e moral"
+      },
+      {
+        "numero": "2",
+        "titulo": "Ética, princípios e valores"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ética e democracia: exercício da cidadania"
+      },
+      {
+        "numero": "4",
+        "titulo": "Ética e função pública"
+      },
+      {
+        "numero": "5",
+        "titulo": "Ética no setor público",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Lei nº 8.112/1990 e suas alterações",
+            "filhos": [
+              {
+                "numero": "5.1.1",
+                "titulo": "Espécies de Procedimento Disciplinar: sindicâncias investigativa, patrimonial e acusatória"
+              },
+              {
+                "numero": "5.1.2",
+                "titulo": "Processo Administrativo Disciplinar",
+                "filhos": [
+                  {
+                    "numero": "5.1.2.1",
+                    "titulo": "Ritos ordinário e sumário"
+                  },
+                  {
+                    "numero": "5.1.2.2",
+                    "titulo": "Fases: instauração, inquérito e julgamento"
+                  },
+                  {
+                    "numero": "5.1.2.3",
+                    "titulo": "Comissão disciplinar: requisitos, suspeição, impedimento e prazo para conclusão dos trabalhos (prorrogação e recondução)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 12.846/2013 e suas alterações"
+      }
+    ],
+    "RACIOCÍNIO LÓGICO": [
+      {
+        "numero": "1",
+        "titulo": "Estruturas lógicas"
+      },
+      {
+        "numero": "2",
+        "titulo": "Lógica de argumentação: analogias, inferências, deduções e conclusões"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lógica sentencial (ou proposicional)",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Proposições simples e compostas"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Tabelas verdade"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Equivalências"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Leis de Morgan"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Diagramas lógicos"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Lógica de primeira ordem"
+      },
+      {
+        "numero": "5",
+        "titulo": "Razões e proporções"
+      },
+      {
+        "numero": "6",
+        "titulo": "Regras de três simples"
+      },
+      {
+        "numero": "7",
+        "titulo": "Porcentagens"
+      },
+      {
+        "numero": "8",
+        "titulo": "Princípios de contagem e probabilidade"
+      },
+      {
+        "numero": "9",
+        "titulo": "Operações com conjuntos"
+      },
+      {
+        "numero": "10",
+        "titulo": "Raciocínio lógico envolvendo problemas aritméticos, geométricos e matriciais"
+      }
+    ],
+    "INFORMÁTICA": [
+      {
+        "numero": "1",
+        "titulo": "Conceitos de internet e intranet"
+      },
+      {
+        "numero": "2",
+        "titulo": "Conceitos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados a internet/intranet",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Ferramentas e aplicativos comerciais de navegação, de correio eletrônico, de grupos de discussão, de busca, de pesquisa e de redes sociais"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Noções de sistema operacional (ambiente Windows).4 Acesso à distância a computadores, transferência de informação e arquivos, aplicativos de áudio, vídeo e multimídia.5Edição de textos, planilhas e apresentações (ambientes Microsoft Office e BrOffice). 6 Redes de computadores. 7 Conceitos de proteção e segurança. 7.1 Noções de vírus, worms e pragas virtuais. 7.2 Aplicativos para segurança (antivírus, firewall, anti-spyware etc.). 8 Convergência de rede. 8.1 Noções de voz sobre IP (VOIP e telefonia IP). 8.2 Noções de videoconferência. 9 Segurança da informação. 10 Sistemas de armazenamento em disco e sistemas de replicação de dados. 11 Procedimentos de backup. 12 Noções de Power BI. 13 Conceito de banco de dados"
+      }
+    ],
+    "ATUALIDADES (SOMENTE PARA A PROVA DISCURSIVA)": [
+      {
+        "numero": "1",
+        "titulo": "Sistema de justiça criminal"
+      },
+      {
+        "numero": "2",
+        "titulo": "Sistema prisional brasileiro e sistema penitenciário federal"
+      },
+      {
+        "numero": "3",
+        "titulo": "Políticas públicas de segurança pública e cidadania"
+      },
+      {
+        "numero": "4",
+        "titulo": "O papel do sistema penitenciário nas Políticas nacionais de segurança pública"
+      }
+    ],
+    "NOÇÕES DE DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Direitos e garantias fundamentais: direitos e deveres individuais e coletivos; direito à vida, à liberdade, à igualdade, à segurança e à propriedade; direitos sociais; nacionalidade; cidadania e direitos políticos; partidos políticos; garantias constitucionais individuais; garantias dos direitos coletivos, sociais e políticos"
+      },
+      {
+        "numero": "2",
+        "titulo": "Poder Executivo: forma e sistema de governo; chefia de Estado e chefia de governo"
+      },
+      {
+        "numero": "3",
+        "titulo": "Defesa do Estado e das instituições democráticas: segurança pública; organização da segurança pública"
+      }
+    ],
+    "NOÇÕES DE DIREITO ADMINISTRATIVO": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 8.112/1990 e suas alterações"
+      },
+      {
+        "numero": "2",
+        "titulo": "Poderes administrativos",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Hierárquico, disciplinar, regulamentar e de polícia"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Uso e abuso do poder"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 8.666/1993 e suas alterações e Decreto nº 10.024/2019 (regulamenta a licitação, na modalidade pregão, na forma eletrônica)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Decreto nº 6.170/2007 e suas alterações (dispõe sobre as normas relativas às transferências de recursos da União mediante convênios e contratos de repasse, e dá outras providências); Portaria Interministerial nº 424/2016 e suas alterações"
+      },
+      {
+        "numero": "6",
+        "titulo": "Responsabilidade civil do Estado",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Responsabilidade civil do Estado no direito brasileiro",
+            "filhos": [
+              {
+                "numero": "6.1.1",
+                "titulo": "Responsabilidade por ato comissivo do Estado"
+              },
+              {
+                "numero": "6.1.2",
+                "titulo": "Responsabilidade por omissão do Estado"
+              }
+            ]
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Requisitos para a demonstração da responsabilidade do Estado"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Causas excludentes e atenuantes da responsabilidade do Estado"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 9.784/1999 e suas alterações"
+      },
+      {
+        "numero": "8",
+        "titulo": "Portaria Interministerial nº 424/2016 e suas alterações"
+      }
+    ],
+    "NOÇÕES DE DIREITO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei penal",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Princípios"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A lei penal no tempo e no espaço"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Tempo e lugar do crime"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Lei penal excepcional, especial e temporária"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Territorialidade e extraterritorialidade da lei penal"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "Pena cumprida no estrangeiro"
+          },
+          {
+            "numero": "1.7",
+            "titulo": "Eficácia da sentença estrangeira"
+          },
+          {
+            "numero": "1.8",
+            "titulo": "Contagem de prazo"
+          },
+          {
+            "numero": "1.9",
+            "titulo": "Frações não computáveis da pena"
+          },
+          {
+            "numero": "1.10",
+            "titulo": "Interpretação da lei penal"
+          },
+          {
+            "numero": "1.11",
+            "titulo": "Analogia"
+          },
+          {
+            "numero": "1.12",
+            "titulo": "Irretroatividade da lei penal"
+          },
+          {
+            "numero": "1.13",
+            "titulo": "Conflito aparente de normas penais"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "O fato típico e seus elementos",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Crime consumado e tentado"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Ilicitude e causas de exclusão"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Excesso punível"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Crimes contra a pessoa"
+      },
+      {
+        "numero": "4",
+        "titulo": "Crimes contra o patrimônio"
+      },
+      {
+        "numero": "5",
+        "titulo": "Crimes contra a fé pública"
+      },
+      {
+        "numero": "6",
+        "titulo": "Crimes contra a administração pública"
+      },
+      {
+        "numero": "7",
+        "titulo": "Disposições constitucionais aplicáveis ao direito penal"
+      }
+    ],
+    "NOÇÕES DE DIREITO PROCESSUAL PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Aplicação da lei processual no tempo, no espaço e em relação às pessoas"
+      },
+      {
+        "numero": "2",
+        "titulo": "Disposições preliminares do Código de Processo Penal"
+      },
+      {
+        "numero": "3",
+        "titulo": "Inquérito policial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Ação penal"
+      },
+      {
+        "numero": "5",
+        "titulo": "Prisões, liberdade provisória e fianças"
+      },
+      {
+        "numero": "6",
+        "titulo": "Processo e julgamento dos crimes de responsabilidade dos funcionários públicos"
+      },
+      {
+        "numero": "7",
+        "titulo": "O habeas corpus e seu processo"
+      },
+      {
+        "numero": "8",
+        "titulo": "Disposições constitucionais aplicáveis ao direito processual penal"
+      }
+    ],
+    "NOÇÕES DE DIREITOS HUMANOS E PARTICIPAÇÃO SOCIAL": [
+      {
+        "numero": "1",
+        "titulo": "Declaração Universal dos Direitos Humanos — Resolução 217-A (III) da Assembleia Geral das Nações Unidas, 1948"
+      },
+      {
+        "numero": "2",
+        "titulo": "Direitos humanos e direitos fundamentais na Constituição Federal de 1988 (arts. 5º ao 15)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Regras mínimas da ONU para o tratamento de pessoas presas"
+      },
+      {
+        "numero": "4",
+        "titulo": "Decreto nº 7.037/2009 e suas alterações (Programa Nacional de Direitos Humanos)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Decreto nº 9.759/2019 (extingue e estabelece diretrizes, regras e limitações para colegiados da administração pública federal.)"
+      },
+      {
+        "numero": "6",
+        "titulo": "Conselho Nacional de Política Criminal e Penitenciária (arts. 62 a 64 da Lei de Execução Penal e suas alterações)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Conselhos Penitenciários (arts. 69 e 70 da Lei de Execução Penal e suas alterações)"
+      },
+      {
+        "numero": "8",
+        "titulo": "Conselhos da Comunidade (arts. 80 e 81 da Lei de Execução Penal e suas alterações)"
+      }
+    ],
+    "LEGISLAÇÃO ESPECIAL": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 12.850/2013 e suas alterações (organizações criminosas)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Lei nº 9.613/1998 e suas alterações (lavagem de dinheiro)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 9.455/1997 e suas alterações (antitortura)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Lei nº 12.846/2013 e suas alterações (anticorrupção)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 13.869/2019 (abuso de autoridade)"
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 8.429/1992 e suas alterações (improbidade administrava)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 10.826/2003 e suas alterações (Estatuto do Desarmamento)"
+      },
+      {
+        "numero": "8",
+        "titulo": "Lei nº 11.343/2006 e suas alterações (Lei de Drogas)"
+      },
+      {
+        "numero": "9",
+        "titulo": "Lei nº 13964/2019 (aperfeiçoa a legislação penal e processual penal)"
+      }
+    ],
+    "EXECUÇÃO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Lei nº 7.210/1984 (Lei de Execução Penal)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Portaria Interministerial MJ/SEDH nº 4.226/2010 (estabelece diretrizes sobre o uso da força pelos agentes de segurança pública)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Portaria MJSP nº 65/2019 (formação da força tarefa de intervenção penitenciária no âmbito do DEPEN)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Portaria MJSP nº 157/2019 (disciplina o procedimento de visita social aos presos nos estabelecimentos penais federais de segurança máxima e dá outras providências)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 13.675/2018 (disciplina a organização e o funcionamento dos órgãos responsáveis pela segurança pública; cria a Política Nacional de Segurança Pública e Defesa Social; institui o Sistema Único de Segurança Pública) e Decreto de Regulamentação nº 9.489/2018"
+      },
+      {
+        "numero": "6",
+        "titulo": "Portaria MJSP nº 18/2020 (aprova a Doutrina Nacional de Atuação Integrada de Segurança Pública – DNAISP)",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Doutrina Nacional de Atuação Integrada de Segurança Pública – DNAISP"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Plano Nacional de Política Criminal e Penitenciária 2020–2023"
+      }
+    ],
+    "DEPARTAMENTO PENITENCIÁRIO NACIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Decreto nº 6.049/2007 (Regulamento Penitenciário Federal)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Portaria MSP nº 199/2018 (Regimento Interno do Departamento Penitenciário Nacional)"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lei nº 10.693/2003 e suas alterações"
+      },
+      {
+        "numero": "4",
+        "titulo": "Lei nº 11.907/2009 (Seção XXIII – Das Carreiras da Área Penitenciária Federal)"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 13.327/2006 (Capítulo VIII – Das Carreiras da Área Penitenciária Federal)"
+      },
+      {
+        "numero": "6",
+        "titulo": "Lei nº 11.473/2007 (dispõe sobre cooperação federativa no âmbito da segurança pública)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Lei nº 11.671/2008 (dispõe sobre a transferência e inclusão de presos em estabelecimentos penais federais)"
+      },
+      {
+        "numero": "8",
+        "titulo": "Decreto nº 6.877/2008 (Regulamenta a Lei nº 11.671/2008)"
+      },
+      {
+        "numero": "9",
+        "titulo": "Portaria DISPF/DEPEN nº 11/2015 (Aprova o Manual das Assistências do Sistema Penitenciário Federal). FABIANO BORDIGNON DIRETOR-GERAL DO DEPARTAMENTO PENITENCIÁRIO NACIONAL ANEXO I"
+      }
+    ]
+  }
+}

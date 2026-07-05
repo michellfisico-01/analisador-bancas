@@ -4,37 +4,82 @@
     {
       "slug": "pf_21",
       "cargo_referencia": "Agente de Polícia Federal",
-      "paginas": [51, 54],
+      "paginas": [
+        51,
+        54
+      ],
       "inicio": "24\\.2\\.3\\s+CARGO 2: AGENTE",
       "fim": "24\\.2\\.4\\s+CARGO 3"
     },
     {
       "slug": "pf_18",
       "cargo_referencia": "Agente de Polícia Federal",
-      "paginas": [59, 62],
+      "paginas": [
+        59,
+        62
+      ],
       "inicio": "24\\.2\\.4\\s+CARGO 12: AGENTE",
       "fim": "24\\.2\\.5\\s+CARGO 13"
     },
     {
       "slug": "prf_21",
       "cargo_referencia": "Policial Rodoviário Federal",
-      "paginas": [37, 41],
+      "paginas": [
+        37,
+        41
+      ],
       "inicio": "24\\.2 CONHECIMENTOS",
       "fim": "CRONOGRAMA PREVISTO"
     },
     {
       "slug": "prf_18",
       "cargo_referencia": "Policial Rodoviário Federal",
-      "paginas": [37, 41],
+      "paginas": [
+        37,
+        41
+      ],
       "inicio": "23\\.2 CONHECIMENTOS",
       "fim": "CRONOGRAMA PREVISTO"
     },
     {
       "slug": "dprf_13",
       "cargo_referencia": "Policial Rodoviário Federal",
-      "paginas": [25, 28],
+      "paginas": [
+        25,
+        28
+      ],
       "inicio": "CONHECIMENTOS B[ÁA]SICOS",
       "fim": "CRONOGRAMA PREVISTO|Atividade Data"
+    },
+    {
+      "slug": "pc_df_19_escrivao",
+      "cargo_referencia": "Escrivao de Policia Civil (DF)",
+      "paginas": [
+        44,
+        48
+      ],
+      "inicio": "OBJETOS DE AVALIA",
+      "fim": "CRONOGRAMA"
+    },
+    {
+      "slug": "pc_df_20_agente",
+      "cargo_referencia": "Agente de Policia Civil (DF)",
+      "paginas": [
+        47,
+        50
+      ],
+      "inicio": "OBJETOS DE AVALIA",
+      "fim": "CRONOGRAMA"
+    },
+    {
+      "slug": "depen_20",
+      "cargo_referencia": "Agente Federal de Execucao Penal",
+      "paginas": [
+        38,
+        41
+      ],
+      "inicio": "CONHECIMENTOS B.SICOS .PARA O CARGO 8",
+      "fim": "CRONOGRAMA"
     }
   ]
 }

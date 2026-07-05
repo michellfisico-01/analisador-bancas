@@ -87,15 +87,21 @@ def listar_documentos(manifesto: dict) -> list[Documento]:
                     cargo=cargo["cargo"],
                 )
             )
-            docs.append(
-                Documento(
-                    url=cargo["gabarito_definitivo_url"],
-                    destino=DIR_GABARITOS / f"{slug}__{rotulo}.pdf",
-                    concurso=slug,
-                    tipo="gabarito",
-                    cargo=cargo["cargo"],
+            # um caderno pode ter mais de um gabarito definitivo (ex.: PCDF e
+            # DEPEN publicam basicos/complementares/especificos separados)
+            urls_gab = cargo.get("gabarito_definitivo_urls") \
+                or [cargo["gabarito_definitivo_url"]]
+            for indice, url_gab in enumerate(urls_gab, start=1):
+                sufixo = "" if len(urls_gab) == 1 else f"__g{indice}"
+                docs.append(
+                    Documento(
+                        url=url_gab,
+                        destino=DIR_GABARITOS / f"{slug}__{rotulo}{sufixo}.pdf",
+                        concurso=slug,
+                        tipo="gabarito",
+                        cargo=cargo["cargo"],
+                    )
                 )
-            )
     return docs
 
 

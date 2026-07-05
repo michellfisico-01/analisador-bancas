@@ -1,5 +1,5 @@
 # Ranking preditivo de tópicos — CEBRASPE PF/PRF
-Gerado em 2026-07-05 00:07. Ano de referência: 2021.
+Gerado em 2026-07-05 08:50. Ano de referência: 2021.
 
 **Como ler**: `prob` é a probabilidade estimada de um item da disciplina cair
 naquele tópico no próximo concurso (posterior Dirichlet; contagens ponderadas
@@ -15,47 +15,47 @@ revisão manual (`python -m src.classificacao.revisao`).
 
 ## Geral (PF + PRF)
 
-### Direito Constitucional (Geral) — 73 itens rotulados
+### Direito Constitucional (Geral) — 102 itens rotulados
 
 | topico                                      |   prob | ic90           |   n_efetivo |   n_bruto | sinal_legislativo   |
 |:--------------------------------------------|-------:|:---------------|------------:|----------:|:--------------------|
-| Direitos e garantias fundamentais           |  0.33  | [0.227, 0.439] |        16.7 |        26 | —                   |
-| Organização do Estado                       |  0.208 | [0.124, 0.306] |        10.4 |        14 | —                   |
-| Defesa do Estado e segurança pública        |  0.158 | [0.084, 0.247] |         7.7 |        10 | —                   |
-| Organização dos poderes                     |  0.151 | [0.078, 0.239] |         7.4 |        14 | —                   |
-| Ordem social                                |  0.121 | [0.057, 0.203] |         5.8 |         7 | —                   |
-| Teoria da Constituição e poder constituinte |  0.022 | [0.002, 0.063] |         0.7 |         2 | —                   |
-| Controle de constitucionalidade             |  0.01  | [0.000, 0.037] |         0   |         0 | —                   |
+| Direitos e garantias fundamentais           |  0.323 | [0.240, 0.410] |        25.7 |        35 | —                   |
+| Defesa do Estado e segurança pública        |  0.237 | [0.164, 0.318] |        18.7 |        21 | —                   |
+| Organização do Estado                       |  0.183 | [0.118, 0.258] |        14.4 |        18 | —                   |
+| Organização dos poderes                     |  0.146 | [0.087, 0.215] |        11.4 |        18 | —                   |
+| Ordem social                                |  0.078 | [0.036, 0.132] |         5.8 |         7 | —                   |
+| Teoria da Constituição e poder constituinte |  0.027 | [0.005, 0.061] |         1.7 |         3 | —                   |
+| Controle de constitucionalidade             |  0.006 | [0.000, 0.024] |         0   |         0 | —                   |
 
-### Direito Administrativo (Geral) — 33 itens rotulados
+### Direito Administrativo (Geral) — 43 itens rotulados
 
 | topico                                      |   prob | ic90           |   n_efetivo |   n_bruto | sinal_legislativo                                   |
 |:--------------------------------------------|-------:|:---------------|------------:|----------:|:----------------------------------------------------|
-| Agentes públicos                            |  0.272 | [0.150, 0.411] |         7.7 |        12 | —                                                   |
-| Organização administrativa                  |  0.235 | [0.121, 0.369] |         6.6 |        10 | —                                                   |
-| Controle da administração pública           |  0.116 | [0.038, 0.222] |         3   |         3 | —                                                   |
-| Poderes administrativos                     |  0.116 | [0.038, 0.222] |         3   |         3 | —                                                   |
-| Improbidade administrativa                  |  0.06  | [0.010, 0.144] |         0.3 |         1 | Reforma da Lei de Improbidade (Lei 14.230/2021) (*) |
-| Serviços públicos                           |  0.052 | [0.007, 0.131] |         1.1 |         2 | —                                                   |
-| Licitações e contratos                      |  0.05  | [0.006, 0.126] |         0   |         0 | Nova Lei de Licitações (Lei 14.133/2021) (*)        |
-| Atos administrativos                        |  0.042 | [0.004, 0.113] |         0.8 |         1 | —                                                   |
-| Responsabilidade civil do Estado            |  0.042 | [0.004, 0.113] |         0.8 |         1 | —                                                   |
-| Regime jurídico-administrativo e princípios |  0.017 | [0.000, 0.063] |         0   |         0 | —                                                   |
+| Agentes públicos                            |  0.229 | [0.129, 0.344] |         8.7 |        13 | —                                                   |
+| Organização administrativa                  |  0.176 | [0.089, 0.283] |         6.6 |        10 | —                                                   |
+| Licitações e contratos                      |  0.162 | [0.078, 0.265] |         5   |         5 | Nova Lei de Licitações (Lei 14.133/2021) (*)        |
+| Poderes administrativos                     |  0.137 | [0.060, 0.234] |         5   |         5 | —                                                   |
+| Controle da administração pública           |  0.087 | [0.028, 0.169] |         3   |         3 | —                                                   |
+| Atos administrativos                        |  0.081 | [0.025, 0.161] |         2.8 |         3 | —                                                   |
+| Improbidade administrativa                  |  0.045 | [0.007, 0.109] |         0.3 |         1 | Reforma da Lei de Improbidade (Lei 14.230/2021) (*) |
+| Serviços públicos                           |  0.039 | [0.005, 0.099] |         1.1 |         2 | —                                                   |
+| Responsabilidade civil do Estado            |  0.031 | [0.003, 0.085] |         0.8 |         1 | —                                                   |
+| Regime jurídico-administrativo e princípios |  0.012 | [0.000, 0.047] |         0   |         0 | —                                                   |
 
-### Direito Penal (Geral) — 23 itens rotulados
+### Direito Penal (Geral) — 43 itens rotulados
 
 | topico                                |   prob | ic90           |   n_efetivo |   n_bruto | sinal_legislativo                                |
 |:--------------------------------------|-------:|:---------------|------------:|----------:|:-------------------------------------------------|
-| Teoria do crime — fato típico         |  0.208 | [0.083, 0.365] |         3.8 |         5 | —                                                |
-| Crimes contra o patrimônio            |  0.166 | [0.056, 0.313] |         3   |         5 | —                                                |
-| Crimes contra a pessoa                |  0.144 | [0.043, 0.284] |         2.5 |         5 | —                                                |
-| Crimes contra a Administração Pública |  0.111 | [0.025, 0.240] |         1.3 |         2 | Lei de Abuso de Autoridade (Lei 13.869/2019) (*) |
-| Punibilidade                          |  0.096 | [0.018, 0.217] |         1   |         1 | Pacote Anticrime (Lei 13.964/2019) (*)           |
-| Ilicitude                             |  0.076 | [0.010, 0.187] |         1.1 |         2 | —                                                |
-| Crimes contra a fé pública            |  0.072 | [0.009, 0.180] |         1   |         1 | —                                                |
-| Princípios e aplicação da lei penal   |  0.064 | [0.006, 0.167] |         0.3 |         1 | Pacote Anticrime (Lei 13.964/2019) (*)           |
-| Culpabilidade                         |  0.04  | [0.001, 0.124] |         0.3 |         1 | —                                                |
-| Outros crimes em espécie              |  0.024 | [0.000, 0.091] |         0   |         0 | —                                                |
+| Crimes contra o patrimônio            |  0.28  | [0.173, 0.401] |        11   |        13 | —                                                |
+| Crimes contra a pessoa                |  0.171 | [0.085, 0.276] |         6.5 |         9 | —                                                |
+| Teoria do crime — fato típico         |  0.155 | [0.074, 0.256] |         5.8 |         7 | —                                                |
+| Crimes contra a Administração Pública |  0.13  | [0.056, 0.225] |         4.3 |         5 | Lei de Abuso de Autoridade (Lei 13.869/2019) (*) |
+| Punibilidade                          |  0.098 | [0.035, 0.183] |         3   |         3 | Pacote Anticrime (Lei 13.964/2019) (*)           |
+| Princípios e aplicação da lei penal   |  0.057 | [0.013, 0.126] |         1.3 |         2 | Pacote Anticrime (Lei 13.964/2019) (*)           |
+| Ilicitude                             |  0.039 | [0.005, 0.097] |         1.1 |         2 | —                                                |
+| Crimes contra a fé pública            |  0.037 | [0.004, 0.094] |         1   |         1 | —                                                |
+| Culpabilidade                         |  0.02  | [0.001, 0.064] |         0.3 |         1 | —                                                |
+| Outros crimes em espécie              |  0.012 | [0.000, 0.047] |         0   |         0 | —                                                |
 
 ## PF
 

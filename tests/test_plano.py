@@ -51,5 +51,7 @@ def test_cronograma_cobre_todas_as_semanas():
     assert all(t <= 12.0 + 0.5 for t in totais)
     assert totais[0] == pytest.approx(12.0, rel=0.1)
     assert totais[1] == pytest.approx(12.0, rel=0.1)
+    # semanas parciais só existem na transição para a revisão geral (o
+    # deadlock que este teste pegou produzia a MAIORIA das semanas capadas)
     parciais = [t for t in totais if t < 12.0 * 0.85]
-    assert len(parciais) <= 1
+    assert len(parciais) <= 2

@@ -37,16 +37,22 @@ def test_cada_cargo_tem_prova_e_gabarito(manifesto):
     for conc in manifesto["concursos"]:
         for cargo in conc["cargos"]:
             assert cargo["prova_url"].lower().endswith(".pdf")
-            assert cargo["gabarito_definitivo_url"].lower().endswith(".pdf")
-            assert "DEFINITIVO" in cargo["gabarito_definitivo_url"].upper() or (
-                "Gab_Definitivo" in cargo["gabarito_definitivo_url"]
-            ), (
-                f"{conc['slug']}/{cargo['cargo']}: gabarito não parece ser o DEFINITIVO "
-                "(regra do projeto: nunca usar o preliminar)"
-            )
+            urls_gab = cargo.get("gabarito_definitivo_urls") \
+                or [cargo["gabarito_definitivo_url"]]
+            for url in urls_gab:
+                assert url.lower().endswith(".pdf")
+                assert "DEFINITIVO" in url.upper(), (
+                    f"{conc['slug']}/{cargo['cargo']}: gabarito não parece ser o "
+                    "DEFINITIVO (regra do projeto: nunca usar o preliminar)"
+                )
             assert cargo["itens_esperados"] > 0
 
 
-def test_piloto_cobre_os_cinco_concursos(manifesto):
+def test_manifesto_cobre_concursos_esperados(manifesto):
     slugs = {c["slug"] for c in manifesto["concursos"]}
-    assert slugs == {"dprf_13", "pf_18", "prf_18", "pf_21", "prf_21"}
+    assert slugs == {
+        # piloto original PF/PRF
+        "dprf_13", "pf_18", "prf_18", "pf_21", "prf_21",
+        # expansão Fase 6a (CEBRASPE certo/errado)
+        "pc_df_19_escrivao", "pc_df_20_agente", "depen_20",
+    }
