@@ -5,6 +5,7 @@ montagem do prompt e do schema (a parte determinística).
 """
 import pytest
 
+from src.classificacao.disciplinas import disciplinas_do_edital
 from src.classificacao.llm import montar_schema, montar_system_prompt
 from src.classificacao.regras import carregar_alvos, classificar, normalizar
 
@@ -80,6 +81,22 @@ def test_system_prompt_contem_taxonomia_e_avisos():
     assert "Legislação Penal Especial" in prompt  # aviso de não confundir com Penal
     assert "Direito Processual Penal" in disciplinas
     assert len(disciplinas) == len(set(disciplinas))  # sem duplicatas no enum
+
+
+def test_disciplinas_do_edital_respeitam_o_programa():
+    """PF não tem Geopolítica/Física/Trânsito; PRF não tem Contabilidade."""
+    pf = disciplinas_do_edital("pf_21")
+    assert "Contabilidade" in pf
+    assert "Direito Penal" in pf  # via disciplina fundida do edital PF
+    assert "Direito Processual Penal" in pf
+    assert "Geopolítica" not in pf
+    assert "Física" not in pf
+    assert "Legislação de Trânsito" not in pf
+
+    prf = disciplinas_do_edital("prf_21")
+    assert "Legislação de Trânsito" in prf
+    assert "Física" in prf
+    assert "Contabilidade" not in prf
 
 
 def test_schema_estruturado_e_fechado():

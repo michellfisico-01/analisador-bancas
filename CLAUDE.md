@@ -83,6 +83,11 @@ carreiras jurídicas de entrada.
 
 ## Estado da Fase 2 (em andamento)
 
+- Mapeamento item→disciplina RODADO: 886/1072 itens com `itens.disciplina`
+  preenchida (`python -m src.classificacao.disciplinas`). Três etapas: âncoras
+  restritas às disciplinas do edital do concurso, voto majoritário por bloco
+  (mesmo motivador = mesma disciplina), interpolação entre faixas vizinhas
+  iguais. 186 itens sem sinal ficam NULL (fila do LLM).
 - Baseline por regras RODADO: 218/1072 itens classificados (os de Direito com
   âncora), 111 em baixa confiança (< 0.75). Re-rodar: `python -m src.classificacao.regras`.
 - Classificador LLM PRONTO mas nunca executado: `python -m src.classificacao.llm
