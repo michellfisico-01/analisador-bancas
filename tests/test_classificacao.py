@@ -1,12 +1,11 @@
-"""Testes da classificação (Fase 2): regras/palavras-chave e montagem do LLM.
+"""Testes da classificação (Fase 2): Camada 1 (regras) e Camada 2 (modelo).
 
-Nenhum teste aqui chama a API — o classificador LLM é testado só na
-montagem do prompt e do schema (a parte determinística).
+Tudo local, sem serviço externo — restrição de custo zero do projeto.
 """
 import pytest
 
 from src.classificacao.disciplinas import disciplinas_do_edital
-from src.classificacao.llm import montar_schema, montar_system_prompt
+from src.classificacao.modelo import _filtrar_classes_raras, montar_corpus
 from src.classificacao.regras import carregar_alvos, classificar, normalizar
 
 
@@ -74,13 +73,12 @@ def test_referencia_legal_pesa_mais_que_palavra_solta(alvos):
     assert r.confianca >= 0.75
 
 
-def test_system_prompt_contem_taxonomia_e_avisos():
-    prompt, disciplinas = montar_system_prompt()
-    assert "Direito Constitucional" in prompt
-    assert "Direito Administrativo" in prompt
-    assert "Legislação Penal Especial" in prompt  # aviso de não confundir com Penal
-    assert "Direito Processual Penal" in disciplinas
-    assert len(disciplinas) == len(set(disciplinas))  # sem duplicatas no enum
+def test_montar_corpus_pondera_item_sobre_motivador():
+    """O texto do item entra duas vezes; o motivador, uma (é só contexto)."""
+    ids, docs = montar_corpus([(7, "Peculato é crime.", "Texto sobre servidor.")])
+    assert ids == [7]
+    assert docs[0].count("peculato") == 2
+    assert docs[0].count("servidor") == 1
 
 
 def test_disciplinas_do_edital_respeitam_o_programa():
@@ -99,11 +97,11 @@ def test_disciplinas_do_edital_respeitam_o_programa():
     assert "Contabilidade" not in prf
 
 
-def test_schema_estruturado_e_fechado():
-    _, disciplinas = montar_system_prompt()
-    schema = montar_schema(disciplinas)
-    assert schema["additionalProperties"] is False
-    assert set(schema["required"]) == {
-        "disciplina", "topico", "subtopico", "confianca", "justificativa"
-    }
-    assert schema["properties"]["disciplina"]["enum"] == disciplinas
+def test_filtrar_classes_raras_remove_e_reporta():
+    ids = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    docs = [f"doc {i}" for i in ids]
+    rotulos = ["A"] * 5 + ["B"] * 3 + ["C"]  # B tem 3 exemplos (< 4), C tem 1
+    ids_f, docs_f, rotulos_f, excluidas = _filtrar_classes_raras(ids, docs, rotulos)
+    assert set(rotulos_f) == {"A"}
+    assert len(ids_f) == len(docs_f) == len(rotulos_f) == 5
+    assert excluidas == ["B", "C"]

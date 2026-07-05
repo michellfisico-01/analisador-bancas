@@ -56,11 +56,12 @@ CREATE TABLE IF NOT EXISTS itens (
     UNIQUE (prova_id, numero)
 );
 
--- Fase 2: cada item pode ter varias classificacoes (regras, LLM, revisao manual)
+-- Fase 2: cada item pode ter varias classificacoes, com origem registrada:
+-- 'regras' (Camada 1), 'modelo' (Camada 2, TF-IDF local), 'manual' (revisao)
 CREATE TABLE IF NOT EXISTS classificacoes (
     id         INTEGER PRIMARY KEY,
     item_id    INTEGER NOT NULL REFERENCES itens(id),
-    metodo     TEXT NOT NULL CHECK (metodo IN ('regras', 'llm', 'manual')),
+    metodo     TEXT NOT NULL CHECK (metodo IN ('regras', 'modelo', 'manual')),
     topico     TEXT NOT NULL,
     subtopico  TEXT,
     confianca  REAL,                      -- 0.0 a 1.0
@@ -79,5 +80,21 @@ def conectar(caminho: Path = CAMINHO_BD) -> sqlite3.Connection:
     caminho.parent.mkdir(parents=True, exist_ok=True)
     con = sqlite3.connect(caminho)
     con.execute("PRAGMA foreign_keys = ON")
+    _migrar(con)
     con.executescript(SCHEMA)
     return con
+
+
+def _migrar(con: sqlite3.Connection) -> None:
+    """Migrações de schema em bancos já existentes.
+
+    2026-07-04 (custo zero): o metodo 'llm' saiu do CHECK de classificacoes e
+    entrou 'modelo'. A tabela antiga é descartada — só continha rótulos de
+    'regras', que são regenerados por ``python -m src.classificacao.regras``.
+    """
+    linha = con.execute(
+        "SELECT sql FROM sqlite_master WHERE type='table' AND name='classificacoes'"
+    ).fetchone()
+    if linha and "'llm'" in (linha[0] or ""):
+        con.execute("DROP TABLE classificacoes")
+        con.commit()

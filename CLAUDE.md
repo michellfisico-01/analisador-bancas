@@ -18,6 +18,23 @@ preditiva. **NÃO é da área jurídica** — quando a classificação de tópic
 jurídico fino, sinalizar explicitamente e concentrar no fluxo de revisão manual, nunca
 assumir.
 
+## Restrição fundamental: custo zero de operação (2026-07-04)
+
+O projeto NÃO pode depender de API paga, serviço em nuvem com cobrança ou modelo
+de linguagem remoto. Tudo roda localmente com bibliotecas de código aberto.
+Classificação de tópicos: NLP clássico (regras, TF-IDF, scikit-learn) e, só se
+necessário, embeddings locais com sentence-transformers em CPU. Se alguma etapa
+ficaria melhor com serviço pago, implementar a alternativa gratuita e registrar
+a sugestão aqui — nunca deixar a arquitetura dependente do serviço pago.
+Hospedagem futura em camadas gratuitas (GitHub Pages, Streamlit Community
+Cloud, Hugging Face Spaces).
+
+**Sugestões registradas para avaliação futura (não implementar sem novo aval):**
+- Classificação via API da Anthropic com JSON estruturado: chegou a ser
+  implementada (histórico do git, commit 9d838ea, `src/classificacao/llm.py`)
+  mas foi REMOVIDA sem nunca ser executada, quando o custo zero virou requisito.
+  Se um dia houver orçamento, é o melhor candidato a terceira camada.
+
 ## Escopo do MVP (recorte deliberado)
 
 - **Carreira piloto**: PF (Agente) e PRF (Policial Rodoviário Federal), nível superior.
@@ -39,9 +56,13 @@ carreiras jurídicas de entrada.
 - **Fase 1** — ✅ concluída em 2026-07-04 — Coleta (download PDFs oficiais) e extração (segmentação questão a questão,
   com texto motivador; SQLite; relatório de qualidade da extração por prova)
 - **Fase 2** — Taxonomia a partir dos editais PF/PRF (revisada pelo usuário antes de usar)
-  + classificação em 2 níveis (tópico e subtópico) por duas abordagens comparáveis:
-  regras/palavras-chave (baseline) e API da Anthropic (JSON estruturado, com texto
-  motivador no contexto). Registrar confiança; fluxo de revisão manual das baixas.
+  + classificação em 2 níveis (tópico e subtópico), 100% local, em camadas:
+  Camada 1 = regras determinísticas (referências normativas + termos técnicos);
+  Camada 2 = TF-IDF (n-gramas 1-3) + classificador linear scikit-learn treinado
+  nos rótulos da Camada 1 + revisões manuais, com validação cruzada e métricas
+  por tópico; Camada 3 (opcional, só se métricas insuficientes) = embeddings
+  locais sentence-transformers em CPU. Registrar confiança e origem de cada
+  rótulo; fluxo de revisão manual realimenta o treino (active learning simples).
 - **Fase 3** — Estatística descritiva, análise do estilo CEBRASPE (proporção certo/errado
   por tópico, padrões de pegadinha), modelo preditivo simples e interpretável (frequência
   ponderada por recência + suavização bayesiana; SEM redes neurais), sinal de mudanças
@@ -80,22 +101,30 @@ carreiras jurídicas de entrada.
   âncora casada só no texto motivador vale metade (o item é o objeto, o motivador
   é contexto); confiança = 1 - 0.5^score.
 
-## Estado da Fase 2 (em andamento)
+## Estado da Fase 2 (em andamento, 100% local)
 
-- Mapeamento item→disciplina RODADO: 886/1072 itens com `itens.disciplina`
-  preenchida (`python -m src.classificacao.disciplinas`). Três etapas: âncoras
-  restritas às disciplinas do edital do concurso, voto majoritário por bloco
-  (mesmo motivador = mesma disciplina), interpolação entre faixas vizinhas
-  iguais. 186 itens sem sinal ficam NULL (fila do LLM).
-- Baseline por regras RODADO: 218/1072 itens classificados (os de Direito com
-  âncora), 111 em baixa confiança (< 0.75). Re-rodar: `python -m src.classificacao.regras`.
-- Classificador LLM PRONTO e LIBERADO (taxonomia aprovada), mas nunca executado:
-  `python -m src.classificacao.llm [--limite N] [--modelo M]`. Único bloqueio
-  restante: ANTHROPIC_API_KEY em `.env` (modelo padrão claude-opus-4-8; custo
-  controlado por --limite). Plano: lote de calibração `--limite 50`, conferir
-  qualidade/custo, depois rodar o restante.
-- Fluxo de revisão manual pronto: `python -m src.classificacao.revisao` (fila =
-  divergência regras x llm, confiança < 0.75, ou sem classificação).
+- Mapeamento item→disciplina RODADO: 869/1072 itens (81%) com `itens.disciplina`
+  (`python -m src.classificacao.disciplinas`). Etapas: âncoras restritas às
+  disciplinas do edital do concurso; voto majoritário por bloco com o guard
+  "motivador sozinho não decide disciplina jurídica" (as provas ambientam
+  RLM/Estatística em narrativas policiais — vocabulário jurídico no motivador
+  é evidência fraca); interpolação entre faixas vizinhas iguais. 203 itens
+  sem sinal ficam NULL.
+- Camada 1 (regras) RODADA: 218/1072 itens, 111 em baixa confiança.
+- Camada 2 (modelo local) RODADA: `python -m src.classificacao.modelo`,
+  TF-IDF 1-3gramas + regressão logística. Validação cruzada: disciplina 93%
+  de acurácia (15 classes); tópico fino 67% (9 classes, 84 exemplos). Com
+  limiares honestos (0.60/0.50) o modelo NÃO grava previsões para o resíduo —
+  os 203 itens sem disciplina não têm sinal textual aproveitável (fórmulas
+  mutiladas, itens curtos). Métricas: `relatorios/metricas_classificador.md`.
+- **Nível fino: volume de dados NÃO sustenta subtópico** (registrado conforme
+  combinado). Modelo B prevê só tópico; subtópico vem de regras + revisão.
+  Várias classes de tópico têm < 4 exemplos e ficaram fora do treino.
+- Fluxo de revisão manual pronto: `python -m src.classificacao.revisao`
+  (cada correção realimenta o treino da Camada 2 — retreinar depois).
+- Pendente de decisão do usuário: estratégia para os 203 itens sem disciplina
+  (revisão manual rápida vs Camada 3 embeddings vs inferência pela ordem do
+  edital).
 
 ## Limitações conhecidas (Fase 1)
 

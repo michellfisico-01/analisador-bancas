@@ -6,8 +6,8 @@ classificador pontua o item (texto + texto motivador) por âncora encontrada,
 com peso maior para referências legais explícitas, que são pistas fortes e
 baratas. Devolve o subtópico de maior pontuação e uma confiança interpretável.
 
-Este é o baseline comparável ao classificador LLM (Fase 2). Itens sem
-nenhuma âncora ficam sem classificação por regras — vão para o LLM e(ou)
+Esta é a Camada 1 da classificação (Fase 2). Itens sem nenhuma âncora ficam
+sem classificação por regras — vão para a Camada 2 (modelo local) e(ou)
 para a revisão manual.
 
 Uso: ``python -m src.classificacao.regras`` classifica todos os itens do
@@ -188,7 +188,7 @@ def main() -> int:
     c = classificar_banco()
     total = c["classificados"] + c["sem_classe"]
     print(f"  {c['classificados']}/{total} itens receberam classificação por regras")
-    print(f"  {c['sem_classe']} sem âncora (vão para LLM/revisão manual)")
+    print(f"  {c['sem_classe']} sem âncora (vão para o modelo local/revisão manual)")
     print(f"  {c['baixa_confianca']} classificados com baixa confiança (< 0.75)")
     return 0
 

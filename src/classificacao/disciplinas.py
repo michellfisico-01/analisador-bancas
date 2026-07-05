@@ -9,7 +9,8 @@ Preenche a coluna ``itens.disciplina`` que a Fase 1 deixou NULL. Duas etapas:
    classificados do bloco preenche os não classificados — e sinaliza
    discordância interna (indício de erro) no relatório.
 
-Itens que sobrarem sem disciplina ficam NULL e entram na fila do LLM.
+Itens que sobrarem sem disciplina ficam NULL e vão para o modelo local
+(Camada 2) e(ou) revisão manual.
 
 Uso: ``python -m src.classificacao.disciplinas``
 """
@@ -144,6 +145,14 @@ def disciplinas_do_edital(slug: str) -> set[str]:
     return presentes
 
 
+# Disciplinas cujo vocabulário aparece em narrativas-tema de outras questões
+# (a "situação hipotética policial" contamina motivadores de RLM/Estatística)
+DISCIPLINAS_JURIDICAS = {
+    "Direito Constitucional", "Direito Administrativo", "Direito Penal",
+    "Direito Processual Penal", "Legislação Penal Especial", "Direitos Humanos",
+}
+
+
 def montar_alvos_disciplina() -> dict[str, list[Ancora]]:
     """Âncoras por disciplina: as de nível grosso + as finas agregadas."""
     alvos: dict[str, list[Ancora]] = defaultdict(list)
@@ -194,8 +203,11 @@ def mapear(con) -> dict[str, int]:
             d: a for d, a in alvos_todos.items() if d in permitidas
         }
 
-    # etapa 1: item a item (motivador entra com meio peso)
+    # etapa 1: item a item (motivador entra com meio peso). Guarda também se o
+    # voto veio do texto do PRÓPRIO item: motivador sozinho não pode decidir um
+    # bloco (problemas de RLM com tema policial enganam âncoras jurídicas).
     voto_item: dict[int, str | None] = {}
+    voto_proprio: dict[int, bool] = {}
     for item_id, _prova, _mot, _num, texto, motivador, slug in itens:
         alvos = alvos_por_slug[slug]
         disc_i, score_i = classificar_item(texto, alvos)
@@ -208,8 +220,10 @@ def mapear(con) -> dict[str, int]:
             voto_item[item_id] = disc_m
         else:
             voto_item[item_id] = disc_i  # pode ser None
+        voto_proprio[item_id] = disc_i is not None and voto_item[item_id] == disc_i
 
-    # etapa 2: voto majoritário por bloco
+    # etapa 2: voto majoritário por bloco — contam só votos com sinal no
+    # próprio item; bloco sem nenhum voto próprio fica sem disciplina
     blocos: dict[tuple, list[int]] = defaultdict(list)
     for item_id, prova_id, motivador_id, _num, _t, _m, _s in itens:
         if motivador_id is not None:
@@ -217,9 +231,25 @@ def mapear(con) -> dict[str, int]:
 
     discordantes = 0
     for _chave, ids in blocos.items():
-        votos = Counter(voto_item[i] for i in ids if voto_item[i])
+        votos = Counter(voto_item[i] for i in ids if voto_item[i] and voto_proprio[i])
         if not votos:
-            continue
+            # Nenhum item do bloco tem sinal no próprio texto. O motivador só
+            # pode decidir sozinho para disciplinas NÃO jurídicas: as provas
+            # ambientam RLM/Estatística/Informática em narrativas policiais,
+            # então vocabulário jurídico no motivador é evidência fraca —
+            # mas um motivador de Estatística descrevendo o conjunto de dados
+            # é evidência legítima.
+            votos_motivador = Counter(
+                voto_item[i] for i in ids
+                if voto_item[i] and voto_item[i] not in DISCIPLINAS_JURIDICAS
+            )
+            if votos_motivador:
+                votos = votos_motivador
+            else:
+                for i in ids:
+                    if not voto_proprio[i]:
+                        voto_item[i] = None
+                continue
         vencedor, n_vencedor = votos.most_common(1)[0]
         if n_vencedor * 2 >= sum(votos.values()):
             for i in ids:
@@ -274,7 +304,7 @@ def main() -> int:
     con = conectar()
     resumo = mapear(con)
     print(f"Itens com disciplina: {resumo['atribuidos']}/{resumo['total']} "
-          f"({resumo['sem_disciplina']} sem sinal -> fila do LLM)")
+          f"({resumo['sem_disciplina']} sem sinal -> modelo local/revisão)")
     print(f"Votos individuais sobrescritos pelo bloco: {resumo['discordantes_no_bloco']}")
     print(f"Itens preenchidos por interpolação de vizinhança: {resumo['interpolados']}")
     print("\nDistribuição por disciplina:")

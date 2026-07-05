@@ -51,7 +51,11 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.comparativo)",
       "PowerShell(if \\(Test-Path .env\\) { \"env: existe\"; \\(Get-Content .env | Select-String -Pattern 'ANTHROPIC_API_KEY=..' -Quiet\\) } else { \"env: nao existe\" })",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\estima_custo.py\")",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\conta_escopo.py\")"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\conta_escopo.py\")",
+      "PowerShell(uv pip uninstall anthropic python-dotenv --python .venv 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.modelo)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\debug_modelo.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m pytest tests/ -q 2>&1)"
     ]
   }
 }
