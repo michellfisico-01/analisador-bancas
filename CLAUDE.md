@@ -70,12 +70,11 @@ carreiras jurídicas de entrada.
 - (Fase 1, 2026-07-04) **Segmentação dos cadernos** usa 3 sinais: layout (recuo das
   linhas), tipografia (número de item tem fonte >= 7pt; numeração de linha de texto
   motivador tem 5-6pt) e sequência estrita (só aceita o próximo número esperado).
-- (Fase 2, 2026-07-04) **Taxonomia consolidada provisória** em
-  `config/taxonomias/consolidada.json` com defaults NÃO aprovados pelo usuário
-  (D1: Penal separado de Processual Penal; D2: Legislação Penal Especial como
-  disciplina própria; D3: nível fino só nas 3 disciplinas de Direito; D4: controle
-  de constitucionalidade mantido como raro). Decisões D1-D4 detalhadas em
-  `docs/taxonomia_proposta.md` — AGUARDANDO REVISÃO DO USUÁRIO antes de rodar o LLM.
+- (Fase 2, 2026-07-04) **Taxonomia consolidada v1.0 APROVADA pelo usuário**
+  ("aprovo os defaults"): D1 Penal separado de Processual Penal; D2 Legislação
+  Penal Especial como disciplina própria; D3 nível fino só nas 3 disciplinas de
+  Direito; D4 controle de constitucionalidade mantido como raro. Detalhes em
+  `docs/taxonomia_proposta.md`; esquema em `config/taxonomias/consolidada.json`.
 - (Fase 2, 2026-07-04) **Regras do baseline**: âncoras casam com fronteira de
   palavra (nunca substring); referências legais e frases multi-palavra pesam 2x;
   âncora casada só no texto motivador vale metade (o item é o objeto, o motivador
@@ -90,10 +89,11 @@ carreiras jurídicas de entrada.
   iguais. 186 itens sem sinal ficam NULL (fila do LLM).
 - Baseline por regras RODADO: 218/1072 itens classificados (os de Direito com
   âncora), 111 em baixa confiança (< 0.75). Re-rodar: `python -m src.classificacao.regras`.
-- Classificador LLM PRONTO mas nunca executado: `python -m src.classificacao.llm
-  [--limite N] [--modelo M]`. Requer ANTHROPIC_API_KEY em `.env` (modelo padrão
-  claude-opus-4-8; custo controlado por --limite). NÃO rodar antes de o usuário
-  aprovar a taxonomia (D1-D4).
+- Classificador LLM PRONTO e LIBERADO (taxonomia aprovada), mas nunca executado:
+  `python -m src.classificacao.llm [--limite N] [--modelo M]`. Único bloqueio
+  restante: ANTHROPIC_API_KEY em `.env` (modelo padrão claude-opus-4-8; custo
+  controlado por --limite). Plano: lote de calibração `--limite 50`, conferir
+  qualidade/custo, depois rodar o restante.
 - Fluxo de revisão manual pronto: `python -m src.classificacao.revisao` (fila =
   divergência regras x llm, confiança < 0.75, ou sem classificação).
 

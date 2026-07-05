@@ -1,6 +1,6 @@
 {
-  "descricao": "Taxonomia consolidada do piloto (RASCUNHO PROVISORIO, sujeito a revisao do usuario nas decisoes D1-D4 de docs/taxonomia_proposta.md). Esquema unico de 2 niveis usado para classificar os itens. Cada subtopico traz ancoras (palavras-chave e referencias legais) para o baseline por regras. Defaults adotados: Penal e Processual Penal separados (D1); Legislacao Penal Especial como disciplina propria (D2); classificacao fina so nas disciplinas de Direito (D3); controle de constitucionalidade mantido e marcado raro (D4).",
-  "versao": "0.1-provisoria",
+  "descricao": "Taxonomia consolidada do piloto (APROVADA pelo usuario em 2026-07-04, decisoes D1-D4 conforme docs/taxonomia_proposta.md). Esquema unico de 2 niveis usado para classificar os itens. Cada subtopico traz ancoras (palavras-chave e referencias legais) para o baseline por regras. Decisoes aprovadas: Penal e Processual Penal separados (D1); Legislacao Penal Especial como disciplina propria (D2); classificacao fina so nas disciplinas de Direito (D3); controle de constitucionalidade mantido e marcado raro (D4).",
+  "versao": "1.0",
   "disciplinas_fino": [
     {
       "disciplina": "Direito Constitucional",
@@ -8,51 +8,209 @@
         {
           "topico": "Teoria da Constituição e poder constituinte",
           "subtopicos": [
-            {"nome": "Conceito e classificação das constituições", "ancoras": ["constituição rígida", "constituição flexível", "classificação das constituições", "norma constitucional", "supremacia da constituição"]},
-            {"nome": "Poder constituinte", "ancoras": ["poder constituinte", "constituinte originário", "constituinte derivado", "reforma constitucional", "emenda à constituição", "emenda constitucional"]},
-            {"nome": "Aplicabilidade das normas constitucionais", "ancoras": ["eficácia plena", "eficácia contida", "eficácia limitada", "norma programática", "aplicabilidade das normas"]}
+            {
+              "nome": "Conceito e classificação das constituições",
+              "ancoras": [
+                "constituição rígida",
+                "constituição flexível",
+                "classificação das constituições",
+                "norma constitucional",
+                "supremacia da constituição"
+              ]
+            },
+            {
+              "nome": "Poder constituinte",
+              "ancoras": [
+                "poder constituinte",
+                "constituinte originário",
+                "constituinte derivado",
+                "reforma constitucional",
+                "emenda à constituição",
+                "emenda constitucional"
+              ]
+            },
+            {
+              "nome": "Aplicabilidade das normas constitucionais",
+              "ancoras": [
+                "eficácia plena",
+                "eficácia contida",
+                "eficácia limitada",
+                "norma programática",
+                "aplicabilidade das normas"
+              ]
+            }
           ]
         },
         {
           "topico": "Controle de constitucionalidade",
           "raro_no_piloto": true,
           "subtopicos": [
-            {"nome": "Controle de constitucionalidade", "ancoras": ["controle de constitucionalidade", "inconstitucionalidade", "ADI", "ADC", "ADPF", "controle difuso", "controle concentrado", "cláusula de reserva de plenário"]}
+            {
+              "nome": "Controle de constitucionalidade",
+              "ancoras": [
+                "controle de constitucionalidade",
+                "inconstitucionalidade",
+                "ADI",
+                "ADC",
+                "ADPF",
+                "controle difuso",
+                "controle concentrado",
+                "cláusula de reserva de plenário"
+              ]
+            }
           ]
         },
         {
           "topico": "Direitos e garantias fundamentais",
           "subtopicos": [
-            {"nome": "Direitos e deveres individuais e coletivos", "ancoras": ["art. 5º", "artigo 5", "direitos e deveres individuais", "direito à vida", "direito à liberdade", "direito à igualdade", "direito à propriedade", "devido processo legal", "contraditório e ampla defesa"]},
-            {"nome": "Direitos sociais, nacionalidade e políticos", "ancoras": ["direitos sociais", "nacionalidade", "brasileiro nato", "brasileiro naturalizado", "direitos políticos", "cidadania", "partidos políticos", "art. 6º", "artigo 6"]},
-            {"nome": "Remédios constitucionais", "ancoras": ["habeas corpus", "mandado de segurança", "mandado de injunção", "habeas data", "ação popular", "remédio constitucional"]}
+            {
+              "nome": "Direitos e deveres individuais e coletivos",
+              "ancoras": [
+                "art. 5º",
+                "artigo 5",
+                "direitos e deveres individuais",
+                "direito à vida",
+                "direito à liberdade",
+                "direito à igualdade",
+                "direito à propriedade",
+                "devido processo legal",
+                "contraditório e ampla defesa"
+              ]
+            },
+            {
+              "nome": "Direitos sociais, nacionalidade e políticos",
+              "ancoras": [
+                "direitos sociais",
+                "nacionalidade",
+                "brasileiro nato",
+                "brasileiro naturalizado",
+                "direitos políticos",
+                "cidadania",
+                "partidos políticos",
+                "art. 6º",
+                "artigo 6"
+              ]
+            },
+            {
+              "nome": "Remédios constitucionais",
+              "ancoras": [
+                "habeas corpus",
+                "mandado de segurança",
+                "mandado de injunção",
+                "habeas data",
+                "ação popular",
+                "remédio constitucional"
+              ]
+            }
           ]
         },
         {
           "topico": "Organização do Estado",
           "subtopicos": [
-            {"nome": "Organização político-administrativa e competências", "ancoras": ["organização político-administrativa", "competência da união", "competência dos estados", "competência dos municípios", "art. 20", "art. 21", "art. 22", "art. 23", "art. 24", "repartição de competências"]},
-            {"nome": "Administração pública na Constituição", "ancoras": ["art. 37", "art. 38", "art. 39", "art. 40", "art. 41", "administração pública", "concurso público", "estabilidade do servidor"]}
+            {
+              "nome": "Organização político-administrativa e competências",
+              "ancoras": [
+                "organização político-administrativa",
+                "competência da união",
+                "competência dos estados",
+                "competência dos municípios",
+                "art. 20",
+                "art. 21",
+                "art. 22",
+                "art. 23",
+                "art. 24",
+                "repartição de competências"
+              ]
+            },
+            {
+              "nome": "Administração pública na Constituição",
+              "ancoras": [
+                "art. 37",
+                "art. 38",
+                "art. 39",
+                "art. 40",
+                "art. 41",
+                "administração pública",
+                "concurso público",
+                "estabilidade do servidor"
+              ]
+            }
           ]
         },
         {
           "topico": "Organização dos poderes",
           "subtopicos": [
-            {"nome": "Poder Legislativo e processo legislativo", "ancoras": ["poder legislativo", "processo legislativo", "congresso nacional", "câmara dos deputados", "senado federal", "medida provisória", "lei complementar", "lei ordinária"]},
-            {"nome": "Poder Executivo", "ancoras": ["poder executivo", "presidente da república", "atribuições do presidente", "sistema de governo", "chefia de estado", "chefia de governo"]},
-            {"nome": "Poder Judiciário e funções essenciais à justiça", "ancoras": ["poder judiciário", "supremo tribunal federal", "superior tribunal de justiça", "ministério público", "advocacia pública", "defensoria pública", "funções essenciais à justiça", "conselho nacional de justiça"]}
+            {
+              "nome": "Poder Legislativo e processo legislativo",
+              "ancoras": [
+                "poder legislativo",
+                "processo legislativo",
+                "congresso nacional",
+                "câmara dos deputados",
+                "senado federal",
+                "medida provisória",
+                "lei complementar",
+                "lei ordinária"
+              ]
+            },
+            {
+              "nome": "Poder Executivo",
+              "ancoras": [
+                "poder executivo",
+                "presidente da república",
+                "atribuições do presidente",
+                "sistema de governo",
+                "chefia de estado",
+                "chefia de governo"
+              ]
+            },
+            {
+              "nome": "Poder Judiciário e funções essenciais à justiça",
+              "ancoras": [
+                "poder judiciário",
+                "supremo tribunal federal",
+                "superior tribunal de justiça",
+                "ministério público",
+                "advocacia pública",
+                "defensoria pública",
+                "funções essenciais à justiça",
+                "conselho nacional de justiça"
+              ]
+            }
           ]
         },
         {
           "topico": "Defesa do Estado e segurança pública",
           "subtopicos": [
-            {"nome": "Segurança pública e órgãos policiais", "ancoras": ["segurança pública", "art. 144", "artigo 144", "polícia federal", "polícia rodoviária federal", "atribuições da polícia", "forças armadas", "art. 142"]}
+            {
+              "nome": "Segurança pública e órgãos policiais",
+              "ancoras": [
+                "segurança pública",
+                "art. 144",
+                "artigo 144",
+                "polícia federal",
+                "polícia rodoviária federal",
+                "atribuições da polícia",
+                "forças armadas",
+                "art. 142"
+              ]
+            }
           ]
         },
         {
           "topico": "Ordem social",
           "subtopicos": [
-            {"nome": "Ordem social", "ancoras": ["ordem social", "seguridade social", "meio ambiente", "art. 6", "família, criança", "seguridade"]}
+            {
+              "nome": "Ordem social",
+              "ancoras": [
+                "ordem social",
+                "seguridade social",
+                "meio ambiente",
+                "art. 6",
+                "família, criança",
+                "seguridade"
+              ]
+            }
           ]
         }
       ]
@@ -63,64 +221,200 @@
         {
           "topico": "Regime jurídico-administrativo e princípios",
           "subtopicos": [
-            {"nome": "Princípios da administração pública", "ancoras": ["princípios da administração", "legalidade, impessoalidade", "moralidade administrativa", "supremacia do interesse público", "regime jurídico-administrativo", "princípio da eficiência", "publicidade administrativa"]}
+            {
+              "nome": "Princípios da administração pública",
+              "ancoras": [
+                "princípios da administração",
+                "legalidade, impessoalidade",
+                "moralidade administrativa",
+                "supremacia do interesse público",
+                "regime jurídico-administrativo",
+                "princípio da eficiência",
+                "publicidade administrativa"
+              ]
+            }
           ]
         },
         {
           "topico": "Organização administrativa",
           "subtopicos": [
-            {"nome": "Centralização e descentralização", "ancoras": ["centralização", "descentralização", "desconcentração", "administração direta", "administração indireta"]},
-            {"nome": "Entidades da administração indireta", "ancoras": ["autarquia", "fundação pública", "empresa pública", "sociedade de economia mista", "entidade paraestatal"]}
+            {
+              "nome": "Centralização e descentralização",
+              "ancoras": [
+                "centralização",
+                "descentralização",
+                "desconcentração",
+                "administração direta",
+                "administração indireta"
+              ]
+            },
+            {
+              "nome": "Entidades da administração indireta",
+              "ancoras": [
+                "autarquia",
+                "fundação pública",
+                "empresa pública",
+                "sociedade de economia mista",
+                "entidade paraestatal"
+              ]
+            }
           ]
         },
         {
           "topico": "Atos administrativos",
           "subtopicos": [
-            {"nome": "Atributos, requisitos e espécies", "ancoras": ["ato administrativo", "atributos do ato", "requisitos do ato", "autoexecutoriedade", "presunção de legitimidade", "imperatividade", "discricionariedade", "ato vinculado"]},
-            {"nome": "Anulação, revogação e convalidação", "ancoras": ["anulação do ato", "revogação do ato", "convalidação", "vício do ato", "teoria dos motivos determinantes", "nulidade do ato administrativo"]}
+            {
+              "nome": "Atributos, requisitos e espécies",
+              "ancoras": [
+                "ato administrativo",
+                "atributos do ato",
+                "requisitos do ato",
+                "autoexecutoriedade",
+                "presunção de legitimidade",
+                "imperatividade",
+                "discricionariedade",
+                "ato vinculado"
+              ]
+            },
+            {
+              "nome": "Anulação, revogação e convalidação",
+              "ancoras": [
+                "anulação do ato",
+                "revogação do ato",
+                "convalidação",
+                "vício do ato",
+                "teoria dos motivos determinantes",
+                "nulidade do ato administrativo"
+              ]
+            }
           ]
         },
         {
           "topico": "Poderes administrativos",
           "subtopicos": [
-            {"nome": "Poderes administrativos", "ancoras": ["poder de polícia", "poder hierárquico", "poder disciplinar", "poder regulamentar", "uso e abuso do poder", "poder discricionário", "polícia administrativa"]}
+            {
+              "nome": "Poderes administrativos",
+              "ancoras": [
+                "poder de polícia",
+                "poder hierárquico",
+                "poder disciplinar",
+                "poder regulamentar",
+                "uso e abuso do poder",
+                "poder discricionário",
+                "polícia administrativa"
+              ]
+            }
           ]
         },
         {
           "topico": "Agentes públicos",
           "subtopicos": [
-            {"nome": "Regime dos servidores (Lei 8.112/1990)", "ancoras": ["lei nº 8.112", "lei 8.112", "servidor público", "cargo público", "provimento", "vacância", "estágio probatório", "estabilidade"]},
-            {"nome": "Regime disciplinar e PAD", "ancoras": ["regime disciplinar", "processo administrativo disciplinar", "PAD", "penalidade disciplinar", "demissão", "suspensão", "advertência"]}
+            {
+              "nome": "Regime dos servidores (Lei 8.112/1990)",
+              "ancoras": [
+                "lei nº 8.112",
+                "lei 8.112",
+                "servidor público",
+                "cargo público",
+                "provimento",
+                "vacância",
+                "estágio probatório",
+                "estabilidade"
+              ]
+            },
+            {
+              "nome": "Regime disciplinar e PAD",
+              "ancoras": [
+                "regime disciplinar",
+                "processo administrativo disciplinar",
+                "PAD",
+                "penalidade disciplinar",
+                "demissão",
+                "suspensão",
+                "advertência"
+              ]
+            }
           ]
         },
         {
           "topico": "Licitações e contratos",
           "subtopicos": [
-            {"nome": "Licitações e contratos administrativos", "ancoras": ["licitação", "lei nº 8.666", "lei 8.666", "lei nº 14.133", "pregão", "dispensa de licitação", "inexigibilidade", "contrato administrativo", "modalidades de licitação"]}
+            {
+              "nome": "Licitações e contratos administrativos",
+              "ancoras": [
+                "licitação",
+                "lei nº 8.666",
+                "lei 8.666",
+                "lei nº 14.133",
+                "pregão",
+                "dispensa de licitação",
+                "inexigibilidade",
+                "contrato administrativo",
+                "modalidades de licitação"
+              ]
+            }
           ]
         },
         {
           "topico": "Serviços públicos",
           "subtopicos": [
-            {"nome": "Serviços públicos", "ancoras": ["serviço público", "concessão de serviço", "permissão de serviço", "autorização de serviço", "delegação de serviço"]}
+            {
+              "nome": "Serviços públicos",
+              "ancoras": [
+                "serviço público",
+                "concessão de serviço",
+                "permissão de serviço",
+                "autorização de serviço",
+                "delegação de serviço"
+              ]
+            }
           ]
         },
         {
           "topico": "Controle da administração pública",
           "subtopicos": [
-            {"nome": "Controle da administração", "ancoras": ["controle da administração", "controle interno", "controle externo", "tribunal de contas", "controle judicial", "controle legislativo"]}
+            {
+              "nome": "Controle da administração",
+              "ancoras": [
+                "controle da administração",
+                "controle interno",
+                "controle externo",
+                "tribunal de contas",
+                "controle judicial",
+                "controle legislativo"
+              ]
+            }
           ]
         },
         {
           "topico": "Responsabilidade civil do Estado",
           "subtopicos": [
-            {"nome": "Responsabilidade civil do Estado", "ancoras": ["responsabilidade civil do estado", "responsabilidade objetiva", "responsabilidade do estado", "dano causado por agente", "ato comissivo", "responsabilidade por omissão"]}
+            {
+              "nome": "Responsabilidade civil do Estado",
+              "ancoras": [
+                "responsabilidade civil do estado",
+                "responsabilidade objetiva",
+                "responsabilidade do estado",
+                "dano causado por agente",
+                "ato comissivo",
+                "responsabilidade por omissão"
+              ]
+            }
           ]
         },
         {
           "topico": "Improbidade administrativa",
           "subtopicos": [
-            {"nome": "Improbidade administrativa (Lei 8.429/1992)", "ancoras": ["improbidade administrativa", "lei nº 8.429", "lei 8.429", "enriquecimento ilícito", "ato de improbidade"]}
+            {
+              "nome": "Improbidade administrativa (Lei 8.429/1992)",
+              "ancoras": [
+                "improbidade administrativa",
+                "lei nº 8.429",
+                "lei 8.429",
+                "enriquecimento ilícito",
+                "ato de improbidade"
+              ]
+            }
           ]
         }
       ]
@@ -131,62 +425,196 @@
         {
           "topico": "Princípios e aplicação da lei penal",
           "subtopicos": [
-            {"nome": "Aplicação da lei penal", "ancoras": ["princípio da legalidade", "anterioridade da lei penal", "lei penal no tempo", "lei penal no espaço", "tempo do crime", "lugar do crime", "territorialidade", "extraterritorialidade", "retroatividade da lei penal"]}
+            {
+              "nome": "Aplicação da lei penal",
+              "ancoras": [
+                "princípio da legalidade",
+                "anterioridade da lei penal",
+                "lei penal no tempo",
+                "lei penal no espaço",
+                "tempo do crime",
+                "lugar do crime",
+                "territorialidade",
+                "extraterritorialidade",
+                "retroatividade da lei penal"
+              ]
+            }
           ]
         },
         {
           "topico": "Teoria do crime — fato típico",
           "subtopicos": [
-            {"nome": "Tipicidade, dolo, culpa e erro de tipo", "ancoras": ["fato típico", "crime doloso", "crime culposo", "dolo", "culpa", "erro de tipo", "nexo causal", "conduta"]},
-            {"nome": "Consumação, tentativa e crime impossível", "ancoras": ["crime consumado", "crime tentado", "tentativa", "crime impossível", "desistência voluntária", "arrependimento eficaz", "arrependimento posterior"]}
+            {
+              "nome": "Tipicidade, dolo, culpa e erro de tipo",
+              "ancoras": [
+                "fato típico",
+                "crime doloso",
+                "crime culposo",
+                "dolo",
+                "culpa",
+                "erro de tipo",
+                "nexo causal",
+                "conduta"
+              ]
+            },
+            {
+              "nome": "Consumação, tentativa e crime impossível",
+              "ancoras": [
+                "crime consumado",
+                "crime tentado",
+                "tentativa",
+                "crime impossível",
+                "desistência voluntária",
+                "arrependimento eficaz",
+                "arrependimento posterior"
+              ]
+            }
           ]
         },
         {
           "topico": "Ilicitude",
           "subtopicos": [
-            {"nome": "Causas de exclusão da ilicitude", "ancoras": ["ilicitude", "antijuridicidade", "legítima defesa", "estado de necessidade", "estrito cumprimento do dever legal", "exercício regular de direito", "excesso punível", "excludente de ilicitude"]}
+            {
+              "nome": "Causas de exclusão da ilicitude",
+              "ancoras": [
+                "ilicitude",
+                "antijuridicidade",
+                "legítima defesa",
+                "estado de necessidade",
+                "estrito cumprimento do dever legal",
+                "exercício regular de direito",
+                "excesso punível",
+                "excludente de ilicitude"
+              ]
+            }
           ]
         },
         {
           "topico": "Culpabilidade",
           "subtopicos": [
-            {"nome": "Culpabilidade e imputabilidade", "ancoras": ["culpabilidade", "imputabilidade", "inimputável", "erro de proibição", "coação irresistível", "exclusão da culpabilidade", "potencial consciência da ilicitude"]}
+            {
+              "nome": "Culpabilidade e imputabilidade",
+              "ancoras": [
+                "culpabilidade",
+                "imputabilidade",
+                "inimputável",
+                "erro de proibição",
+                "coação irresistível",
+                "exclusão da culpabilidade",
+                "potencial consciência da ilicitude"
+              ]
+            }
           ]
         },
         {
           "topico": "Punibilidade",
           "subtopicos": [
-            {"nome": "Extinção da punibilidade", "ancoras": ["extinção da punibilidade", "prescrição", "decadência", "perempção", "punibilidade", "anistia", "graça", "indulto"]}
+            {
+              "nome": "Extinção da punibilidade",
+              "ancoras": [
+                "extinção da punibilidade",
+                "prescrição",
+                "decadência",
+                "perempção",
+                "punibilidade",
+                "anistia",
+                "graça",
+                "indulto"
+              ]
+            }
           ]
         },
         {
           "topico": "Crimes contra a pessoa",
           "subtopicos": [
-            {"nome": "Crimes contra a pessoa", "ancoras": ["crimes contra a pessoa", "homicídio", "art. 121", "lesão corporal", "art. 129", "ameaça", "sequestro", "cárcere privado", "calúnia", "difamação", "injúria"]}
+            {
+              "nome": "Crimes contra a pessoa",
+              "ancoras": [
+                "crimes contra a pessoa",
+                "homicídio",
+                "art. 121",
+                "lesão corporal",
+                "art. 129",
+                "ameaça",
+                "sequestro",
+                "cárcere privado",
+                "calúnia",
+                "difamação",
+                "injúria"
+              ]
+            }
           ]
         },
         {
           "topico": "Crimes contra o patrimônio",
           "subtopicos": [
-            {"nome": "Crimes contra o patrimônio", "ancoras": ["crimes contra o patrimônio", "furto", "art. 155", "roubo", "art. 157", "extorsão", "estelionato", "art. 171", "apropriação indébita", "receptação"]}
+            {
+              "nome": "Crimes contra o patrimônio",
+              "ancoras": [
+                "crimes contra o patrimônio",
+                "furto",
+                "art. 155",
+                "roubo",
+                "art. 157",
+                "extorsão",
+                "estelionato",
+                "art. 171",
+                "apropriação indébita",
+                "receptação"
+              ]
+            }
           ]
         },
         {
           "topico": "Crimes contra a fé pública",
           "subtopicos": [
-            {"nome": "Crimes contra a fé pública", "ancoras": ["crimes contra a fé pública", "moeda falsa", "falsificação de documento", "documento falso", "falsidade ideológica", "art. 297", "art. 299"]}
+            {
+              "nome": "Crimes contra a fé pública",
+              "ancoras": [
+                "crimes contra a fé pública",
+                "moeda falsa",
+                "falsificação de documento",
+                "documento falso",
+                "falsidade ideológica",
+                "art. 297",
+                "art. 299"
+              ]
+            }
           ]
         },
         {
           "topico": "Crimes contra a Administração Pública",
           "subtopicos": [
-            {"nome": "Crimes contra a Administração Pública", "ancoras": ["crimes contra a administração pública", "peculato", "art. 312", "concussão", "corrupção passiva", "corrupção ativa", "art. 317", "art. 333", "prevaricação", "advocacia administrativa"]}
+            {
+              "nome": "Crimes contra a Administração Pública",
+              "ancoras": [
+                "crimes contra a administração pública",
+                "peculato",
+                "art. 312",
+                "concussão",
+                "corrupção passiva",
+                "corrupção ativa",
+                "art. 317",
+                "art. 333",
+                "prevaricação",
+                "advocacia administrativa"
+              ]
+            }
           ]
         },
         {
           "topico": "Outros crimes em espécie",
           "subtopicos": [
-            {"nome": "Crimes contra a dignidade sexual e a incolumidade pública", "ancoras": ["dignidade sexual", "estupro", "crimes contra a incolumidade pública", "incêndio", "tráfico de drogas na modalidade"]}
+            {
+              "nome": "Crimes contra a dignidade sexual e a incolumidade pública",
+              "ancoras": [
+                "dignidade sexual",
+                "estupro",
+                "crimes contra a incolumidade pública",
+                "incêndio",
+                "tráfico de drogas na modalidade"
+              ]
+            }
           ]
         }
       ]

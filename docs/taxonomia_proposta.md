@@ -1,8 +1,10 @@
-# Taxonomia proposta — disciplinas de Direito (Fase 2)
+# Taxonomia — disciplinas de Direito (Fase 2)
 
-> **Status: RASCUNHO PARA REVISÃO.** Nada abaixo será usado na classificação
-> enquanto você não aprovar. Marquei com ⚖️ os pontos que dependem de juízo
-> jurídico ou de decisão sua de escopo.
+> **Status: APROVADA pelo usuário em 2026-07-04**, com os defaults recomendados
+> nas decisões D1-D4: (D1) Penal e Processual Penal separados; (D2) Legislação
+> Penal Especial como disciplina própria; (D3) classificação fina só nas 3
+> disciplinas-piloto; (D4) controle de constitucionalidade mantido, marcado raro.
+> Os ⚖️ abaixo ficam como registro histórico dos pontos que exigiram decisão.
 
 ## Por que uma taxonomia *consolidada* (e não uma por edital)
 
