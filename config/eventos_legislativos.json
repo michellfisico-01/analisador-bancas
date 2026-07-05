@@ -1,0 +1,42 @@
+{
+  "descricao": "Curadoria MANUAL de mudanças legislativas relevantes por tópico. Cada evento eleva a probabilidade prevista dos tópicos afetados em concursos posteriores ao ano do evento (o efeito decai com o tempo). Campo revisado=false indica entrada sugerida pela ferramenta e AINDA NÃO CONFERIDA PELO USUÁRIO — o modelo aplica mesmo assim, mas o relatório marca com (*).",
+  "eventos": [
+    {
+      "nome": "Pacote Anticrime (Lei 13.964/2019)",
+      "ano": 2019,
+      "intensidade": 1.0,
+      "topicos_afetados": [
+        "Direito Penal > Princípios e aplicação da lei penal",
+        "Direito Penal > Punibilidade"
+      ],
+      "revisado": false
+    },
+    {
+      "nome": "Lei de Abuso de Autoridade (Lei 13.869/2019)",
+      "ano": 2019,
+      "intensidade": 1.0,
+      "topicos_afetados": [
+        "Direito Penal > Crimes contra a Administração Pública"
+      ],
+      "revisado": false
+    },
+    {
+      "nome": "Nova Lei de Licitações (Lei 14.133/2021)",
+      "ano": 2021,
+      "intensidade": 1.0,
+      "topicos_afetados": [
+        "Direito Administrativo > Licitações e contratos"
+      ],
+      "revisado": false
+    },
+    {
+      "nome": "Reforma da Lei de Improbidade (Lei 14.230/2021)",
+      "ano": 2021,
+      "intensidade": 1.0,
+      "topicos_afetados": [
+        "Direito Administrativo > Improbidade administrativa"
+      ],
+      "revisado": false
+    }
+  ]
+}

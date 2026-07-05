@@ -63,10 +63,13 @@ carreiras jurídicas de entrada.
   por tópico; Camada 3 (opcional, só se métricas insuficientes) = embeddings
   locais sentence-transformers em CPU. Registrar confiança e origem de cada
   rótulo; fluxo de revisão manual realimenta o treino (active learning simples).
-- **Fase 3** — Estatística descritiva, análise do estilo CEBRASPE (proporção certo/errado
-  por tópico, padrões de pegadinha), modelo preditivo simples e interpretável (frequência
-  ponderada por recência + suavização bayesiana; SEM redes neurais), sinal de mudanças
-  legislativas (curadoria manual no início). Saída: ranking com incerteza.
+- **Fase 3** — ✅ núcleo concluído em 2026-07-05 — Estatística descritiva
+  (`relatorios/analise_descritiva.md` + figuras), estilo CEBRASPE (proporção
+  certo/errado por disciplina e tópico), modelo preditivo interpretável
+  (frequência ponderada por recência + Dirichlet; `relatorios/ranking_preditivo.md`),
+  sinal legislativo com curadoria manual (`config/eventos_legislativos.json`).
+  Pendências da fase: usuário revisar os eventos legislativos sugeridos
+  (marcados com `revisado: false`) e análise qualitativa de "pegadinhas".
 - **Fase 4** — Gerador de plano de estudos (ciclos de estudo), exportação Markdown e PDF.
 - **Fase 5** — Dashboard web local (Streamlit vs React: decisão do usuário), só após
   fases anteriores validadas.
@@ -122,9 +125,24 @@ carreiras jurídicas de entrada.
   Várias classes de tópico têm < 4 exemplos e ficaram fora do treino.
 - Fluxo de revisão manual pronto: `python -m src.classificacao.revisao`
   (cada correção realimenta o treino da Camada 2 — retreinar depois).
-- Pendente de decisão do usuário: estratégia para os 203 itens sem disciplina
-  (revisão manual rápida vs Camada 3 embeddings vs inferência pela ordem do
-  edital).
+- Inferência pela ordem do edital IMPLEMENTADA e RODADA
+  (`python -m src.classificacao.ordem_edital`): cobertura de disciplina em
+  987/1072 (92%); 85 itens seguem NULL na fila de revisão.
+- Ordem de reprocessamento completo: disciplinas -> ordem_edital -> regras ->
+  modelo -> descritiva/preditivo/comparativo.
+
+## Decisões do modelo preditivo (Fase 3, 2026-07-05)
+
+- **Recência**: peso = 0.5^(anos/5) — meia-vida de 5 anos (perfil de banca
+  muda devagar; 2013 ainda informa, mas vale 1/3 de 2021).
+- **Suavização**: Dirichlet com prior de Jeffreys (alpha=0.5 por tópico do
+  edital) — tópico que nunca caiu (ex.: controle de constitucionalidade)
+  mantém probabilidade pequena mas não-nula.
+- **Incerteza**: IC de credibilidade 90% pela marginal Beta do posterior.
+- **Sinal legislativo**: pseudo-contagens com decaimento 0.5^(anos/2);
+  entradas não revisadas pelo usuário aparecem com (*) no relatório.
+- **Rótulo efetivo** (precedência): manual > regras conf>=0.75 > modelo >
+  regras conf<0.75 (implementado em `src/analise/base.py`).
 
 ## Limitações conhecidas (Fase 1)
 
