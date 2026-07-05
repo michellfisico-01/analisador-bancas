@@ -91,24 +91,40 @@ def montar_schema(disciplinas_validas: list[str]) -> dict:
     }
 
 
-def itens_pendentes(con, limite: int | None, refazer: bool) -> list[tuple]:
+# Escopo 'pendentes': só o que precisa de LLM — itens sem disciplina
+# estrutural + itens das disciplinas jurídicas (que precisam do nível fino).
+# Escopo 'tudo': todos os itens (validação completa do mapeamento, ~2x custo).
+FILTRO_PENDENTES = (
+    "(i.disciplina IS NULL OR i.disciplina IN ("
+    "'Direito Constitucional', 'Direito Administrativo', 'Direito Penal', "
+    "'Direito Processual Penal', 'Legislação Penal Especial'))"
+)
+
+
+def itens_pendentes(con, limite: int | None, refazer: bool,
+                    escopo: str = "pendentes") -> list[tuple]:
     """Itens a classificar (sem classificação LLM, salvo --refazer)."""
+    condicoes = []
+    if not refazer:
+        condicoes.append(
+            "i.id NOT IN (SELECT item_id FROM classificacoes WHERE metodo = 'llm')"
+        )
+    if escopo == "pendentes":
+        condicoes.append(FILTRO_PENDENTES)
     sql = (
         "SELECT i.id, i.texto, COALESCE(m.texto, '') "
         "FROM itens i LEFT JOIN textos_motivadores m ON m.id = i.texto_motivador_id "
     )
-    if not refazer:
-        sql += (
-            "WHERE i.id NOT IN "
-            "(SELECT item_id FROM classificacoes WHERE metodo = 'llm') "
-        )
+    if condicoes:
+        sql += "WHERE " + " AND ".join(condicoes) + " "
     sql += "ORDER BY i.id"
     if limite:
         sql += f" LIMIT {int(limite)}"
     return con.execute(sql).fetchall()
 
 
-def classificar_lote(modelo: str, limite: int | None, refazer: bool) -> int:
+def classificar_lote(modelo: str, limite: int | None, refazer: bool,
+                     escopo: str = "pendentes") -> int:
     """Classifica os itens pendentes via API. Devolve o total processado."""
     import anthropic  # import tardio: módulo utilizável sem SDK para testes
 
@@ -128,7 +144,7 @@ def classificar_lote(modelo: str, limite: int | None, refazer: bool) -> int:
     system_prompt, disciplinas_validas = montar_system_prompt()
     schema = montar_schema(disciplinas_validas)
     con = conectar()
-    pendentes = itens_pendentes(con, limite, refazer)
+    pendentes = itens_pendentes(con, limite, refazer, escopo)
     if not pendentes:
         print("Nenhum item pendente de classificação LLM.")
         return 0
@@ -168,6 +184,11 @@ def classificar_lote(modelo: str, limite: int | None, refazer: bool) -> int:
             "subtopico=excluded.subtopico, confianca=excluded.confianca",
             (item_id, topico_completo, dados["subtopico"], dados["confianca"]),
         )
+        # o LLM também fecha os buracos do mapeamento estrutural de disciplina
+        con.execute(
+            "UPDATE itens SET disciplina = ? WHERE id = ? AND disciplina IS NULL",
+            (dados["disciplina"], item_id),
+        )
         con.commit()  # commit por item: execução é retomável se interrompida
         processados += 1
         if processados % 25 == 0:
@@ -183,8 +204,11 @@ def main() -> int:
                         help="classificar no máximo N itens nesta execução")
     parser.add_argument("--refazer", action="store_true",
                         help="reclassifica inclusive itens já classificados")
+    parser.add_argument("--escopo", choices=["pendentes", "tudo"], default="pendentes",
+                        help="pendentes = sem disciplina + disciplinas jurídicas "
+                             "(padrão, ~metade do custo); tudo = todos os itens")
     args = parser.parse_args()
-    classificar_lote(args.modelo, args.limite, args.refazer)
+    classificar_lote(args.modelo, args.limite, args.refazer, args.escopo)
     return 0
 
 
