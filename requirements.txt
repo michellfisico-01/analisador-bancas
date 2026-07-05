@@ -13,3 +13,5 @@ scipy>=1.14           # intervalos de credibilidade (distribuição Beta)
 tabulate>=0.9         # tabelas Markdown nos relatórios (pandas.to_markdown)
 # Fase 4 — gerador de plano de estudos
 reportlab>=4.0        # exportação do plano em PDF (puro Python, sem GTK)
+# Fase 5 — dashboard local (publicável no Streamlit Community Cloud, gratuito)
+streamlit>=1.37       # interface web local

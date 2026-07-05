@@ -77,8 +77,13 @@ carreiras jurídicas de entrada.
   tópicos improváveis sem bloco dedicado, alertas legislativos no plano.
   Exporta Markdown + PDF (reportlab) em `relatorios/planos/`. Escopo: só as
   3 disciplinas piloto (demais disciplinas do edital ficam para a Fase 6).
-- **Fase 5** — Dashboard web local (Streamlit vs React: decisão do usuário), só após
-  fases anteriores validadas.
+- **Fase 5** — ✅ concluída em 2026-07-05 (fases 2-4 validadas pelo usuário em
+  2026-07-05) — Dashboard Streamlit local: `streamlit run streamlit_app.py`.
+  Quatro abas: visão geral (métricas + estilo CEBRASPE), frequência de tópicos
+  (com cobertura declarada), ranking preditivo (barras com IC90) e gerador de
+  plano interativo com download em Markdown/PDF. Arquivo na raiz segue a
+  convenção do Streamlit Community Cloud para publicação gratuita futura.
+  Verificado no navegador: 4 abas renderizam sem erros de console.
 - **Fase 6** — Expansão: FGV, FCC, múltipla escolha, demais disciplinas.
 
 ## Decisões tomadas
