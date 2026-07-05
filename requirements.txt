@@ -3,3 +3,6 @@
 requests>=2.32        # download dos PDFs oficiais
 pdfplumber>=0.11      # extração de texto e tabelas dos PDFs
 pytest>=8.0           # testes das funções frágeis (extração)
+# Fase 2 — classificação via LLM
+anthropic>=0.69       # SDK oficial da API da Anthropic (classificador LLM)
+python-dotenv>=1.0    # carrega a chave da API de .env (nunca commitado)

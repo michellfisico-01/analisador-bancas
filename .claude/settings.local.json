@@ -41,7 +41,11 @@
       "PowerShell($s = \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\espia_edital.py\"; & \".venv\\\\Scripts\\\\python.exe\" $s pf_21 44 48 > \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\edital_pf21_objetos.txt\"; Get-Content \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\edital_pf21_objetos.txt\" -TotalCount 120)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\mapeia_cargos_edital.py\")",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.taxonomia)",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\mostra_taxonomia.py\" prf_21)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\mostra_taxonomia.py\" prf_21)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.regras)",
+      "Skill(claude-api)",
+      "Skill(claude-api:*)",
+      "PowerShell(uv pip install -r requirements.txt --python .venv 2>&1)"
     ]
   }
 }
