@@ -68,8 +68,12 @@ carreiras jurídicas de entrada.
   certo/errado por disciplina e tópico), modelo preditivo interpretável
   (frequência ponderada por recência + Dirichlet; `relatorios/ranking_preditivo.md`),
   sinal legislativo com curadoria manual (`config/eventos_legislativos.json`).
-  Pendências da fase: usuário revisar os eventos legislativos sugeridos
-  (marcados com `revisado: false`) e análise qualitativa de "pegadinhas".
+  Análise de "pegadinhas" concluída em 2026-07-05
+  (`python -m src.analise.pegadinhas` → `relatorios/pegadinhas.md`):
+  marcador "somente/apenas/exclusivamente" CONFIRMADO como sinal de ERRADO
+  (67% vs base 53%; 77% nas jurídicas); demais marcadores com amostra
+  pequena. Pendência restante da fase: usuário revisar os eventos
+  legislativos sugeridos (marcados com `revisado: false`).
 - **Fase 4** — ✅ concluída em 2026-07-05 — Gerador de plano de estudos
   (`python -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20`):
   ciclos semanais alternando disciplinas, horas ∝ peso da disciplina no órgão
