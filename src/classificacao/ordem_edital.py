@@ -83,7 +83,8 @@ def preencher(con) -> dict[str, int]:
     classes = list(modelo.classes_)
 
     provas = con.execute(
-        "SELECT p.id, c.slug FROM provas p JOIN concursos c ON c.id = p.concurso_id"
+        "SELECT p.id, c.slug FROM provas p JOIN concursos c ON c.id = p.concurso_id "
+        "WHERE c.banca = 'CEBRASPE'"  # FGV: disciplina vem do caderno, não da ordem
     ).fetchall()
 
     contagem = {"estrutural": 0, "modelo_restrito": 0, "sem_decisao": 0,

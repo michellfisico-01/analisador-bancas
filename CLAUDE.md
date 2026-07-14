@@ -111,9 +111,19 @@ carreiras jurídicas de entrada.
   divergência, ~90% com disciplina. Disciplinas canônicas novas: Direito
   Eleitoral, Direito Civil e Processual Civil, Administração, AFO.
   Rótulos de baixa confiança EXCLUÍDOS das análises (decisão do usuário,
-  2026-07-05). Próximo da 6b: FGV múltipla escolha (candidato: TRF1 2024,
-  provas em conhecimento.fgv.br) — exige parser novo. Pendências: revisão
-  manual (~187 itens sem disciplina + baixas confianças).
+  2026-07-05).
+  **FGV/múltipla escolha CONCLUÍDA em 2026-07-05**: TRF1 2024 (slug trf1_24,
+  fonte conhecimento.fgv.br) com Analista-Judiciária e Técnico-Administrativa,
+  provas Tipo 1 (80 questões cada). Parsers novos: `extracao/gabarito_fgv.py`
+  (seções por cargo+tipo, * = anulada) e `extracao/prova_fgv.py` (número
+  sozinho em negrito + seções de disciplina impressas no caderno). Nas
+  provas FGV a disciplina vem das seções do caderno (gravada na extração;
+  disciplinas.py e ordem_edital.py PULAM banca FGV); a seção "Conhecimentos
+  Específicos" agrupa o Direito e é resolvida por âncoras (`mapear_fgv`,
+  exige score >= 2). Dataset: **2.052 itens, 22 provas, 11 concursos,
+  2 bancas**, 22/22 sem divergência, ~90% com disciplina. Pendências:
+  revisão manual (~210 sem disciplina + baixas confianças); próximos
+  candidatos de expansão: mais tipos/cargos TRF1, TJs FGV, FCC.
 
 ## Decisões tomadas
 

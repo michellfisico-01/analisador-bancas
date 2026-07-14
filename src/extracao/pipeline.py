@@ -20,7 +20,22 @@ from src.coleta.download import carregar_manifesto, listar_documentos
 from src.config import DIR_RELATORIOS
 from src.db import conectar
 from src.extracao.gabarito import extrair_gabarito
+from src.extracao.gabarito_fgv import extrair_gabarito_fgv
 from src.extracao.prova import extrair_prova
+from src.extracao.prova_fgv import extrair_prova_fgv
+
+
+def _disciplina_da_secao(secao: str | None) -> str | None:
+    """Seção impressa no caderno FGV -> disciplina canônica (se inequívoca)."""
+    if not secao:
+        return None
+    from src.classificacao.disciplinas import MAPA_EDITAL_CANONICO
+
+    upper = secao.upper()
+    for chave, canonicas in MAPA_EDITAL_CANONICO:
+        if chave in upper:
+            return canonicas[0] if len(canonicas) == 1 else None
+    return None
 
 
 @dataclass
@@ -72,9 +87,13 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
     pdf_prova = arquivos[(slug, "prova", nome_cargo)][0]
     pdfs_gab = arquivos[(slug, "gabarito", nome_cargo)]
 
+    banca = concurso["banca"]
     gabarito: dict[int, str] = {}
     for pdf_gab in pdfs_gab:
-        parcial = extrair_gabarito(pdf_gab)
+        if banca == "FGV":
+            parcial = extrair_gabarito_fgv(pdf_gab, cargo["gabarito_secao"])
+        else:
+            parcial = extrair_gabarito(pdf_gab)
         duplicados = set(parcial) & set(gabarito)
         if duplicados:
             raise ValueError(
@@ -86,7 +105,26 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
     q.anulados = sum(1 for r in gabarito.values() if r == "X")
 
     numeros = sorted(gabarito)
-    resultado = extrair_prova(pdf_prova, numeros[0], numeros[-1])
+    disciplina_por_numero: dict[int, str | None] = {}
+    if banca == "FGV":
+        from src.extracao.prova import Bloco, ResultadoExtracao
+
+        fgv = extrair_prova_fgv(pdf_prova, numeros[0], numeros[-1])
+        blocos = []
+        for b in fgv.blocos:
+            rotulo = b.questoes[0].disciplina_caderno if b.questoes else None
+            blocos.append(Bloco(
+                motivador=b.motivador,
+                itens=[(qq.numero, qq.texto) for qq in b.questoes],
+                rotulo_bloco=rotulo,
+            ))
+            for qq in b.questoes:
+                disciplina_por_numero[qq.numero] = _disciplina_da_secao(
+                    qq.disciplina_caderno
+                )
+        resultado = ResultadoExtracao(blocos=blocos, avisos=fgv.avisos)
+    else:
+        resultado = extrair_prova(pdf_prova, numeros[0], numeros[-1])
     q.avisos = resultado.avisos
     q.blocos = len(resultado.blocos)
 
@@ -149,8 +187,9 @@ def processar_prova(con, concurso: dict, cargo: dict, arquivos) -> QualidadeProv
             status = "anulada" if resposta == "X" else "valida"
             cur.execute(
                 "INSERT INTO itens (prova_id, numero, texto, texto_motivador_id, "
-                "bloco, gabarito, status) VALUES (?,?,?,?,?,?,?)",
+                "bloco, disciplina, gabarito, status) VALUES (?,?,?,?,?,?,?,?)",
                 (prova_id, numero, texto, motivador_id, bloco.rotulo_bloco,
+                 disciplina_por_numero.get(numero),
                  None if resposta == "X" else resposta, status),
             )
             if motivador_id is None:

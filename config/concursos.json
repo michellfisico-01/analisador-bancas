@@ -298,6 +298,37 @@
           "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_020_01.PDF"
         }
       ]
+    },
+    {
+      "slug": "trf1_24",
+      "banca": "FGV",
+      "orgao": "TRF1",
+      "nome": "TRF1 2024 (8º concurso de servidores)",
+      "ano_prova": 2024,
+      "formato": "multipla_escolha",
+      "observacao": "Fase 6b: primeiro concurso FGV/multipla escolha do produto. Provas Tipo 1 (branca); gabarito definitivo unico v4 (retificado 13/11/2024) com secoes por cargo+tipo, * = anulada. Disciplinas de Portugues/RLM/etc vem das secoes impressas no caderno; a secao Conhecimentos Especificos agrupa o Direito e e resolvida por ancoras. Fonte: conhecimento.fgv.br (documentos publicos).",
+      "editais": [
+        {
+          "descricao": "Edital n. 1/2024 - Abertura",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital_1_2024-abertura-8o-concurso.pdf"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Analista Judiciário – Judiciária (TRF1)",
+          "itens_esperados": 80,
+          "prova_url": "https://conhecimento.fgv.br/sites/default/files/concursos/36.pdf",
+          "gabarito_definitivo_url": "https://conhecimento.fgv.br/sites/default/files/concursos/trf1_gabarito_definitivo_v4.pdf",
+          "gabarito_secao": "Analista Judiciário - Área Judiciária - TIPO 1"
+        },
+        {
+          "cargo": "Técnico Judiciário – Administrativa (TRF1)",
+          "itens_esperados": 80,
+          "prova_url": "https://conhecimento.fgv.br/sites/default/files/concursos/44.pdf",
+          "gabarito_definitivo_url": "https://conhecimento.fgv.br/sites/default/files/concursos/trf1_gabarito_definitivo_v4.pdf",
+          "gabarito_secao": "Técnico Judiciário - Área Administrativa - TIPO 1"
+        }
+      ]
     }
   ]
 }

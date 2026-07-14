@@ -179,6 +179,7 @@ MAPA_EDITAL_CANONICO: list[tuple[str, list[str]]] = [
     ("GESTÃO", ["Administração"]),
     ("AUDITORIA", ["Outros"]),
     ("SEGURANÇA JUDICIÁRIA", ["Outros"]),
+    ("SUSTENTABILIDADE", ["Outros"]),
     ("PDPJ", ["Informática"]),
     # expansão Fase 6a (PCDF/DEPEN/ABIN)
     ("INTELIG", ["Atividade de Inteligência"]),
@@ -262,11 +263,14 @@ def mapear(con) -> dict[str, int]:
        contíguas de itens).
     """
     alvos_todos = montar_alvos_disciplina()
+    # só CEBRASPE: nas provas FGV a disciplina vem impressa no caderno
+    # (seções), gravada na extração — a inferência aqui iria atropelá-la
     itens = con.execute(
         "SELECT i.id, i.prova_id, i.texto_motivador_id, i.numero, i.texto, "
         "COALESCE(m.texto,''), c.slug "
         "FROM itens i LEFT JOIN textos_motivadores m ON m.id = i.texto_motivador_id "
-        "JOIN provas p ON p.id = i.prova_id JOIN concursos c ON c.id = p.concurso_id"
+        "JOIN provas p ON p.id = i.prova_id JOIN concursos c ON c.id = p.concurso_id "
+        "WHERE c.banca = 'CEBRASPE'"
     ).fetchall()
 
     # âncoras filtradas por concurso: só disciplinas que existem naquele edital
@@ -380,13 +384,37 @@ def mapear(con) -> dict[str, int]:
     }
 
 
+def mapear_fgv(con) -> int:
+    """Itens FGV sem disciplina (seções "Conhecimentos Específicos" agrupam
+    todo o Direito): classificação item a item por âncoras, exigindo sinal
+    forte (score >= 2 — uma referência legal ou frase técnica basta)."""
+    alvos = montar_alvos_disciplina()
+    itens = con.execute(
+        "SELECT i.id, i.texto, COALESCE(m.texto,'') "
+        "FROM itens i LEFT JOIN textos_motivadores m ON m.id = i.texto_motivador_id "
+        "JOIN provas p ON p.id = i.prova_id JOIN concursos c ON c.id = p.concurso_id "
+        "WHERE c.banca = 'FGV' AND i.disciplina IS NULL"
+    ).fetchall()
+    atribuidos = 0
+    for item_id, texto, motivador in itens:
+        disc, score = classificar_item(f"{texto} {motivador}", alvos)
+        if disc and score >= 2.0:
+            con.execute("UPDATE itens SET disciplina = ? WHERE id = ?",
+                        (disc, item_id))
+            atribuidos += 1
+    con.commit()
+    return atribuidos
+
+
 def main() -> int:
     con = conectar()
     resumo = mapear(con)
-    print(f"Itens com disciplina: {resumo['atribuidos']}/{resumo['total']} "
+    print(f"Itens CEBRASPE com disciplina: {resumo['atribuidos']}/{resumo['total']} "
           f"({resumo['sem_disciplina']} sem sinal -> modelo local/revisão)")
     print(f"Votos individuais sobrescritos pelo bloco: {resumo['discordantes_no_bloco']}")
     print(f"Itens preenchidos por interpolação de vizinhança: {resumo['interpolados']}")
+    fgv = mapear_fgv(con)
+    print(f"Itens FGV (específicos) com disciplina via âncoras: {fgv}")
     print("\nDistribuição por disciplina:")
     for disc, n in con.execute(
         "SELECT COALESCE(disciplina, '(sem disciplina)'), COUNT(*) FROM itens "

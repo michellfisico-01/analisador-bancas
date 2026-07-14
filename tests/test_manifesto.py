@@ -5,7 +5,9 @@ import pytest
 
 from src.coleta.download import carregar_manifesto, listar_documentos
 
-HOSTS_PERMITIDOS = ("cdn.cebraspe.org.br", "www.cespe.unb.br")
+HOSTS_PERMITIDOS = (
+    "cdn.cebraspe.org.br", "www.cespe.unb.br", "conhecimento.fgv.br",
+)
 
 
 @pytest.fixture(scope="module")
@@ -56,5 +58,5 @@ def test_manifesto_cobre_concursos_esperados(manifesto):
         # expansão Fase 6a (CEBRASPE certo/errado)
         "pc_df_19_escrivao", "pc_df_20_agente", "depen_20", "abin_17",
         # expansão Fase 6b (tribunais)
-        "cpnuje_24",
+        "cpnuje_24", "trf1_24",
     }

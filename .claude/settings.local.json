@@ -89,7 +89,12 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.comparativo 2>&1)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_tse.py\")",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\tse_arquivos.py\")",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\tse_gabs.py\")"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\tse_gabs.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\fgv_links.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\fgv_estrutura.py\" 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\fgv_inspeciona.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\fgv_layout.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\fgv_teste.py\")"
     ]
   }
 }
