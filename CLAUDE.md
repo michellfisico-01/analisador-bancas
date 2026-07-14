@@ -97,9 +97,13 @@ carreiras jurídicas de entrada.
   do PCDF Agente é PDF escaneado — fora do banco até haver OCR local
   (tesseract, melhoria futura); (2) DEPEN Agente é cargo de NÍVEL MÉDIO
   (único do concurso) — exceção documentada ao recorte, mantida por ser
-  carreira policial federal alvo; (3) ABIN 2017 ADIADA até verificar peso de
-  Direito no programa. Pendente 6a: revisão manual dos ~114 itens sem
-  disciplina. FGV/FCC/múltipla escolha seguem futuras.
+  carreira policial federal alvo; (3) ABIN 2017/18 INCLUÍDA após verificação
+  (Direito Adm/Const/Penal nos conhecimentos gerais do cargo 1 — Oficial de
+  Inteligência; gerais 1-60 + específicos 61-150; cargos 2 e 3 fora).
+  Dataset final 6a: **1.532 itens, 14 provas, 9 concursos**, 14/14 sem
+  divergência, ~89% com disciplina. Disciplina canônica nova: Atividade de
+  Inteligência. Pendente 6a: revisão manual dos ~168 itens sem disciplina.
+  FGV/FCC/múltipla escolha seguem futuras.
 
 ## Decisões tomadas
 
@@ -185,9 +189,9 @@ carreiras jurídicas de entrada.
 
 ## Estado dos dados (atualizado na Fase 6a, 2026-07-05)
 
-- 37 PDFs oficiais em `data/raw/` (12 provas, 13 gabaritos definitivos, 8 editais).
-- `data/processed/bancas.db`: 8 concursos, 12 provas, **1.382 itens**,
-  ~92% com disciplina. Extração 12/12 provas ativas sem divergência vs
+- 42 PDFs oficiais em `data/raw/` (14 provas, 15 gabaritos definitivos, 9 editais).
+- `data/processed/bancas.db`: 9 concursos, 14 provas, **1.532 itens**,
+  ~89% com disciplina. Extração 14/14 provas ativas sem divergência vs
   gabarito definitivo (ver `relatorios/qualidade_extracao.md`).
 - Um caderno pode ter VÁRIOS gabaritos definitivos (campo
   `gabarito_definitivo_urls` no manifesto; o pipeline mescla e recusa

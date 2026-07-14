@@ -108,6 +108,12 @@ ANCORAS_GROSSO: dict[str, list[str]] = {
         "regimento interno", "departamento penitenciário nacional",
         "estatuto dos policiais civis", "carreira de polícia civil",
     ],
+    "Atividade de Inteligência": [
+        "atividade de inteligência", "sistema brasileiro de inteligência",
+        "sisbin", "lei nº 9.883", "contrainteligência", "agência brasileira de inteligência",
+        "política nacional de inteligência", "salvaguarda de informações",
+        "documentos sigilosos", "análise de inteligência",
+    ],
 }
 
 
@@ -137,11 +143,21 @@ MAPA_EDITAL_CANONICO: list[tuple[str, list[str]]] = [
     ("ESPANHOLA", ["Língua Estrangeira"]),
     ("DPRF", ["Outros"]),
     ("CIDADANIA", ["Direitos Humanos"]),
-    # expansão Fase 6a (PCDF/DEPEN)
+    # expansão Fase 6a (PCDF/DEPEN/ABIN)
+    ("INTELIG", ["Atividade de Inteligência"]),
     ("EXECUÇÃO PENAL", ["Execução Penal"]),
     ("PENITENCIÁRIO NACIONAL", ["Legislação Institucional"]),
     ("DISTRITO FEDERAL", ["Realidade do DF"]),
     ("ATUALIDADES", ["Atualidades"]),
+    # áreas de conhecimento fora do produto (ABIN CE etc.) -> Outros
+    ("DIREITO INTERNACIONAL", ["Outros"]),
+    ("HISTÓRIA", ["Outros"]),
+    ("GEOGRAFIA", ["Outros"]),
+    ("POLÍTICA E SEGURANÇA", ["Outros"]),
+    ("CIÊNCIA POLÍTICA", ["Outros"]),
+    ("CIÊNCIAS SOCIAIS", ["Outros"]),
+    ("RELAÇÕES INTERNACIONAIS", ["Outros"]),
+    ("REDES DE COMPUTADORES", ["Informática"]),
     # "LEGISLAÇÃO" genérica por último: só casa se nenhuma variante
     # específica (ESPECIAL, TRÂNSITO, DPRF...) tiver casado antes
     ("LEGISLAÇÃO", ["Legislação Institucional"]),

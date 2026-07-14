@@ -74,7 +74,19 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\inspeciona_novos.py\")",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\inspeciona_depen.py\")",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\mapeia_editais_novos.py\")",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20 2>&1)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\abin_edital.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\abin_gabs.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.taxonomia 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.extracao.pipeline 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.disciplinas 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.ordem_edital 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.regras 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.modelo 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.descritiva 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.preditivo 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.pegadinhas 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.comparativo 2>&1)"
     ]
   }
 }

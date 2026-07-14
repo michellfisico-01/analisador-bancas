@@ -80,6 +80,16 @@
       ],
       "inicio": "CONHECIMENTOS B.SICOS .PARA O CARGO 8",
       "fim": "CRONOGRAMA"
+    },
+    {
+      "slug": "abin_17",
+      "cargo_referencia": "Oficial de Inteligencia (cargo 1, area 1)",
+      "paginas": [
+        34,
+        44
+      ],
+      "inicio": "OBJETOS DE AVALIA",
+      "fim": "CARGO 2: OFICIAL"
     }
   ]
 }

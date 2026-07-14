@@ -1,0 +1,2122 @@
+{
+  "slug": "abin_17",
+  "cargo_referencia": "Oficial de Inteligencia (cargo 1, area 1)",
+  "disciplinas": {
+    "LÍNGUA PORTUGUESA": [
+      {
+        "numero": "1",
+        "titulo": "Compreensão e interpretação de textos de gêneros variados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Reconhecimento de tipos e gêneros textuais"
+      },
+      {
+        "numero": "3",
+        "titulo": "Domínio da ortografia oficial"
+      },
+      {
+        "numero": "4",
+        "titulo": "Domínio dos mecanismos de coesão textual",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Emprego de elementos de referenciação, substituição e repetição, de conectores e de outros elementos de sequenciação textual"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Emprego de tempos e modos verbais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Domínio da estrutura morfossintática do período",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Emprego das classes de palavras"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Relações de coordenação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Relações de subordinação entre orações e entre termos da oração"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Emprego dos sinais de pontuação"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Concordância verbal e nominal"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Regência verbal e nominal"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Emprego do sinal indicativo de crase"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Colocação dos pronomes átonos"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Reescrita de frases e parágrafos do texto",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Significação das palavras"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Substituição de palavras ou de trechos de texto"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Reorganização da estrutura de orações e de períodos do texto"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Reescrita de textos de diferentes gêneros e níveis de formalidade"
+          }
+        ]
+      }
+    ],
+    "ATIVIDADE DE INTELIGÊNCIA E LEGISLAÇÃO CORRELATA": [
+      {
+        "numero": "1",
+        "titulo": "Conceitos de Inteligência: escopo e categorias de Inteligência (Inteligência, Contrainteligência e operações de Inteligência); funções da atividade de Inteligência"
+      },
+      {
+        "numero": "2",
+        "titulo": "Decreto nº 8.793/2016 (Política Nacional de Inteligência): pressupostos da atividade de Inteligência; o Estado, a sociedade e a Inteligência; os ambientes internacional e nacional; instrumentos da atividade de Inteligência; principais ameaças; objetivos da Inteligência nacional e diretrizes de Inteligência"
+      },
+      {
+        "numero": "3",
+        "titulo": "Estratégia Nacional de Inteligência"
+      },
+      {
+        "numero": "4",
+        "titulo": "Controle da atividade de Inteligência: Inteligência, democracia e controle; o controle parlamentar da atividade de Inteligência; mecanismos não parlamentares de controle; o controle da atividade de Inteligência no Brasil"
+      },
+      {
+        "numero": "5",
+        "titulo": "Lei nº 9.883/1999 e suas alterações (institui o Sistema Brasileiro de Inteligência, cria a Agência Brasileira de Inteligência – ABIN e dá outras providências)",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Decreto nº 4.376/2002 e suas alterações (dispõe sobre a organização e o funcionamento do Sistema Brasileiro de Inteligência, instituído pela Lei nº 9.883/1999, e dá outras providências)"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Decreto nº 8.905/2016 (aprova a Estrutura Regimental e o Quadro Demonstrativo dos Cargos em Comissão e das Funções de Confiança da Agência Brasileira de Inteligência)"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Lei nº 11.776/2008 (dispõe sobre a estruturação do Plano de Carreiras e Cargos da Agência Brasileira de Inteligência – ABIN, cria as Carreiras de Oficial de Inteligência, Oficial Técnico de Inteligência, Agente de Inteligência e Agente Técnico de Inteligência e dá outras providências)"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Lei nº 12.527/2011 (Lei de Acesso à Informação)"
+          }
+        ]
+      }
+    ],
+    "DIREITO ADMINISTRATIVO": [
+      {
+        "numero": "1",
+        "titulo": "Introdução ao direito administrativo",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Os diferentes critérios adotados para a conceituação do direito administrativo"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Objeto do direito administrativo"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Fontes do direito administrativo"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Regime jurídico-administrativo: princípios do direito administrativo"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Princípios da administração pública"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Administração pública",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Conceito de administração pública sob os aspectos orgânico, formal e material"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Órgão público: conceito e classificação"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Servidor: cargo e funções"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Atribuições"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Competência administrativa: conceito e critérios de distribuição"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Avocação e delegação de competência"
+          },
+          {
+            "numero": "2.7",
+            "titulo": "Ausência de competência: agente de fato"
+          },
+          {
+            "numero": "2.8",
+            "titulo": "Administração direta e indireta"
+          },
+          {
+            "numero": "2.9",
+            "titulo": "Autarquias"
+          },
+          {
+            "numero": "2.10",
+            "titulo": "Fundações públicas"
+          },
+          {
+            "numero": "2.11",
+            "titulo": "Empresas públicas e privadas"
+          },
+          {
+            "numero": "2.12",
+            "titulo": "Sociedades de economia mista"
+          },
+          {
+            "numero": "2.13",
+            "titulo": "Entidades paraestatais"
+          },
+          {
+            "numero": "2.14",
+            "titulo": "Dispositivos pertinentes contidos na Constituição Federal de 1988"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Atos administrativos",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Conceitos, requisitos, elementos, pressupostos e classificação"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Fato e ato administrativo"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Atos administrativos em espécie"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Parecer: responsabilidade do emissor do parecer"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "O silêncio no direito administrativo"
+          },
+          {
+            "numero": "3.6",
+            "titulo": "Cassação"
+          },
+          {
+            "numero": "3.7",
+            "titulo": "Revogação e anulação"
+          },
+          {
+            "numero": "3.8",
+            "titulo": "Processo administrativo"
+          },
+          {
+            "numero": "3.9",
+            "titulo": "Lei nº 9.784/1999"
+          },
+          {
+            "numero": "3.10",
+            "titulo": "Fatos da administração pública: atos da administração pública e fatos administrativos"
+          },
+          {
+            "numero": "3.11",
+            "titulo": "Formação do ato administrativo: elementos, procedimento administrativo"
+          },
+          {
+            "numero": "3.12",
+            "titulo": "Validade, eficácia e autoexecutoriedade do ato administrativo"
+          },
+          {
+            "numero": "3.13",
+            "titulo": "Atos administrativos simples, complexos e compostos"
+          },
+          {
+            "numero": "3.14",
+            "titulo": "Atos administrativos unilaterais, bilaterais e multilaterais"
+          },
+          {
+            "numero": "3.15",
+            "titulo": "Atos administrativos gerais e individuais"
+          },
+          {
+            "numero": "3.16",
+            "titulo": "Atos administrativos vinculados e discricionários"
+          },
+          {
+            "numero": "3.17",
+            "titulo": "Mérito do ato administrativo, discricionariedade"
+          },
+          {
+            "numero": "3.18",
+            "titulo": "Ato administrativo inexistente"
+          },
+          {
+            "numero": "3.19",
+            "titulo": "Teoria das nulidades no direito administrativo"
+          },
+          {
+            "numero": "3.20",
+            "titulo": "Atos administrativos nulos e anuláveis"
+          },
+          {
+            "numero": "3.21",
+            "titulo": "Vícios do ato administrativo"
+          },
+          {
+            "numero": "3.22",
+            "titulo": "Teoria dos motivos determinantes"
+          },
+          {
+            "numero": "3.23",
+            "titulo": "Revogação, anulação e convalidação do ato administrativo"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Poderes da administração pública",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Hierarquia: poder hierárquico e suas manifestações"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Poder disciplinar"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Poder de polícia"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Polícia judiciária e polícia administrativa"
+          },
+          {
+            "numero": "4.5",
+            "titulo": "Liberdades públicas e poder de polícia"
+          },
+          {
+            "numero": "4.6",
+            "titulo": "Principais setores de atuação da polícia administrativa"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Controle da administração pública",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Conceito, tipos e formas de controle"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Controle interno e externo"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Controle parlamentar"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Controle pelos tribunais de contas"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Controle administrativo"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Recurso de administração"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Reclamação"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Lei nº 8.429/1992 e suas alterações (Lei de Improbidade Administrativa)"
+          },
+          {
+            "numero": "5.9",
+            "titulo": "Sistemas de controle jurisdicional da administração pública: contencioso administrativo e sistema da jurisdição una"
+          },
+          {
+            "numero": "5.10",
+            "titulo": "Controle jurisdicional da administração pública no direito brasileiro"
+          },
+          {
+            "numero": "5.11",
+            "titulo": "Controle da atividade financeira do Estado: espécies e sistemas"
+          },
+          {
+            "numero": "5.12",
+            "titulo": "Tribunal de Contas da União (TCU) e suas atribuições; entendimentos com caráter normativo exarados pelo TCU"
+          },
+          {
+            "numero": "5.13",
+            "titulo": "Sistema de correição do poder executivo federal"
+          },
+          {
+            "numero": "5.14",
+            "titulo": "Pedido de reconsideração e recurso hierárquico próprio e impróprio"
+          },
+          {
+            "numero": "5.15",
+            "titulo": "Prescrição administrativa"
+          },
+          {
+            "numero": "5.16",
+            "titulo": "Representação e reclamação administrativas"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Agentes públicos e servidores públicos",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Agentes públicos (servidor público e funcionário público)"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Natureza jurídica da relação de emprego público"
+          },
+          {
+            "numero": "6.3",
+            "titulo": "Preceitos constitucionais"
+          },
+          {
+            "numero": "6.4",
+            "titulo": "Servidor efetivo e vitalício: garantias"
+          },
+          {
+            "numero": "6.5",
+            "titulo": "Estágio probatório"
+          },
+          {
+            "numero": "6.6",
+            "titulo": "Servidor ocupante de cargo em comissão"
+          },
+          {
+            "numero": "6.7",
+            "titulo": "Direitos, deveres e responsabilidades dos servidores públicos civis"
+          },
+          {
+            "numero": "6.8",
+            "titulo": "Lei nº 8.112/1990 e suas alterações"
+          },
+          {
+            "numero": "6.10",
+            "titulo": "Regime disciplinar e processo administrativo-disciplinar"
+          },
+          {
+            "numero": "6.11",
+            "titulo": "Improbidade administrativa"
+          },
+          {
+            "numero": "6.12",
+            "titulo": "Lei nº 8.429/1992 e suas alterações (Lei de Improbidade Administrativa)"
+          },
+          {
+            "numero": "6.13",
+            "titulo": "Lei Complementar nº 101/2000 (Lei de Responsabilidade Fiscal)"
+          },
+          {
+            "numero": "6.14",
+            "titulo": "Formas de provimento e vacância dos cargos públicos"
+          },
+          {
+            "numero": "6.15",
+            "titulo": "Exigência constitucional de concurso público para investidura em cargo ou emprego público"
+          }
+        ]
+      },
+      {
+        "numero": "7",
+        "titulo": "Bens públicos",
+        "filhos": [
+          {
+            "numero": "7.1",
+            "titulo": "Requisição da propriedade privada"
+          },
+          {
+            "numero": "7.2",
+            "titulo": "Ocupação temporária"
+          }
+        ]
+      },
+      {
+        "numero": "8",
+        "titulo": "Responsabilidade civil do Estado",
+        "filhos": [
+          {
+            "numero": "8.1",
+            "titulo": "Responsabilidade patrimonial do Estado por atos da administração pública: evolução histórica e fundamentos jurídicos"
+          },
+          {
+            "numero": "8.2",
+            "titulo": "Teorias subjetivas e objetivas da responsabilidade patrimonial do Estado"
+          },
+          {
+            "numero": "8.3",
+            "titulo": "Responsabilidade patrimonial do Estado por atos da administração pública no direito brasileiro"
+          }
+        ]
+      },
+      {
+        "numero": "9",
+        "titulo": "Direito administrativo disciplinar",
+        "filhos": [
+          {
+            "numero": "9.1",
+            "titulo": "Fontes; princípios; ilícito de direito administrativo disciplinar; procedimentos disciplinares da administração pública"
+          },
+          {
+            "numero": "9.2",
+            "titulo": "Lei nº 8.112/1990 e suas alterações: regime disciplinar"
+          },
+          {
+            "numero": "9.3",
+            "titulo": "Lei nº 9.784/1999"
+          }
+        ]
+      },
+      {
+        "numero": "10",
+        "titulo": "Lei nº 12.846/2013 (Lei anticorrupção)"
+      }
+    ],
+    "DIREITO CONSTITUCIONAL": [
+      {
+        "numero": "1",
+        "titulo": "Princípios fundamentais da Constituição Federal de 1988"
+      },
+      {
+        "numero": "2",
+        "titulo": "Direitos e garantias fundamentais, nacionalidade, cidadania e direitos políticos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Organização do Estado: União e Administração Pública"
+      },
+      {
+        "numero": "4",
+        "titulo": "Poder Executivo"
+      },
+      {
+        "numero": "5",
+        "titulo": "Poder Legislativo"
+      },
+      {
+        "numero": "6",
+        "titulo": "O controle externo e os sistemas de controle interno"
+      },
+      {
+        "numero": "7",
+        "titulo": "Defesa do Estado e das instituições democráticas: estado de defesa, estado de sítio, Forças Armadas e segurança pública"
+      },
+      {
+        "numero": "8",
+        "titulo": "Ordem social: ciência e tecnologia; meio ambiente; e índios. LÍNGUA INGLESA E(OU) LÍNGUA ESPANHOLA (para o cargo/áreas de Oficial de Inteligência, serão exigidos conhecimentos de idioma em língua inglesa e em língua espanhola; para os cargos/áreas de Oficial Técnico de Inteligência e de Agente de Inteligência, serão exigidos conhecimentos de idioma em língua inglesa ou em língua espanhola): I LÍNGUA INGLESA. 1 Compreensão de texto escrito em língua inglesa. 2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos. II LÍNGUA ESPANHOLA. 1 Compreensão de texto escrito em língua espanhola. 2 Itens gramaticais relevantes para a compreensão dos conteúdos semânticos"
+      }
+    ],
+    "RACIOCÍNIO LÓGICO": [
+      {
+        "numero": "1",
+        "titulo": "Estruturas lógicas"
+      },
+      {
+        "numero": "2",
+        "titulo": "Lógica de argumentação: analogias, inferências, deduções e conclusões"
+      },
+      {
+        "numero": "3",
+        "titulo": "Lógica sentencial (ou proposicional)",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Proposições simples e compostas"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Tabelas- verdade"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Equivalências"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Leis de De Morgan"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Diagramas lógicos"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Lógica de primeira ordem"
+      },
+      {
+        "numero": "5",
+        "titulo": "Princípios de contagem e probabilidade"
+      },
+      {
+        "numero": "6",
+        "titulo": "Operações com conjuntos"
+      },
+      {
+        "numero": "7",
+        "titulo": "Raciocínio lógico envolvendo problemas aritméticos, geométricos e matriciais. 21.2.3 CONHECIMENTOS ESPECÍFICOS PARA O CARGO 1: OFICIAL DE INTELIGÊNCIA 21.2.3.1 ÁREA 1"
+      }
+    ],
+    "HISTÓRIA DO BRASIL": [
+      {
+        "numero": "1",
+        "titulo": "A formação do Brasil contemporâneo",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "A República Velha e as estruturas oligárquicas"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Economia e sociedade: o café e a estratificação social"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "A Revolução de 30"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "A Era Vargas: política, economia e sociedade"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "O período democrático (1945-1964)",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "A redemocratização do Estado e a Constituição de 46"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Ideologia e política partidária"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "A política de industrialização do governo JK"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "A crise do regime democrático"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "O regime militar e a redemocratização (1964 aos dias atuais)",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "A ruptura política do movimento de 64"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "A política econômica e social dos governos militares"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "A crise do regime militar e a redemocratização"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "O Brasil político",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Nação e território"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Organização do Estado Brasileiro"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "As constituições"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Os partidos políticos e as instituições"
+          }
+        ]
+      }
+    ],
+    "HISTÓRIA MUNDIAL": [
+      {
+        "numero": "1",
+        "titulo": "A sociedade liberal e o mundo contemporâneo (1870-1914)",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Consolidação do Capitalismo: a economia e a sociedade da Revolução Industrial"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "A expansão da sociedade capitalista: neocolonialismo e imperialismo"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Fundamentação e crítica do Estado liberal: as doutrinas sociais"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "As relações internacionais: o equilíbrio europeu e o sistema de alianças"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "A crise da sociedade liberal (1914- 1945)",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "A 1ª Guerra Mundial"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "O entre guerras"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Regimes totalitários: nazismo, fascismo e a revolução russa"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "A 2ª Guerra Mundial"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "O mundo contemporâneo e as sociedades atuais (pós-1945)",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Guerra Fria e descolonização"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Construção e crise do Socialismo: a URSS, a China e a Europa Oriental"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "A consolidação do Estado nacional: populismo e autoritarismo"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Políticas intervencionistas, crises e revoluções"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "As sociedades contemporâneas"
+          }
+        ]
+      }
+    ],
+    "GEOGRAFIA DO BRASIL": [
+      {
+        "numero": "1",
+        "titulo": "A integração do Brasil ao processo de internacionalização da economia"
+      },
+      {
+        "numero": "2",
+        "titulo": "A divisão inter-regional do trabalho e da produção"
+      },
+      {
+        "numero": "3",
+        "titulo": "O processo de industrialização e suas repercussões na organização do espaço"
+      },
+      {
+        "numero": "4",
+        "titulo": "A rede brasileira de transportes e sua evolução"
+      },
+      {
+        "numero": "5",
+        "titulo": "A estrutura urbana brasileira e as grandes metrópoles"
+      },
+      {
+        "numero": "6",
+        "titulo": "A dinâmica das fronteiras agrícolas e sua expansão para o Centro-Oeste e a Amazônia"
+      },
+      {
+        "numero": "7",
+        "titulo": "A evolução da estrutura fundiária e problemas demográficos no campo"
+      },
+      {
+        "numero": "8",
+        "titulo": "Estruturação e funcionamento do agronegócio no Brasil"
+      },
+      {
+        "numero": "9",
+        "titulo": "Estrutura fundiária, uso da terra e relações de produção no campo brasileiro"
+      },
+      {
+        "numero": "10",
+        "titulo": "Os movimentos migratórios internos"
+      },
+      {
+        "numero": "11",
+        "titulo": "A distribuição dos efetivos demográficos no território nacional"
+      },
+      {
+        "numero": "12",
+        "titulo": "A estrutura etária da população brasileira e a evolução de seu crescimento no século XX"
+      },
+      {
+        "numero": "13",
+        "titulo": "Integração entre indústria, estrutura urbana, rede de transportes e setor agrícola no Brasil"
+      },
+      {
+        "numero": "14",
+        "titulo": "Recursos naturais: aproveitamento, desperdício e políticas de conservação de recursos naturais"
+      },
+      {
+        "numero": "15",
+        "titulo": "O Brasil e a questão cultural"
+      }
+    ],
+    "GEOGRAFIA MUNDIAL": [
+      {
+        "numero": "1",
+        "titulo": "Globalização e fragmentação em relação à nova ordem mundial"
+      },
+      {
+        "numero": "2",
+        "titulo": "O estágio atual do capitalismo e a divisão internacional do trabalho"
+      },
+      {
+        "numero": "3",
+        "titulo": "Processo de desenvolvimento/subdesenvolvimento"
+      },
+      {
+        "numero": "4",
+        "titulo": "Caracterização geral dos sistemas político-econômicos contemporâneos e suas áreas de influência e disputa"
+      },
+      {
+        "numero": "5",
+        "titulo": "O papel das grandes organizações político-econômicas internacionais"
+      },
+      {
+        "numero": "6",
+        "titulo": "A formação dos grandes blocos econômicos"
+      },
+      {
+        "numero": "7",
+        "titulo": "A ação do Estado na economia e política contemporâneas"
+      },
+      {
+        "numero": "8",
+        "titulo": "As consequências da transformação do espaço socialista"
+      },
+      {
+        "numero": "9",
+        "titulo": "Os conflitos geopolíticos recentes"
+      },
+      {
+        "numero": "10",
+        "titulo": "Movimentos migratórios internacionais e crescimento demográfico"
+      },
+      {
+        "numero": "11",
+        "titulo": "A questão ecológica em nível mundial"
+      },
+      {
+        "numero": "12",
+        "titulo": "Estrutura e funcionamento do agronegócio internacional"
+      },
+      {
+        "numero": "13",
+        "titulo": "Matrizes energéticas"
+      },
+      {
+        "numero": "14",
+        "titulo": "Repercussões na geopolítica internacional"
+      }
+    ],
+    "POLÍTICA E SEGURANÇA": [
+      {
+        "numero": "1",
+        "titulo": "Relações internacionais: conceitos básicos, atores, processos, instituições e principais paradigmas teóricos"
+      },
+      {
+        "numero": "2",
+        "titulo": "Sistema mundial de poder",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "A bipolaridade da segunda metade do século XX e o cenário pós-Guerra Fria"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "A cultura de massas"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "O nacionalismo e a construção de identidades"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "A ordem mundial pós-11 de setembro"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "O Oriente Médio e seu impacto nas relações internacionais"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Conflitos étnico-religiosos contemporâneos"
+      },
+      {
+        "numero": "4",
+        "titulo": "A política externa brasileira",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Evolução desde 1945, principais vertentes e linhas de ação"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "A agenda internacional e o Brasil"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "O multilateralismo de dimensão universal: a ONU"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "As conferências internacionais"
+          },
+          {
+            "numero": "4.5",
+            "titulo": "Os órgãos multilaterais"
+          },
+          {
+            "numero": "4.6",
+            "titulo": "O Brasil e o sistema interamericano"
+          },
+          {
+            "numero": "4.7",
+            "titulo": "A dimensão da segurança na política exterior do Brasil"
+          },
+          {
+            "numero": "4.8",
+            "titulo": "O Brasil e as coalizões internacionais: o G-20, o IBAS e o BRICS"
+          },
+          {
+            "numero": "4.9",
+            "titulo": "O Brasil e a América do Sul"
+          },
+          {
+            "numero": "4.10",
+            "titulo": "Integração na América do Sul"
+          },
+          {
+            "numero": "4.11",
+            "titulo": "O Brasil e a cooperação sul-sul"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Comunidade dos Países de Língua Portuguesa"
+      },
+      {
+        "numero": "6",
+        "titulo": "Sistema financeiro internacional"
+      },
+      {
+        "numero": "7",
+        "titulo": "Desarmamento e não-proliferação"
+      },
+      {
+        "numero": "8",
+        "titulo": "Terrorismo"
+      },
+      {
+        "numero": "9",
+        "titulo": "Narcotráfico"
+      },
+      {
+        "numero": "10",
+        "titulo": "Espionagem",
+        "filhos": [
+          {
+            "numero": "10.1",
+            "titulo": "Espionagem comercial"
+          },
+          {
+            "numero": "10.2",
+            "titulo": "Espionagem industrial"
+          }
+        ]
+      },
+      {
+        "numero": "11",
+        "titulo": "Sabotagem"
+      },
+      {
+        "numero": "12",
+        "titulo": "Interferência externa"
+      },
+      {
+        "numero": "13",
+        "titulo": "Segurança cibernética"
+      },
+      {
+        "numero": "14",
+        "titulo": "Radicalização e extremismo",
+        "filhos": [
+          {
+            "numero": "14.1",
+            "titulo": "Processos de radicalização"
+          }
+        ]
+      },
+      {
+        "numero": "15",
+        "titulo": "Fatos históricos importantes do crime organizado no Brasil na Nova República"
+      },
+      {
+        "numero": "16",
+        "titulo": "Legislação específica",
+        "filhos": [
+          {
+            "numero": "16.1",
+            "titulo": "Lei nº 6.634/1979 (dispõe sobre a Faixa de Fronteira, altera o Decreto-lei nº 1.135/1970 e dá outras providências)"
+          },
+          {
+            "numero": "16.2",
+            "titulo": "Decreto nº 85.064/1980 (regulamenta a Lei nº 6.634/1979, que dispõe sobre a Faixa de Fronteira)"
+          },
+          {
+            "numero": "16.3",
+            "titulo": "Decreto nº 5.484/2005 (aprova a Política de Defesa Nacional e dá outras providências)"
+          },
+          {
+            "numero": "16.4",
+            "titulo": "Lei nº 13.445/2017 (Lei de Migração)"
+          }
+        ]
+      }
+    ],
+    "DIREITO INTERNACIONAL PÚBLICO": [
+      {
+        "numero": "1",
+        "titulo": "Direito internacional público: conceito, fontes e princípios. Comity, forum non conveniens"
+      },
+      {
+        "numero": "2",
+        "titulo": "Atos internacionais",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Tratados: validade; efeitos; ratificação; promulgação; registro, publicidade; vigência contemporânea e diferida; incorporação ao direito interno; violação; conflito entre tratado e norma de direito interno; extinção"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Convenções, acordos, ajustes e protocolos"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Convenção das Nações Unidas contra o crime organizado transnacional (Convenção de Palermo)"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Decreto nº 5.015/2004 (Convenção das Nações Unidas contra o Crime Organizado Transnacional)"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Decreto nº 5.017/2004 (protocolo adicional à convenção das Nações Unidas contra o crime organizado transnacional relativo à prevenção, repressão e punição do tráfico de pessoas, em especial mulheres e crianças)"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Decreto nº 5.687/2006 (Convenção das Nações Unidas contra a Corrupção; Convenção de Mérida)"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Estado",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Atos unilaterais do Estado"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Normas imperativas (jus cogens)"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Obrigações erga omnes"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Soft Law"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Responsabilidade internacional"
+          },
+          {
+            "numero": "3.6",
+            "titulo": "Soberania",
+            "filhos": [
+              {
+                "numero": "3.6.1",
+                "titulo": "Conceito de Huber na decisão arbitral no caso Holanda v. EUA de 1928"
+              }
+            ]
+          },
+          {
+            "numero": "3.7",
+            "titulo": "Intervenção e não intervenção",
+            "filhos": [
+              {
+                "numero": "3.7.1",
+                "titulo": "Decisão da Corte Internacional de Justiça no caso Nicarágua v. EUA de 1986"
+              },
+              {
+                "numero": "3.7.2",
+                "titulo": "Limites para atuação do Estado",
+                "filhos": [
+                  {
+                    "numero": "3.7.2.1",
+                    "titulo": "Caso Lotus, decidido pelo Tribunal Permanente de Justiça Internacional em 1927"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "numero": "3.8",
+            "titulo": "Imunidade à jurisdição estatal"
+          },
+          {
+            "numero": "3.9",
+            "titulo": "Jurisdição internacional e imunidade de jurisdição",
+            "filhos": [
+              {
+                "numero": "3.9.1",
+                "titulo": "Opiniões de Rezek e Guillaume separadas da decisão final no caso Arrest Warrant (Congo x Bélgica, 2000)"
+              }
+            ]
+          },
+          {
+            "numero": "3.10",
+            "titulo": "Abdução de estrangeiros",
+            "filhos": [
+              {
+                "numero": "3.10.1",
+                "titulo": "Casos relevantes na jurisprudência internacional: Eichmann, Verdugo-Urquidez sobre busca e apreensão extraterritorial (EUA) e Alvarez-Machain (EUA)"
+              }
+            ]
+          },
+          {
+            "numero": "3.11",
+            "titulo": "Consulados e embaixadas"
+          },
+          {
+            "numero": "3.12",
+            "titulo": "Diplomatas e cônsules: privilégios e imunidades"
+          },
+          {
+            "numero": "3.13",
+            "titulo": "Organizações internacionais: conceito; natureza jurídica; elementos caracterizadores; espécies"
+          },
+          {
+            "numero": "3.14",
+            "titulo": "População; nacionalidade; tratados multilaterais; estatuto da igualdade"
+          },
+          {
+            "numero": "3.15",
+            "titulo": "Estrangeiros: vistos; deportação, expulsão e extradição: fundamentos jurídicos; reciprocidade e controle jurisdicional"
+          },
+          {
+            "numero": "3.16",
+            "titulo": "Asilo político: conceito, natureza e disciplina"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Proteção internacional dos direitos humanos",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Declaração Universal dos Direitos Humanos"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Direitos civis, políticos, econômicos e culturais"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Mecanismos de implementação"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Direito Internacional dos Refugiados",
+            "filhos": [
+              {
+                "numero": "4.4.1",
+                "titulo": "Os dispositivos convencionais, legais e administrativos referentes ao refúgio"
+              },
+              {
+                "numero": "4.4.2",
+                "titulo": "Tipos de perseguição"
+              },
+              {
+                "numero": "4.4.3",
+                "titulo": "O papel dos órgãos internos e o controle judicial"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Conflitos internacionais",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Meios de solução: diplomáticos, políticos e jurisdicionais",
+            "filhos": [
+              {
+                "numero": "5.1.1",
+                "titulo": "Soluções pacíficas de controvérsias internacionais (Capítulo VI da Carta da ONU)"
+              },
+              {
+                "numero": "5.1.2",
+                "titulo": "Ação relativa a ameaças à paz, ruptura da paz e atos de agressão (Capítulo VII da Carta da ONU)"
+              }
+            ]
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Cortes internacionais"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Domínio público internacional: mar; águas interiores; mar territorial; zona contígua; zona econômica; plataforma continental; alto-mar; rios internacionais; espaço aéreo; normas convencionais; nacionalidade das aeronaves; espaço extra-atmosférico"
+      },
+      {
+        "numero": "7",
+        "titulo": "Convenções internacionais sobre terrorismo: Convenção Internacional sobre a Supressão de Atentados Terroristas com Bombas; Convenção Internacional para a Supressão do Financiamento do Terrorismo; Convenção Interamericana Contra o Terrorismo"
+      },
+      {
+        "numero": "8",
+        "titulo": "Resolução nº 1.373/2001 do Conselho de Segurança das Nações Unidas"
+      }
+    ],
+    "DIREITO PENAL": [
+      {
+        "numero": "1",
+        "titulo": "Princípios básicos do direito penal"
+      },
+      {
+        "numero": "2",
+        "titulo": "Direito penal e política criminal"
+      },
+      {
+        "numero": "3",
+        "titulo": "Parte Geral do Código Penal"
+      },
+      {
+        "numero": "4",
+        "titulo": "Parte Especial do Código Penal (Decreto-Lei nº 2.848/1940) e suas alterações",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Crimes contra a incolumidade pública"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Crimes contra a paz pública"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Crimes contra a fé pública"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Crimes contra a administração pública"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Leis Penais Especiais",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Lei nº 11.343/2006 (Tráfico ilícito e uso indevido de substâncias entorpecentes)"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Lei nº Lei 12.850/2014 (Crime organizado)"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Lei nº 9.613/1998 (Lavagem de dinheiro)"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Lei nº 4.898/1965 (Abuso de autoridade)"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Lei nº 10.826/2003 (Estatuto do desarmamento)"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "Lei nº 9.296/1996 (Interceptação telefônica)"
+          },
+          {
+            "numero": "5.7",
+            "titulo": "Lei nº 13.260/2016 (Crimes de Terrorismo)"
+          },
+          {
+            "numero": "5.8",
+            "titulo": "Lei nº 7.170/1983 (Crimes contra a segurança nacional). 21.2.3.2 ÁREA 2 1 MACROECONOMIA. 1.1 Contabilidade Nacional. 1.1.1 Conceitos de produto e renda nacional e suas formas de mensuração. 1.1.2 Produto nominal x produto real. 1.1.3 Produto e renda das empresas e das famílias. 1.1.4 Gastos e receitas do governo. 1.1.5 Balanço de pagamentos. 1.1.6 Contas Nacionais do Brasil. 1.1.7 Conceito de deflator implícito da renda. 1.1.8 Conceitos alternativos de déficit público. 1.1.9 As contas do sistema financeiro e o multiplicador bancário. 1.2 Política Monetária e Fiscal. 1.2.1 Funções da moeda. 1.2.2 Criação e distribuição de moeda pelos bancos comerciais. 1.2.3 Taxa de redesconto, reservas obrigatórias, gerências da dívida pública. 1.2.4 Demanda da moeda. 1.2.5 Papel do Banco Central. 1.2.6 Política monetária. 1.2.7 Mercado de crédito, mercado de capitais, instrumentos de cobertura de riscos, regulamentação e supervisão. 1.2.8 Sistema financeiro brasileiro. 1.2.9 Equivalência Ricardiana. 1.3 Modelo IS x LM x BP. 1.4 Oferta e demanda agregadas 1.4.1 Modelo de oferta e demanda agregada, inflação e desemprego. 1.4.2 A função demanda agregada. 1.4.3 As funções de oferta agregada de curto e longo prazo. 1.4.4 Efeitos da política monetária e fiscal no curto e longo prazo. 1.4.5 Choques de oferta. 1.4.6 Inflação e emprego. 1.4.7 Determinação do nível de preços. 1.4.8 Introdução às teorias da inflação. 1.5 Curva de Phillips. 1.5.1 Expectativas adaptativas e racionais. 1.5.2 Rigidez de preços e salários. 1.5.3 Teoria dos Ciclos Reais e Modelos Novos Keynesianos. 1.5.4 Equação de Fisher. 1.6 Teorias de crescimento econômico 1.6.1 Modelo de Solow. 1.6.2 Crescimento endógeno. 1.6.3 Decomposição (contabilidade) do crescimento. 1.6.4 Instituições e crescimento. 1.6.5 Capital humano. 1.6.6 Poupança, crescimento populacional, inovações tecnológicas e o crescimento econômico. 1.6.7 “A regra de ouro”. 1.7 Investimento e consumo. 1.7.1 Q de Tobin. 1.7.2 Teoria da Renda Permanente. 1.7.3 Ciclo de vida. 1.7.4 Restrição de Crédito. 1.7.5 Papel das expectativas. 1.7.6 O consumo e o investimento num modelo de escolha intertemporal. 1.7.7 A restrição orçamentária intertemporal das famílias. 1.7.8 A restrição orçamentária intertemporal do governo e a equivalência ricardiana. 1.7.9 A restrição orçamentária intertemporal de uma nação e o endividamento externo. 2 MICROECONOMIA. 2.1 Teoria do Consumidor. 2.1.1 Preferência e utilidade. 2.1.2 Maximização de utilidade e escolha. 2.1.3 Restrição orçamentária. 2.1.4 Equilíbrio do consumidor. 2.1.5 Efeito-preço, efeito- renda e efeito-substituição. 2.1.6 Escolha envolvendo risco. 2.1.7 Equação de Slutsky. 2.1.8 Elasticidade- preço, elasticidade-renda, elasticidades-preço cruzadas. 2.1.9 Elasticidades compensadas e não- compensadas. 2.1.10 Classificação de bens: normais, inferiores, bens de Giffen, substitutos, complementares. 2.1.11 Excedente do consumidor. 2.1.12 Demanda de mercado e receita total, média e marginal. 2.2 Teoria da Firma. 2.2.1 Fatores de produção. 2.2.2 Função de produção e suas propriedades. 2.2.3 Elasticidade de substituição. 2.2.4 Rendimentos de fator, rendimentos de escala. 2.2.5 Função de produção com proporções fixas e proporções variáveis. 2.2.6 Combinação ótima de fatores. 2.2.7 Função de custo; curto e longo prazo; custo fixo e variável. 2.2.8 Curva de Oferta da Firma e da Indústria de curto e longo prazos. 2.3 Mercados 2.3.1 Concorrência Perfeita. 2.3.2 Monopólio. 2.3.3 Concorrência Monopolística. 2.3.4 Oligopólio: Modelos Clássicos - Cournot, Bertrand e Edgeworth; fatias de mercado; cartéis; liderança de preços; comparação com o mercado de concorrência perfeita. Modelos de mark-up - Princípio do custo total; curva de demanda quebrada; concentração e barreiras à entrada; diferenciação e diversificação do produto. 2.4 Equilíbrio Geral. 2.4.1 Troca pura. 2.4.2 Troca com produção. 2.4.3 Caixa de Edgeworth. 2.5 Falhas de mercado. 2.5.1 Informação assimétrica: complexidade de contratos e informação assimétrica; Modelo de Principal Agente; Risco moral; seleção adversa; sinalização de mercado; leilões. 2.6 Externalidades e bens públicos. 2.6.1 Externalidades e alocação ineficiente. 2.6.2 Soluções para o problema de externalidades. 2.6.3 Bens públicos e alocação de recursos. 2.6.4 Preço de Lindahl para bens públicos. 2.6.5 Votação e alocação de recursos. 2.6.6 Modelo político simples. 2.6.7 Mecanismos de votação. 2.7 Incerteza. 2.7.1 Utilidade esperada. 2.7.2 Teorema de von Neumann-Morgenstern. 2.7.3 Aversão ao risco. 2.7.4 Métodos para redução da incerteza e do risco. 2.7.5 Seguro. 2.7.6 Diversificação. 2.7.7 Flexibilização. 2.7.8 Informação. 2.7.9 Assimetria de informações. 2.8 Teoria dos Jogos. 2.8.1 Equilíbrio de Nash. 2.8.2 Equilíbrio de Nash em Estratégias Mistas. 2.8.3 Jogo Repetido. 2.8.4 Equilíbrio Perfeito em Subjogos. 2.8.5 Informação incompleta. 2.8.6 Jogos bayesianos simultâneos. 2.8.7 Jogos com sinalização. 2.8.8 Jogos evolucionários e aprendizado. 3 ECONOMIA BRASILEIRA. 3.1 A economia brasileira do século XIX à crise de 1929. 3.1.1 O modelo agroexportador. 3.1.2 Políticas econômicas e crescimento industrial. 3.2 Industrialização brasileira e política econômica: 1930-1945. 3.2.1 Modelo de Industrialização por Substituição de Importações. 3.2.2 Plano SALTE. 3.3 O Pós-Guerra e a Nova Fase de Industrialização: a política econômica e o Plano de Metas. 3.4 O Período 1962-1967. 3.4.1 Reformas no sistema fiscal e financeiro. 3.4.2 O Plano Trienal de Desenvolvimento Econômico e Social. 3.4.3 Reformas do Programa de Ação Econômica do Governo (PAEG). 3.5 A Retomada do Crescimento 1968-1973. 3.5.1 Causas do \"Milagre Econômico”. 3.5.2 O Plano Nacional de Desenvolvimento (I PND). 3.5.3 Desaceleração econômica e o segundo Plano Nacional de Desenvolvimento (II PND). 3.6 A crise da década de 1980. 3.6.1 A interrupção do financiamento externo e as políticas de estabilização. 3.6.2 Aceleração inflacionária e os planos de combate à inflação. 3.7 Economia brasileira na década de 1990. 3.7.1 Abertura comercial e financeira: impactos sobre a indústria, a inflação e o balanço de pagamentos; desindustrialização e reprimarização da economia brasileira; a reforma do estado e as privatizações. 3.7.2 Plano Real. 3.8 Aceleração inflacionária e os planos de combate à inflação. 3.9 Abertura comercial e financeira: impactos sobre a indústria, a inflação e o balanço de pagamentos. 3.10 O Papel do Estado na economia brasileira no século XX e na atualidade. 3.11 O papel da agricultura no desenvolvimento econômico. 3.12 Desequilíbrios regionais. 3.13 Distribuição de renda e pobreza. 3.14 A reforma do estado e as privatizações. 3.15 Mercado de trabalho e emprego. 4 RELAÇÕES ECONÔMICAS INTERNACIONAIS. 4.1 Teorias de Comércio Internacional. 4.1.1 Teorias clássicas, Neoclássicas e contemporâneas do comércio internacional: teorias explicativas do comércio de bens industrializados; produtividade do trabalho e a teoria ricardiana das vantagens comparativas; o papel das dotações relativas de fatores de produção. 4.1.2 Modelo Heckscher-Ohlin. 4.1.3 Novas teorias. 4.1.4 Modelo Venon e Linder. 4.1.5 Vantagens comparativas e ganhos do comércio internacional. 4.1.6 Escola Cepalina. 4.1.7 Concorrência imperfeita e comércio internacional. 4.1.8 Concorrência monopolista e a determinação dos padrões de comércio internacional; o comércio intrafirma e intrassetorial e suas implicações para o comércio internacional. 4.2 Efeitos do comércio internacional. 4.2.1 Equilíbrio em economias abertas: efeitos do comércio e de políticas protecionistas sobre a distribuição de renda, crescimento e desenvolvimento econômico, economias de escala, desenvolvimento tecnológico, formação de capital e padrões de consumo. 4.3 O Sistema de Comércio Internacional. 4.3.1 Origem e evolução. 4.3.2 Rodadas de negociação do Acordo Geral de Tarifas e Comércio (GATT) e da Organização Mundial de Comércio (OMC). 4.3.3 Acordos regionais e os novos temas das negociações comerciais multilaterais. 4.3.4 O Brasil e as negociações comerciais internacionais. 4.4 Investimentos. 4.4.1 Acordos de investimentos e atração de investimentos diretos no país (IDP). 4.4.2 O ambiente de negócios e a atração de IDP. 4.4.3 A importância da internacionalização das empresas brasileiras para a economia do Brasil. 4.4.4 As agências e órgãos governamentais brasileiros de formulação, coordenação e implementação das políticas de comércio exterior. 4.5 História do Sistema Financeiro Internacional. 4.5.1 Padrão ouro. 4.5.2 Padrão dólar- ouro. 4.5.3 Sistema de Bretton Woods: instituições e funcionamento. 4.5.4 Mercados não regulados: euromoedas e “paraísos fiscais”; fim da conversibilidade do dólar. 4.5.5 Fundo Monetário Internacional (FMI). 4.5.6 Banco Internacional de Compensação (BIS). 4.5.7 Bancos regionais de desenvolvimento; Banco Interamericano de Desenvolvimento (BID). 4.5.8 Clube de Paris. 4.5.9 G-20 Financeiro. 4.5.10 Os Acordos de Basileia. 4.5.11 A nova Governança do Sistema Financeiro Internacional. 4.5.12 Globalização produtiva e financeira. 4.5.13 A evolução da mobilidade do capital e dos regimes cambiais. 4.5.14 O debate sobre a abertura financeira. 4.5.15 Os ciclos de liquidez e os países em desenvolvimento. 4.5.16 Temas contemporâneos em finanças internacionais. 5 ESTATÍSTICA E ECONOMETRIA. 5.1 Números-índices. 5.1.1 Índices de Laspeyres e de Paasche. 5.1.2 Propriedades ideais de um número índice. 5.1.3 Mudança de base e deflacionamento de dados. 5.2 Probabilidade. 5.2.1 Definição e propriedades. 5.2.2 Variáveis aleatórias discretas e contínuas. 5.2.3 Função de probabilidade e densidade de probabilidade. 5.2.4 Distribuição conjunta, distribuição marginais, independência estatística. 5.2.5 Esperança matemática e variância de uma variável aleatória. 5.2.6 Covariância e coeficiente de correlação. 5.2.7 Principais distribuições: Bernoulli, Binomial, Poisson, Geométrica, Hipergeométrica, Uniforme, Normal, Lognormal, Qui-quadrado, t e F. 5.2.8 Principais teoremas de probabilidade: Teorema de Tchebycheff. Lei dos grandes números. Teorema Central do Limite. 5.3 Inferência estatística. 5.3.1 Estimação por ponto e por intervalo. 5.3.2 Propriedades desejáveis dos estimadores em pequenas e grandes amostras. 5.3.3 Intervalo de confiança e teste de hipóteses. 5.3.4 Tipos de erro. 5.3.5 Nível de significância Intervalos de confiança e testes de hipóteses. 5.3.6 Análise de variância. 5.4 Econometria 5.4.1 Regressão linear simples. 5.4.2 Análise de variância da regressão. 5.4.3 Intervalo de previsão. 5.4.4 Regressão Linear Múltipla. 5.4.5 Variáveis Binárias. 5.4.6 Violação das Hipóteses. 5.4.7 Equações Simultâneas. 5.4.8 Séries Temporais: Estacionariedade, Processo Auto-Regressivo Média Móvel. 5.4.9 Raiz Unitária e Cointegração. 21.2.3.3 ÁREA 3"
+          }
+        ]
+      }
+    ],
+    "CIÊNCIA POLÍTICA": [
+      {
+        "numero": "1",
+        "titulo": "História do pensamento político ocidental",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Liberalismo: fundamentos, teoria, críticas e o individualismo metodológico"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Marxismo: fundamentos, teoria, método, categorias de análise e críticas"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Formas de Governo"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Formação dos Estados modernos e ascensão do nacionalismo"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Teoria Geral do Estado",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Sociedade e Estado"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Teorias sobre a origem do Estado e seus fins"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Organização do Estado, estrutura e funções"
+          },
+          {
+            "numero": "2.4",
+            "titulo": "Separação de poderes"
+          },
+          {
+            "numero": "2.5",
+            "titulo": "Formas de Estado (unitário, regional e federativo)"
+          },
+          {
+            "numero": "2.6",
+            "titulo": "Sistemas de governo (presidencialismo e parlamentarismo)"
+          },
+          {
+            "numero": "2.7",
+            "titulo": "Soberania como característica de Estado"
+          },
+          {
+            "numero": "2.8",
+            "titulo": "Sistemas eleitorais e partidos políticos"
+          },
+          {
+            "numero": "2.9",
+            "titulo": "Pluralismo/Poliarquia"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Teoria política",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Teoria das elites"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Teoria da ação social"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Poder, dominação e resistência"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Partidos, instituições políticas e sociedade civil"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Representação política"
+          },
+          {
+            "numero": "3.6",
+            "titulo": "Comportamento político"
+          },
+          {
+            "numero": "3.7",
+            "titulo": "Processo de tomada de decisões"
+          },
+          {
+            "numero": "3.8",
+            "titulo": "Consenso e opinião pública"
+          },
+          {
+            "numero": "3.9",
+            "titulo": "Cidadania, representatividade e inclusão"
+          },
+          {
+            "numero": "3.10",
+            "titulo": "Igualdade, liberdade e justiça"
+          },
+          {
+            "numero": "3.11",
+            "titulo": "Mídia e política"
+          },
+          {
+            "numero": "3.12",
+            "titulo": "Classe e estratificação social"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Regimes políticos",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Democracia e suas instituições"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Totalitarismo e suas origens"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "O novo nacionalismo (neonativismo) e o fundamentalismo contemporâneo"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Atores não estatais"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Evolução do Sistema Partidário Brasileiro",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "O período imperial"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "A primeira república"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Os partidos nos anos 30"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "A organização do pluripartidarismo e os partidos do pós-guerra (1945-1964)"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "O bipartidarismo (1966-1979)"
+          },
+          {
+            "numero": "5.6",
+            "titulo": "O novo pluripartidarismo (1985-dias atuais)"
+          }
+        ]
+      },
+      {
+        "numero": "6",
+        "titulo": "Governo e políticas públicas",
+        "filhos": [
+          {
+            "numero": "6.1",
+            "titulo": "Formulação, análise e avaliação de políticas públicas"
+          },
+          {
+            "numero": "6.2",
+            "titulo": "Lobby, Advocacy e grupos de pressão"
+          }
+        ]
+      }
+    ],
+    "CIÊNCIAS SOCIAIS": [
+      {
+        "numero": "1",
+        "titulo": "Teoria",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "Indivíduo e sociedade"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "Sociabilidade"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "Civilização"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Ordem social: estrutura, divisão do trabalho e grupos sociais"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "Ideologias e valores"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "O social e o simbólico"
+          },
+          {
+            "numero": "1.7",
+            "titulo": "Escola sociológica francesa e suas vertentes teóricas – teoria estruturalista e teoria estrutural-funcionalista"
+          },
+          {
+            "numero": "1.8",
+            "titulo": "Conceito de sociedade na antropologia britânica"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Modelos de explicação sociológica",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Explicação causal"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "Explicação racional-intencional"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Interpretação"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Sociologia política",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Perspectivas macro históricas"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "Estados Nacionais, formação e desafios contemporâneos"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Formação e práticas de atores não estatais e suas relações com os Estados Nacionais"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "Estruturação, organização e transformação do poder político e de práticas coletivas"
+          },
+          {
+            "numero": "3.5",
+            "titulo": "Regimes políticos e ordem social"
+          }
+        ]
+      },
+      {
+        "numero": "4",
+        "titulo": "Antropologia social e cultural",
+        "filhos": [
+          {
+            "numero": "4.1",
+            "titulo": "Categorias de pensamento, linguagem e sociedade"
+          },
+          {
+            "numero": "4.2",
+            "titulo": "Natureza e cultura"
+          },
+          {
+            "numero": "4.3",
+            "titulo": "Tabu"
+          },
+          {
+            "numero": "4.4",
+            "titulo": "Racionalidade e reciprocidade nas trocas sociais"
+          },
+          {
+            "numero": "4.5",
+            "titulo": "Antropologia cultural estadunidense: padrões culturais e personalidade"
+          },
+          {
+            "numero": "4.6",
+            "titulo": "Identidades: cultura e política"
+          }
+        ]
+      },
+      {
+        "numero": "5",
+        "titulo": "Estatística aplicada a Ciências Sociais: amostragem, média, moda, mediana, desvio padrão, erro",
+        "filhos": [
+          {
+            "numero": "5.1",
+            "titulo": "Interpretação de gráficos"
+          },
+          {
+            "numero": "5.2",
+            "titulo": "Probabilidade"
+          },
+          {
+            "numero": "5.3",
+            "titulo": "Inferência"
+          },
+          {
+            "numero": "5.4",
+            "titulo": "Estimativa"
+          },
+          {
+            "numero": "5.5",
+            "titulo": "Correlação, extrapolação e interpolação com variáveis de tempo ou espaço"
+          }
+        ]
+      }
+    ],
+    "RELAÇÕES INTERNACIONAIS": [
+      {
+        "numero": "1",
+        "titulo": "História das Relações Internacionais",
+        "filhos": [
+          {
+            "numero": "1.1",
+            "titulo": "O Congresso de Viena e as Relações Internacionais na Europa no século XIX"
+          },
+          {
+            "numero": "1.2",
+            "titulo": "O Sistema Bismarckiano, imperialismo e Colonialismo"
+          },
+          {
+            "numero": "1.3",
+            "titulo": "A Primeira Guerra Mundial"
+          },
+          {
+            "numero": "1.4",
+            "titulo": "Os 14 pontos de Wilson"
+          },
+          {
+            "numero": "1.5",
+            "titulo": "A Paz de Versalhes e a ordem mundial resultante (1919-1939)"
+          },
+          {
+            "numero": "1.6",
+            "titulo": "A Revolução Russa, o stalinismo e o impacto internacional do socialismo"
+          },
+          {
+            "numero": "1.7",
+            "titulo": "O Fascismo e o Nazismo"
+          },
+          {
+            "numero": "1.8",
+            "titulo": "A Segunda Guerra Mundial"
+          },
+          {
+            "numero": "1.9",
+            "titulo": "A organização das nações unidas"
+          },
+          {
+            "numero": "1.10",
+            "titulo": "Bipolarização e Guerra Fria"
+          },
+          {
+            "numero": "1.11",
+            "titulo": "Descolonização e Terceiro Mundo: conflitos pós-coloniais e problemas de desenvolvimento"
+          },
+          {
+            "numero": "1.12",
+            "titulo": "Globalização e fim do “socialismo real”"
+          },
+          {
+            "numero": "1.13",
+            "titulo": "O Mundo Pós-Guerra Fria – tendências do século XXI"
+          }
+        ]
+      },
+      {
+        "numero": "2",
+        "titulo": "Teoria das Relações Internacionais",
+        "filhos": [
+          {
+            "numero": "2.1",
+            "titulo": "Principais correntes teóricas e suas vertentes: realismo, neorrealismo, realismo estrutural, idealismo, neoliberalismo, pluralismo; globalismo, neomarxismo, estruturalismo"
+          },
+          {
+            "numero": "2.2",
+            "titulo": "A escola inglesa sua perspectiva sobre a ordem internacional"
+          },
+          {
+            "numero": "2.3",
+            "titulo": "Liberalismo, marxismo e relações internacionais"
+          }
+        ]
+      },
+      {
+        "numero": "3",
+        "titulo": "Política Externa",
+        "filhos": [
+          {
+            "numero": "3.1",
+            "titulo": "Teorias de Análise de política externa"
+          },
+          {
+            "numero": "3.2",
+            "titulo": "A construção da identidade internacional"
+          },
+          {
+            "numero": "3.3",
+            "titulo": "Instituições e processo decisório em política externa"
+          },
+          {
+            "numero": "3.4",
+            "titulo": "opinião pública e política externa. 21.2.3.4 ÁREA 4"
+          }
+        ]
+      }
+    ],
+    "REDES DE COMPUTADORES": [
+      {
+        "numero": "1",
+        "titulo": "Técnicas básicas de comunicação de dados"
+      },
+      {
+        "numero": "2",
+        "titulo": "Técnicas de comutação de circuitos, pacotes e células"
+      },
+      {
+        "numero": "3",
+        "titulo": "Topologias de redes de computadores"
+      },
+      {
+        "numero": "4",
+        "titulo": "Arquitetura e protocolos de redes de comunicação de dados"
+      },
+      {
+        "numero": "5",
+        "titulo": "Endereçamento e protocolos da família TCP/IP"
+      },
+      {
+        "numero": "6",
+        "titulo": "Modelo OSI"
+      },
+      {
+        "numero": "7",
+        "titulo": "Arquitetura cliente- servidor"
+      },
+      {
+        "numero": "8",
+        "titulo": "Tecnologias de rede local: Ethernet, Fast Ethernet, Gigabit Ethernet"
+      },
+      {
+        "numero": "9",
+        "titulo": "Redes sem fio: padrões 802.11, protocolos 802.1x, EAP, WEP, WPA, WPA2"
+      }
+    ],
+    "PREVENÇÃO E TRATAMENTO DE INCIDENTES": [
+      {
+        "numero": "1",
+        "titulo": "Procedimentos de resposta a incidentes"
+      },
+      {
+        "numero": "2",
+        "titulo": "Análise de logs e trilhas de auditoria"
+      },
+      {
+        "numero": "3",
+        "titulo": "Dispositivos de Segurança: firewall, IDS, IPS, antivírus, web application firewall, proxies, NAT, VPN e filtro de conteúdo web"
+      },
+      {
+        "numero": "4",
+        "titulo": "Pacotes de correção (patches) para aplicações e sistemas operacionais"
+      },
+      {
+        "numero": "5",
+        "titulo": "Gerenciamento de privilégios administrativos"
+      },
+      {
+        "numero": "6",
+        "titulo": "Contramedidas"
+      },
+      {
+        "numero": "7",
+        "titulo": "Arquitetura de segurança Zero Trust"
+      },
+      {
+        "numero": "8",
+        "titulo": "Honeypots"
+      },
+      {
+        "numero": "9",
+        "titulo": "Whitelisting e Blacklisting"
+      }
+    ],
+    "FUNDAMENTOS DE ANÁLISE FORENSE": [
+      {
+        "numero": "1",
+        "titulo": "Procedimentos de análise forense digital e cadeia de custódia"
+      },
+      {
+        "numero": "2",
+        "titulo": "Sistemas de arquivos"
+      },
+      {
+        "numero": "3",
+        "titulo": "Persistência de dados"
+      },
+      {
+        "numero": "4",
+        "titulo": "Aquisição, duplicação e preservação de dados"
+      },
+      {
+        "numero": "5",
+        "titulo": "Recuperação de dados apagados ou corrompidos"
+      },
+      {
+        "numero": "6",
+        "titulo": "Análise cronológica (linha de tempo)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Estrutura de memória RAM"
+      },
+      {
+        "numero": "8",
+        "titulo": "Aquisição de dados em memória (offline e em tempo real)"
+      },
+      {
+        "numero": "9",
+        "titulo": "Identificação de atividade maliciosa em memória"
+      },
+      {
+        "numero": "10",
+        "titulo": "Análise de tráfego de rede: coleta passiva e ativa e análise de pacotes"
+      }
+    ],
+    "ANÁLISE DE ARTEFATOS MALICIOSOS": [
+      {
+        "numero": "1",
+        "titulo": "Estrutura de arquivos executáveis"
+      },
+      {
+        "numero": "2",
+        "titulo": "Técnicas de evasão e obstrução de análise: obfuscação, empacotamento, anti-debugging, anti-disassembly, anti-VM"
+      },
+      {
+        "numero": "3",
+        "titulo": "Injeção de código, DLL hijacking e API hooking"
+      },
+      {
+        "numero": "4",
+        "titulo": "Técnicas de persistência e lateralidade"
+      },
+      {
+        "numero": "5",
+        "titulo": "Técnicas de exfiltração de dados"
+      },
+      {
+        "numero": "6",
+        "titulo": "Engenharia reversa e análise de artefatos maliciosos: identificação de propriedades estáticas e comportamento dinâmico"
+      }
+    ],
+    "INTELIGÊNCIA DE AMEAÇAS CIBERNÉTICAS": [
+      {
+        "numero": "1",
+        "titulo": "Inteligência de ameaças em fontes abertas (OSINT)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Indicadores de comprometimento (IOC): YARA, OpenIOC, STIX, CybOX, TAXII"
+      },
+      {
+        "numero": "3",
+        "titulo": "Comportamento de ameaças cibernéticas: logs de atividades e identificação de objetivos"
+      },
+      {
+        "numero": "4",
+        "titulo": "Análise de entropia em ataques cibernéticos"
+      },
+      {
+        "numero": "5",
+        "titulo": "Estruturas de comando e controle de artefatos maliciosos"
+      },
+      {
+        "numero": "6",
+        "titulo": "Redirecionamento de tráfego malicioso (sinkhole)"
+      },
+      {
+        "numero": "7",
+        "titulo": "Técnicas de identificação e atribuição de campanhas de ataques cibernéticos"
+      }
+    ],
+    "PRINCIPAIS AMEAÇAS E FORMAS DE ATAQUE": [
+      {
+        "numero": "1",
+        "titulo": "Ameaças persistentes avançadas (APT)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Vulnerabilidades Zero Day"
+      },
+      {
+        "numero": "3",
+        "titulo": "Ataques de Negação de Serviço (DoS) e Ataques Distribuídos de Negação de Serviço (DDoS)"
+      },
+      {
+        "numero": "4",
+        "titulo": "Artefatos maliciosos: vírus, cavalo de tróia, worm, rootkit, backdoor, keylogger, spyware, adware, ransonware"
+      },
+      {
+        "numero": "5",
+        "titulo": "Engenharia Social"
+      },
+      {
+        "numero": "6",
+        "titulo": "Man-in-the-middle"
+      },
+      {
+        "numero": "7",
+        "titulo": "Botnets"
+      },
+      {
+        "numero": "8",
+        "titulo": "Phishing"
+      },
+      {
+        "numero": "9",
+        "titulo": "Crimes cibernéticos"
+      }
+    ],
+    "TESTES DE PENETRAÇÃO": [
+      {
+        "numero": "1",
+        "titulo": "Tipos de testes de penetração"
+      },
+      {
+        "numero": "2",
+        "titulo": "Metodologias de testes de penetração: OWASP, ISSAF, NIST, OSSTMM, PTES"
+      },
+      {
+        "numero": "3",
+        "titulo": "Principais técnicas utilizadas em testes de penetração"
+      },
+      {
+        "numero": "4",
+        "titulo": "Funcionamento das principais ferramentas para reconhecimento, varredura, identificação e exploração de vulnerabilidades"
+      }
+    ],
+    "ANÁLISE DE VULNERABILIDADES": [
+      {
+        "numero": "1",
+        "titulo": "Identificação de condições de erro"
+      },
+      {
+        "numero": "2",
+        "titulo": "Validação de entradas e fuzzing"
+      },
+      {
+        "numero": "3",
+        "titulo": "Identificação de vulnerabilidades por inspeção de código"
+      }
+    ],
+    "SEGURANÇA DE APLICAÇÕES WEB": [
+      {
+        "numero": "1",
+        "titulo": "SQL injection, XSS, CSRF, ataques de inclusão de arquivos"
+      },
+      {
+        "numero": "2",
+        "titulo": "Vulnerabilidades em navegadores"
+      }
+    ],
+    "SEGURANÇA DE SISTEMAS MÓVEIS (MOBILE)": [
+      {
+        "numero": "1",
+        "titulo": "Arquitetura de sistema de arquivos e armazenamento de dados em dispositivos móveis"
+      },
+      {
+        "numero": "2",
+        "titulo": "Modelos de gerenciamento de permissões para iOS e Android"
+      },
+      {
+        "numero": "3",
+        "titulo": "Vulnerabilidades de code signing"
+      },
+      {
+        "numero": "4",
+        "titulo": "Vulnerabilidades de controles de autenticação"
+      },
+      {
+        "numero": "5",
+        "titulo": "Comunicação inter- aplicativos e sidejacking"
+      },
+      {
+        "numero": "6",
+        "titulo": "Artefatos maliciosos para dispositivos móveis"
+      }
+    ],
+    "FUNDAMENTOS DE CRIPTOGRAFIA": [
+      {
+        "numero": "1",
+        "titulo": "Conceitos básicos e aplicações"
+      },
+      {
+        "numero": "2",
+        "titulo": "Criptografia simétrica e assimétrica"
+      },
+      {
+        "numero": "3",
+        "titulo": "Assinatura e certificação digital"
+      },
+      {
+        "numero": "4",
+        "titulo": "Infraestrutura de Chaves Públicas"
+      },
+      {
+        "numero": "5",
+        "titulo": "Ataques a sistemas de criptografia"
+      }
+    ],
+    "FUNDAMENTOS DE PROTEÇÃO DE INFRAESTRUTURAS CRÍTICAS": [
+      {
+        "numero": "1",
+        "titulo": "Noções de Controladores Lógicos Programáveis (PLC)"
+      },
+      {
+        "numero": "2",
+        "titulo": "Noções de Sistemas ICS/SCADA. OUTROS CONCEITOS RELATIVOS À INTELIGÊNCIA CIBERNÉTICA: 1 Terrorismo cibernético. 2 Espionagem cibernética"
+      },
+      {
+        "numero": "3",
+        "titulo": "Dark Web"
+      },
+      {
+        "numero": "4",
+        "titulo": "Deep Web"
+      },
+      {
+        "numero": "5",
+        "titulo": "Redes Anônimas"
+      },
+      {
+        "numero": "6",
+        "titulo": "Hacktivismo"
+      },
+      {
+        "numero": "7",
+        "titulo": "Redes Sociais"
+      },
+      {
+        "numero": "8",
+        "titulo": "Big Data e correlação de eventos de segurança da informação"
+      },
+      {
+        "numero": "9",
+        "titulo": "Internet das Coisas (IoT). 21.2.4 CONHECIMENTOS ESPECÍFICOS PARA O"
+      }
+    ]
+  }
+}

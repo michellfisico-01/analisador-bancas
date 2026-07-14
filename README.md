@@ -61,7 +61,7 @@ python -m src.classificacao.revisao
 | Etapa | Método |
 |---|---|
 | Coleta | API oficial do CEBRASPE + CDN; só gabaritos definitivos; delays e user-agent identificado |
-| Extração | pdfplumber; segmentação por layout + tipografia + sequência; validação cruzada com o gabarito (9/9 provas sem divergência) |
+| Extração | pdfplumber; segmentação por layout + tipografia + sequência; validação cruzada com o gabarito (14/14 provas sem divergência) |
 | Classificação | Camadas: regras determinísticas (âncoras normativas) → TF-IDF + regressão logística → revisão humana. Confiança e origem registradas por rótulo |
 | Predição | Contagens ponderadas por recência (meia-vida 5 anos) + posterior Dirichlet (prior de Jeffreys) + sinal de mudanças legislativas com curadoria manual; IC de credibilidade 90% |
 | Plano | Horas ∝ peso da disciplina × probabilidade do tópico; ciclos semanais; export Markdown/PDF |

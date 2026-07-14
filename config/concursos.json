@@ -216,6 +216,35 @@
           "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF"
         }
       ]
+    },
+    {
+      "slug": "abin_17",
+      "banca": "CEBRASPE",
+      "orgao": "ABIN",
+      "nome": "ABIN 2017/18 (Oficial de Inteligência)",
+      "ano_prova": 2018,
+      "formato": "certo_errado",
+      "observacao": "Expansao CEBRASPE (Fase 6a). Cargo 1 (Oficial de Inteligencia, Area 1), prova aplicada em 03/2018. Direito Adm/Const/Penal esta nos conhecimentos GERAIS (itens 1-60); especificos 61-150 sao de Inteligencia. Cargo 2 (areas tecnicas) e cargo 3 ficam fora.",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura",
+          "url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/ED_1_2017_ABIN_17_ABT.PDF"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Oficial de Inteligência (ABIN) — gerais",
+          "itens_esperados": 60,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/378_ABIN_CB1_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/GAB_DEFINITIVO_378_ABIN_CB1_01.PDF"
+        },
+        {
+          "cargo": "Oficial de Inteligência (ABIN) — específicos",
+          "itens_esperados": 90,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/378_ABIN_001_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/GAB_DEFINITIVO_378_ABIN_001_01.PDF"
+        }
+      ]
     }
   ]
 }
