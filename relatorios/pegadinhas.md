@@ -1,6 +1,6 @@
 # Padrões de "pegadinha" — CEBRASPE PF/PRF
 
-Gerado em 2026-07-14 14:59. Itens válidos analisados:
+Gerado em 2026-07-14 15:06. Itens válidos analisados:
 1453 | taxa-base de ERRADO: **52.9%**.
 
 A intuição do concurseiro diz que certos marcadores de generalização
@@ -51,13 +51,8 @@ questões (não só teoria) ao estudá-los.
 
 | disciplina             | topico                               |   n |   pct_errado | ic90         |
 |:-----------------------|:-------------------------------------|----:|-------------:|:-------------|
-| Direito Constitucional | Organização dos poderes              |  24 |        0.583 | [0.42, 0.74] |
-| Direito Penal          | Crimes contra o patrimônio           |  12 |        0.583 | [0.35, 0.79] |
-| Direito Penal          | Crimes contra a pessoa               |   9 |        0.556 | [0.30, 0.79] |
-| Direito Constitucional | Defesa do Estado e segurança pública |  19 |        0.526 | [0.34, 0.70] |
-| Direito Constitucional | Direitos e garantias fundamentais    |  34 |        0.5   | [0.36, 0.64] |
-| Direito Constitucional | Ordem social                         |  12 |        0.5   | [0.28, 0.72] |
-| Direito Administrativo | Agentes públicos                     |  12 |        0.417 | [0.21, 0.65] |
-| Direito Administrativo | Organização administrativa           |  11 |        0.364 | [0.17, 0.61] |
-| Direito Constitucional | Organização do Estado                |  20 |        0.35  | [0.20, 0.53] |
-| Direito Penal          | Teoria do crime — fato típico        |  12 |        0.333 | [0.15, 0.57] |
+| Direito Constitucional | Direitos e garantias fundamentais    |  14 |        0.643 | [0.42, 0.82] |
+| Direito Constitucional | Organização do Estado                |   9 |        0.556 | [0.30, 0.79] |
+| Direito Constitucional | Organização dos poderes              |  19 |        0.526 | [0.34, 0.70] |
+| Direito Constitucional | Defesa do Estado e segurança pública |  14 |        0.5   | [0.29, 0.71] |
+| Direito Administrativo | Agentes públicos                     |   8 |        0.25  | [0.08, 0.54] |

@@ -1,9 +1,12 @@
 """Base comum da análise (Fase 3): consulta canônica dos itens rotulados.
 
 Define a REGRA DE PRECEDÊNCIA dos rótulos finos, usada em toda a análise:
-``manual`` (revisão humana) > ``regras`` com confiança >= 0.75 > ``modelo``
-> ``regras`` com confiança baixa. A origem do rótulo escolhido acompanha
-cada linha, para que os relatórios possam declarar a cobertura por fonte.
+``manual`` (revisão humana) > ``regras`` com confiança >= 0.75 > ``modelo``.
+
+Rótulos de REGRAS COM CONFIANÇA BAIXA (< 0.75) são EXCLUÍDOS das análises
+por decisão do usuário (2026-07-05): continuam no banco alimentando a fila
+de revisão, mas item cuja única classificação é de baixa confiança conta
+como NÃO rotulado nas estatísticas — menos cobertura, mais pureza.
 """
 from __future__ import annotations
 
@@ -60,10 +63,11 @@ def carregar_itens() -> pd.DataFrame:
 
     if not cls.empty:
         cls = cls.assign(prioridade=cls.apply(prioridade, axis=1))
+        # regras de baixa confiança (prioridade 3) NÃO entram na análise
+        cls = cls[cls.prioridade < 3]
+    if not cls.empty:
         cls = cls.sort_values(["item_id", "prioridade"]).groupby("item_id").first()
-        origem = cls.prioridade.map(
-            {0: "manual", 1: "regras_alta", 2: "modelo", 3: "regras_baixa"}
-        )
+        origem = cls.prioridade.map({0: "manual", 1: "regras_alta", 2: "modelo"})
         cls = cls.assign(origem_rotulo=origem)[["topico", "subtopico", "origem_rotulo"]]
         itens = itens.merge(cls, left_on="item_id", right_index=True, how="left")
     else:
