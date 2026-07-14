@@ -1,6 +1,6 @@
 # Relatório de qualidade da extração
 
-Gerado em 2026-07-14 15:58.
+Gerado em 2026-07-14 16:14.
 
 | Concurso | Cargo | Esperados | Gabarito | Extraídos | Anulados | Blocos | Sem motivador | Status |
 |---|---|---:|---:|---:|---:|---:|---:|---|
@@ -26,6 +26,7 @@ Gerado em 2026-07-14 15:58.
 | cpnuje_24 | Técnico – Agente da Polícia Judicial (TSE) — específicos | 70 | 70 | 70 | 4 | 17 | 0 | OK |
 | trf1_24 | Analista Judiciário – Judiciária (TRF1) | 80 | 80 | 80 | 2 | 1 | 80 | OK |
 | trf1_24 | Técnico Judiciário – Administrativa (TRF1) | 80 | 80 | 80 | 1 | 1 | 80 | OK |
+| trf1_24 | Técnico – Agente da Polícia Judicial (TRF1) | 80 | 80 | 80 | 1 | 1 | 80 | OK |
 
 ## Detalhes e avisos
 

@@ -327,6 +327,13 @@
           "prova_url": "https://conhecimento.fgv.br/sites/default/files/concursos/44.pdf",
           "gabarito_definitivo_url": "https://conhecimento.fgv.br/sites/default/files/concursos/trf1_gabarito_definitivo_v4.pdf",
           "gabarito_secao": "Técnico Judiciário - Área Administrativa - TIPO 1"
+        },
+        {
+          "cargo": "Técnico – Agente da Polícia Judicial (TRF1)",
+          "itens_esperados": 80,
+          "prova_url": "https://conhecimento.fgv.br/sites/default/files/concursos/40.pdf",
+          "gabarito_definitivo_url": "https://conhecimento.fgv.br/sites/default/files/concursos/trf1_gabarito_definitivo_v4.pdf",
+          "gabarito_secao": "Técnico Judiciário - Área Administrativa - Agente da Policia Judicial - TIPO 1"
         }
       ]
     }
