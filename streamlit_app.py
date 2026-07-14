@@ -51,9 +51,9 @@ extras = pseudo_contagens_legislativas(ano_ref)
 
 st.title("Analisador Preditivo de Bancas")
 st.caption(
-    "CEBRASPE · PF e PRF · 2013-2021 · 100% local e de custo zero. "
-    "Probabilidades são posteriores bayesianos sobre provas oficiais — "
-    "cada número é explicável."
+    "CEBRASPE · PF, PRF, PCDF, DEPEN e ABIN · 2013-2021 · 100% local e de "
+    "custo zero. Probabilidades são posteriores bayesianos sobre provas "
+    "oficiais — cada número é explicável."
 )
 
 aba_visao, aba_freq, aba_ranking, aba_plano = st.tabs(
@@ -95,8 +95,9 @@ with aba_visao:
 with aba_freq:
     col_a, col_b = st.columns(2)
     disc_sel = col_a.selectbox("Disciplina", DISCIPLINAS_PILOTO, key="freq_disc")
-    orgao_sel = col_b.selectbox("Órgão", ["PF + PRF", "PF", "PRF"], key="freq_orgao")
-    base = itens if orgao_sel == "PF + PRF" else itens[itens.orgao == orgao_sel]
+    orgaos = ["Todos"] + sorted(itens.orgao.dropna().unique())
+    orgao_sel = col_b.selectbox("Órgão", orgaos, key="freq_orgao")
+    base = itens if orgao_sel == "Todos" else itens[itens.orgao == orgao_sel]
 
     grupo = base[base.disciplina == disc_sel]
     rotulados = grupo[grupo.topico.notna()]
@@ -127,8 +128,9 @@ with aba_freq:
 with aba_ranking:
     col_a, col_b = st.columns(2)
     disc_r = col_a.selectbox("Disciplina", DISCIPLINAS_PILOTO, key="rank_disc")
-    orgao_r = col_b.selectbox("Órgão", ["PF + PRF", "PF", "PRF"], key="rank_orgao")
-    base_r = itens if orgao_r == "PF + PRF" else itens[itens.orgao == orgao_r]
+    orgaos_r = ["Todos"] + sorted(itens.orgao.dropna().unique())
+    orgao_r = col_b.selectbox("Órgão", orgaos_r, key="rank_orgao")
+    base_r = itens if orgao_r == "Todos" else itens[itens.orgao == orgao_r]
 
     tab_r = ranking_disciplina(base_r, disc_r, universo[disc_r], ano_ref, extras)
     st.caption(
@@ -159,7 +161,8 @@ with aba_ranking:
 with aba_plano:
     st.subheader("Gerar plano de estudos personalizado")
     col_a, col_b, col_c = st.columns(3)
-    orgao_p = col_a.selectbox("Concurso alvo", ["PF", "PRF", "GERAL"], key="plano_orgao")
+    opcoes_p = sorted(itens.orgao.dropna().unique()) + ["GERAL"]
+    orgao_p = col_a.selectbox("Concurso alvo", opcoes_p, key="plano_orgao")
     semanas_p = col_b.slider("Semanas até a prova", 4, 52, 12)
     horas_p = col_c.slider("Horas de estudo por semana", 4, 50, 15)
 
