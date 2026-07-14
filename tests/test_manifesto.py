@@ -55,4 +55,6 @@ def test_manifesto_cobre_concursos_esperados(manifesto):
         "dprf_13", "pf_18", "prf_18", "pf_21", "prf_21",
         # expansão Fase 6a (CEBRASPE certo/errado)
         "pc_df_19_escrivao", "pc_df_20_agente", "depen_20", "abin_17",
+        # expansão Fase 6b (tribunais)
+        "cpnuje_24",
     }

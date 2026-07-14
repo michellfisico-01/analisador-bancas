@@ -1,12 +1,12 @@
 # Comparativo das abordagens de classificação
 
-Gerado em 2026-07-14 14:59. Total de itens: 1532.
+Gerado em 2026-07-14 15:16. Total de itens: 1892.
 
 ## Cobertura por método
 
 | Método | Itens classificados | Confiança média | Baixa confiança (<0.75) |
 |---|---:|---:|---:|
-| regras | 353 | 0.64 | 165 |
+| regras | 515 | 0.63 | 254 |
 | modelo | 0 | — | 0 |
 | manual | 0 | — | 0 |
 
@@ -16,29 +16,33 @@ _O modelo local ainda não foi treinado — rode `python -m src.classificacao.mo
 
 ## Fila de revisão manual
 
-- Itens aguardando revisão humana: **165** (divergências entre métodos e confianças < 0.75)
+- Itens aguardando revisão humana: **254** (divergências entre métodos e confianças < 0.75)
 - Abrir a revisão: `python -m src.classificacao.revisao`
 
 ## Disciplina dos itens (mapeamento estrutural)
 
 | Disciplina | Itens |
 |---|---:|
-| Informática | 268 |
-| Língua Portuguesa | 236 |
-| Direito Constitucional | 204 |
-| (sem disciplina — fila de revisão) | 166 |
-| Raciocínio Lógico-Matemático | 105 |
+| Língua Portuguesa | 329 |
+| Informática | 274 |
+| Direito Constitucional | 274 |
+| (sem disciplina — fila de revisão) | 185 |
+| Direito Penal | 108 |
+| Raciocínio Lógico-Matemático | 103 |
 | Contabilidade | 102 |
-| Direito Penal | 76 |
+| Direito Administrativo | 88 |
 | Estatística | 66 |
-| Direito Administrativo | 63 |
-| Direito Processual Penal | 53 |
+| Direito Processual Penal | 58 |
+| Administração | 54 |
 | Legislação de Trânsito | 52 |
+| Direitos Humanos | 46 |
 | Execução Penal | 34 |
-| Direitos Humanos | 29 |
 | Física | 27 |
 | Legislação Penal Especial | 23 |
+| Direito Eleitoral | 21 |
+| Direito Civil e Processual Civil | 17 |
 | Legislação Institucional | 9 |
 | Ética no Serviço Público | 7 |
 | Atividade de Inteligência | 7 |
 | Geopolítica | 5 |
+| Administração Financeira e Orçamentária | 3 |

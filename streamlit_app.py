@@ -51,8 +51,8 @@ extras = pseudo_contagens_legislativas(ano_ref)
 
 st.title("Analisador Preditivo de Bancas")
 st.caption(
-    "CEBRASPE · PF, PRF, PCDF, DEPEN e ABIN · 2013-2021 · 100% local e de "
-    "custo zero. Probabilidades são posteriores bayesianos sobre provas "
+    "CEBRASPE · PF, PRF, PCDF, DEPEN, ABIN e TSE · 2013-2024 · 100% local e "
+    "de custo zero. Probabilidades são posteriores bayesianos sobre provas "
     "oficiais — cada número é explicável."
 )
 

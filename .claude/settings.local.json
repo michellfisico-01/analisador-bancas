@@ -86,7 +86,10 @@
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.descritiva 2>&1)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.preditivo 2>&1)",
       "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.analise.pegadinhas 2>&1)",
-      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.comparativo 2>&1)"
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" -m src.classificacao.comparativo 2>&1)",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\sonda_tse.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\tse_arquivos.py\")",
+      "PowerShell(& \".venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\MICHEL~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Michel-Felipe-OneDrive-Desktop-Software-concurceiro\\\\82d3d8cd-eeba-4ff1-8007-cd8f0ca4124d\\\\scratchpad\\\\tse_gabs.py\")"
     ]
   }
 }

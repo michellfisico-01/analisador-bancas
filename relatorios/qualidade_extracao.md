@@ -1,6 +1,6 @@
 # Relatório de qualidade da extração
 
-Gerado em 2026-07-14 14:56.
+Gerado em 2026-07-14 15:12.
 
 | Concurso | Cargo | Esperados | Gabarito | Extraídos | Anulados | Blocos | Sem motivador | Status |
 |---|---|---:|---:|---:|---:|---:|---:|---|
@@ -18,6 +18,12 @@ Gerado em 2026-07-14 14:56.
 | prf_21 | Policial Rodoviário Federal | 112 | 112 | 112 | 9 | 29 | 0 | OK |
 | abin_17 | Oficial de Inteligência (ABIN) — gerais | 60 | 60 | 60 | 2 | 18 | 0 | OK |
 | abin_17 | Oficial de Inteligência (ABIN) — específicos | 90 | 90 | 90 | 8 | 30 | 0 | OK |
+| cpnuje_24 | Analista Judiciário – Judiciária (TSE) — básicos | 50 | 50 | 50 | 0 | 9 | 0 | OK |
+| cpnuje_24 | Analista Judiciário – Judiciária (TSE) — específicos | 70 | 70 | 70 | 5 | 17 | 0 | OK |
+| cpnuje_24 | Técnico Judiciário – Administrativa (TSE) — básicos | 50 | 50 | 50 | 2 | 16 | 0 | OK |
+| cpnuje_24 | Técnico Judiciário – Administrativa (TSE) — específicos | 70 | 70 | 70 | 4 | 24 | 0 | OK |
+| cpnuje_24 | Técnico – Agente da Polícia Judicial (TSE) — básicos | 50 | 50 | 50 | 0 | 9 | 0 | OK |
+| cpnuje_24 | Técnico – Agente da Polícia Judicial (TSE) — específicos | 70 | 70 | 70 | 4 | 17 | 0 | OK |
 
 ## Detalhes e avisos
 

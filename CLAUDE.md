@@ -100,10 +100,20 @@ carreiras jurídicas de entrada.
   carreira policial federal alvo; (3) ABIN 2017/18 INCLUÍDA após verificação
   (Direito Adm/Const/Penal nos conhecimentos gerais do cargo 1 — Oficial de
   Inteligência; gerais 1-60 + específicos 61-150; cargos 2 e 3 fora).
-  Dataset final 6a: **1.532 itens, 14 provas, 9 concursos**, 14/14 sem
-  divergência, ~89% com disciplina. Disciplina canônica nova: Atividade de
-  Inteligência. Pendente 6a: revisão manual dos ~168 itens sem disciplina.
-  FGV/FCC/múltipla escolha seguem futuras.
+  Dataset após 6a: 1.532 itens, 14 provas, 9 concursos. Disciplina canônica
+  nova: Atividade de Inteligência.
+  **6b (tribunais) EM ANDAMENTO desde 2026-07-05**: TSE Unificado 2024
+  (CPNUJE, slug cpnuje_24) incluído — descoberta importante: foi CEBRASPE
+  certo/errado, então abriu a vertical TRIBUNAIS reusando 100% do pipeline.
+  Cargos 18 (Analista-Judiciária), 19 (Técnico-Administrativa) e 20
+  (Técnico-Agente da Polícia Judicial), básicos 1-50 + específicos 51-120
+  cada. Dataset atual: **1.892 itens, 20 provas, 10 concursos**, 20/20 sem
+  divergência, ~90% com disciplina. Disciplinas canônicas novas: Direito
+  Eleitoral, Direito Civil e Processual Civil, Administração, AFO.
+  Rótulos de baixa confiança EXCLUÍDOS das análises (decisão do usuário,
+  2026-07-05). Próximo da 6b: FGV múltipla escolha (candidato: TRF1 2024,
+  provas em conhecimento.fgv.br) — exige parser novo. Pendências: revisão
+  manual (~187 itens sem disciplina + baixas confianças).
 
 ## Decisões tomadas
 

@@ -114,6 +114,31 @@ ANCORAS_GROSSO: dict[str, list[str]] = {
         "política nacional de inteligência", "salvaguarda de informações",
         "documentos sigilosos", "análise de inteligência",
     ],
+    "Direito Eleitoral": [
+        "código eleitoral", "lei nº 4.737", "lei nº 9.504", "lei das eleições",
+        "justiça eleitoral", "alistamento eleitoral", "domicílio eleitoral",
+        "propaganda eleitoral", "inelegibilidade", "lei complementar nº 64",
+        "tribunal superior eleitoral", "tribunal regional eleitoral",
+        "prestação de contas de campanha", "crimes eleitorais", "zona eleitoral",
+        "título de eleitor", "urna eletrônica", "ficha limpa",
+    ],
+    "Direito Civil e Processual Civil": [
+        "código civil", "lei nº 10.406", "código de processo civil",
+        "lei nº 13.105", "negócio jurídico", "pessoa jurídica de direito privado",
+        "prescrição e decadência", "petição inicial", "tutela provisória",
+        "apelação", "agravo de instrumento", "coisa julgada", "litisconsórcio",
+    ],
+    "Administração": [
+        "gestão de pessoas", "planejamento estratégico", "governança",
+        "avaliação de desempenho", "estrutura organizacional",
+        "departamentalização", "gestão por competências", "liderança",
+        "administração pública gerencial", "gestão de processos",
+    ],
+    "Administração Financeira e Orçamentária": [
+        "orçamento público", "plano plurianual", "lei orçamentária anual",
+        "diretrizes orçamentárias", "créditos adicionais", "receita pública",
+        "despesa pública", "empenho", "restos a pagar", "ciclo orçamentário",
+    ],
 }
 
 
@@ -143,6 +168,18 @@ MAPA_EDITAL_CANONICO: list[tuple[str, list[str]]] = [
     ("ESPANHOLA", ["Língua Estrangeira"]),
     ("DPRF", ["Outros"]),
     ("CIDADANIA", ["Direitos Humanos"]),
+    # expansão Fase 6b (TSE/tribunais)
+    ("DIREITO ELEITORAL", ["Direito Eleitoral"]),
+    ("PROCESSUAL CIVIL", ["Direito Civil e Processual Civil"]),
+    ("DIREITO CIVIL", ["Direito Civil e Processual Civil"]),
+    ("LICITAÇÕES", ["Direito Administrativo"]),
+    ("ORÇAMENT", ["Administração Financeira e Orçamentária"]),
+    ("ADMINISTRAÇÃO FINANCEIRA", ["Administração Financeira e Orçamentária"]),
+    ("ADMINISTRAÇÃO", ["Administração"]),
+    ("GESTÃO", ["Administração"]),
+    ("AUDITORIA", ["Outros"]),
+    ("SEGURANÇA JUDICIÁRIA", ["Outros"]),
+    ("PDPJ", ["Informática"]),
     # expansão Fase 6a (PCDF/DEPEN/ABIN)
     ("INTELIG", ["Atividade de Inteligência"]),
     ("EXECUÇÃO PENAL", ["Execução Penal"]),
@@ -186,7 +223,7 @@ def disciplinas_do_edital(slug: str) -> set[str]:
 DISCIPLINAS_JURIDICAS = {
     "Direito Constitucional", "Direito Administrativo", "Direito Penal",
     "Direito Processual Penal", "Legislação Penal Especial", "Direitos Humanos",
-    "Execução Penal",
+    "Execução Penal", "Direito Eleitoral", "Direito Civil e Processual Civil",
 }
 
 

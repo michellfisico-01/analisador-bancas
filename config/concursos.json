@@ -245,6 +245,59 @@
           "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/abin_17/arquivos/GAB_DEFINITIVO_378_ABIN_001_01.PDF"
         }
       ]
+    },
+    {
+      "slug": "cpnuje_24",
+      "banca": "CEBRASPE",
+      "orgao": "TSE",
+      "nome": "TSE Unificado 2024 (Justiça Eleitoral)",
+      "ano_prova": 2024,
+      "formato": "certo_errado",
+      "observacao": "Fase 6b: abre a vertical TRIBUNAIS reusando o pipeline CEBRASPE certo/errado. Cargos do piloto: 18 (Analista Judiciario - Judiciaria), 19 (Tecnico - Administrativa) e 20 (Tecnico - Agente da Policia Judicial). Estrutura por cargo: basicos 1-50 + especificos 51-120, cadernos e gabaritos separados. Gabarito do cargo 18 usa a versao ATUALIZADA (pos sub judice, 2025-01).",
+      "editais": [
+        {
+          "descricao": "Edital n. 1 - Abertura (atualizado ret. 15)",
+          "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/Edital_1_2024_CPNUJE_Abertura_atualizado_ret_15.pdf"
+        }
+      ],
+      "cargos": [
+        {
+          "cargo": "Analista Judiciário – Judiciária (TSE) — básicos",
+          "itens_esperados": 50,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_CB1_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_CB1_01.PDF"
+        },
+        {
+          "cargo": "Analista Judiciário – Judiciária (TSE) — específicos",
+          "itens_esperados": 70,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_018_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_018_01_ATUALIZADO.PDF"
+        },
+        {
+          "cargo": "Técnico Judiciário – Administrativa (TSE) — básicos",
+          "itens_esperados": 50,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_CB5_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_CB5_01.PDF"
+        },
+        {
+          "cargo": "Técnico Judiciário – Administrativa (TSE) — específicos",
+          "itens_esperados": 70,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_019_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_019_01.PDF"
+        },
+        {
+          "cargo": "Técnico – Agente da Polícia Judicial (TSE) — básicos",
+          "itens_esperados": 50,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_CB4_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_CB4_01.PDF"
+        },
+        {
+          "cargo": "Técnico – Agente da Polícia Judicial (TSE) — específicos",
+          "itens_esperados": 70,
+          "prova_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_020_01.PDF",
+          "gabarito_definitivo_url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_020_01.PDF"
+        }
+      ]
     }
   ]
 }

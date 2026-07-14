@@ -90,6 +90,16 @@
       ],
       "inicio": "OBJETOS DE AVALIA",
       "fim": "CARGO 2: OFICIAL"
+    },
+    {
+      "slug": "cpnuje_24",
+      "cargo_referencia": "Analista Judiciario - Judiciaria / Tecnico - Administrativa",
+      "paginas": [
+        45,
+        69
+      ],
+      "inicio": "OBJETOS DE AVALIA",
+      "fim": "Quantitativo de"
     }
   ]
 }
