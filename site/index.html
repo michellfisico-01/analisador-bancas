@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Analisador Preditivo de Bancas — estude o que a banca realmente cobra</title>
+<style>
+  :root {
+    --paper: #f2f4f5;
+    --card: #ffffff;
+    --ink: #182530;
+    --muted: #5d6e78;
+    --brand: #2c6e8f;
+    --brand-soft: #d7e4ec;
+    --correcao: #b23a2a;
+    --line: #cfd8dc;
+    --code-bg: #182530;
+    --code-ink: #d8e4ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0f181e;
+      --card: #16232c;
+      --ink: #e6ecef;
+      --muted: #93a4ad;
+      --brand: #6aa7c4;
+      --brand-soft: #23404f;
+      --correcao: #e07a5f;
+      --line: #2a3942;
+      --code-bg: #0a1114;
+      --code-ink: #c4d4dc;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0f181e; --card: #16232c; --ink: #e6ecef; --muted: #93a4ad;
+    --brand: #6aa7c4; --brand-soft: #23404f; --correcao: #e07a5f;
+    --line: #2a3942; --code-bg: #0a1114; --code-ink: #c4d4dc;
+  }
+  :root[data-theme="light"] {
+    --paper: #f2f4f5; --card: #ffffff; --ink: #182530; --muted: #5d6e78;
+    --brand: #2c6e8f; --brand-soft: #d7e4ec; --correcao: #b23a2a;
+    --line: #cfd8dc; --code-bg: #182530; --code-ink: #d8e4ea;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; color-scheme: light dark; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  .mono {
+    font-family: Consolas, "Cascadia Mono", ui-monospace, monospace;
+  }
+  h1, h2, h3, .sans {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3 { text-wrap: balance; line-height: 1.15; }
+
+  .faixa {
+    background: var(--paper);
+    border-bottom: 3px double var(--ink);
+    padding: 14px 24px;
+    display: flex; flex-wrap: wrap; gap: 6px 28px;
+    justify-content: space-between; align-items: baseline;
+    font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .faixa strong { font-weight: 700; letter-spacing: 0.1em; }
+
+  .miolo { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
+  .prosa { max-width: 66ch; }
+
+  .eyebrow {
+    font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--brand); font-weight: 600; margin: 0 0 10px;
+  }
+  .eyebrow.vermelha { color: var(--correcao); }
+
+  /* ---------------- herói ---------------- */
+  .heroi {
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 56px; align-items: center; padding: 72px 0 64px;
+  }
+  .heroi h1 {
+    font-size: clamp(2rem, 4.6vw, 3.3rem);
+    font-weight: 780; margin: 0 0 20px; letter-spacing: -0.02em;
+  }
+  .heroi h1 em {
+    font-style: normal;
+    box-shadow: inset 0 -0.28em 0 var(--brand-soft);
+  }
+  .heroi p { color: var(--muted); margin: 0 0 30px; font-size: 1.06rem; }
+  .botoes { display: flex; flex-wrap: wrap; gap: 12px; }
+  .botao {
+    display: inline-block; padding: 12px 22px; border-radius: 3px;
+    font-family: "Segoe UI", system-ui, sans-serif; font-weight: 650;
+    font-size: 0.95rem; text-decoration: none; letter-spacing: 0.01em;
+  }
+  .botao.cheio { background: var(--brand); color: var(--paper); }
+  .botao.vazio { color: var(--brand); border: 1.5px solid var(--brand); }
+  .botao:focus-visible { outline: 3px solid var(--brand-soft); outline-offset: 2px; }
+
+  /* gráfico do herói */
+  .grafico {
+    background: var(--card); border: 1px solid var(--line); border-radius: 6px;
+    padding: 22px 24px 18px;
+  }
+  .grafico h3 { font-size: 0.95rem; margin: 0 0 4px; font-weight: 700; }
+  .grafico .sub { font-size: 12.5px; color: var(--muted); margin: 0 0 18px; }
+  .linha-barra { display: grid; grid-template-columns: 1fr; margin-bottom: 13px; }
+  .linha-barra .rotulo {
+    display: flex; justify-content: space-between; gap: 12px;
+    font-size: 13px; margin-bottom: 4px;
+  }
+  .linha-barra .valor { font-weight: 700; font-size: 12.5px; }
+  .trilho { background: var(--brand-soft); border-radius: 2px; height: 10px; overflow: hidden; }
+  .barra {
+    height: 100%; background: var(--brand); border-radius: 2px 2px 2px 2px;
+    width: var(--w); transform-origin: left;
+    animation: crescer 0.9s cubic-bezier(.2,.7,.3,1) both;
+  }
+  .linha-barra:nth-child(3) .barra { animation-delay: 0.08s; }
+  .linha-barra:nth-child(4) .barra { animation-delay: 0.16s; }
+  .linha-barra:nth-child(5) .barra { animation-delay: 0.24s; }
+  .linha-barra:nth-child(6) .barra { animation-delay: 0.32s; }
+  .linha-barra.apagada .barra { background: var(--muted); opacity: 0.55; }
+  @keyframes crescer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @media (prefers-reduced-motion: reduce) {
+    .barra { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+  .grafico .nota {
+    font-size: 12.5px; color: var(--muted); border-top: 1px solid var(--line);
+    padding-top: 12px; margin: 16px 0 0;
+  }
+  .grafico .nota strong { color: var(--correcao); }
+
+  /* ---------------- seções ---------------- */
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  section h2 {
+    font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 760;
+    letter-spacing: -0.015em; margin: 0 0 14px;
+  }
+  section > .miolo > p.lede { color: var(--muted); max-width: 60ch; margin-top: 0; }
+
+  .cartoes {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px; margin-top: 34px;
+  }
+  .cartao {
+    background: var(--card); border: 1px solid var(--line); border-radius: 6px;
+    padding: 22px 22px 18px;
+  }
+  .cartao h3 { font-size: 1.02rem; margin: 0 0 8px; font-weight: 700; }
+  .cartao p { font-size: 0.92rem; color: var(--muted); margin: 0; line-height: 1.6; }
+  .cartao .dado {
+    font-family: Consolas, ui-monospace, monospace;
+    color: var(--brand); font-size: 0.85rem; display: block; margin-top: 12px;
+  }
+
+  /* ---------------- pegadinha ---------------- */
+  .pegadinha .numero-grande {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: clamp(3.4rem, 9vw, 6rem); font-weight: 800;
+    color: var(--correcao); line-height: 1; letter-spacing: -0.03em;
+  }
+  .gabarito-grade {
+    display: flex; flex-wrap: wrap; gap: 7px; margin: 26px 0 10px;
+  }
+  .celula {
+    width: 40px; height: 40px; border: 1.5px solid var(--line); border-radius: 4px;
+    display: grid; place-items: center;
+    font-family: Consolas, ui-monospace, monospace; font-weight: 700;
+    font-size: 15px; background: var(--card); color: var(--muted);
+  }
+  .celula.errada {
+    border-color: var(--correcao); color: var(--correcao);
+    background: color-mix(in srgb, var(--correcao) 9%, var(--card));
+  }
+  .legenda-grade { font-size: 12.5px; color: var(--muted); }
+
+  /* ---------------- metodologia ---------------- */
+  .passos { list-style: none; counter-reset: passo; padding: 0; margin: 30px 0 0; }
+  .passos li {
+    counter-increment: passo;
+    display: grid; grid-template-columns: 52px 1fr; gap: 16px;
+    padding: 16px 0; border-top: 1px dashed var(--line);
+  }
+  .passos li::before {
+    content: counter(passo, decimal-leading-zero);
+    font-family: Consolas, ui-monospace, monospace;
+    color: var(--brand); font-size: 1.25rem; font-weight: 700; padding-top: 2px;
+  }
+  .passos strong { font-family: "Segoe UI", system-ui, sans-serif; }
+  .passos p { margin: 2px 0 0; font-size: 0.94rem; color: var(--muted); }
+
+  /* ---------------- honestidade / cta ---------------- */
+  .avisos { margin: 26px 0 0; padding-left: 1.1em; }
+  .avisos li { margin-bottom: 12px; color: var(--muted); font-size: 0.97rem; }
+  .avisos li strong { color: var(--ink); }
+
+  .terminal {
+    background: var(--code-bg); color: var(--code-ink);
+    border-radius: 6px; padding: 20px 22px; overflow-x: auto;
+    font-family: Consolas, ui-monospace, monospace; font-size: 0.86rem;
+    line-height: 1.9; margin-top: 26px;
+  }
+  .terminal .cmt { opacity: 0.55; }
+
+  footer {
+    border-top: 3px double var(--ink); margin-top: 56px;
+    padding: 26px 24px 40px; font-size: 12.5px; color: var(--muted);
+  }
+  footer .miolo { display: flex; flex-wrap: wrap; gap: 10px 40px; justify-content: space-between; }
+
+  @media (max-width: 840px) {
+    .heroi { grid-template-columns: 1fr; gap: 36px; padding-top: 48px; }
+  }
+</style>
+
+<header class="faixa mono" aria-label="Identificação">
+  <strong>ANALISADOR PREDITIVO DE BANCAS</strong>
+  <span>APLICAÇÃO: 2013–2024</span>
+  <span>2.132 QUESTÕES OFICIAIS</span>
+  <span>CEBRASPE · FGV</span>
+  <span>LEIA COM ATENÇÃO AS ESTATÍSTICAS ABAIXO</span>
+</header>
+
+<div class="miolo">
+  <div class="heroi">
+    <div>
+      <p class="eyebrow mono">Provas oficiais · estatística bayesiana · custo zero de achismo</p>
+      <h1>O edital diz que tudo pesa igual. <em>As provas dizem outra coisa.</em></h1>
+      <p>
+        Medimos, questão por questão, o que cada banca realmente cobra em cada
+        concurso — e transformamos isso em prioridades de estudo com
+        probabilidade, margem de incerteza e um plano semanal em PDF.
+      </p>
+      <div class="botoes">
+        <a class="botao cheio" href="#comecar">Começar agora</a>
+        <a class="botao vazio" href="#metodo">Ver o método</a>
+      </div>
+    </div>
+
+    <figure class="grafico" role="img"
+      aria-label="Distribuição real das questões de Direito Constitucional por tópico">
+      <h3 class="sans">Direito Constitucional — o peso real de cada tópico</h3>
+      <p class="sub mono">FRAÇÃO DAS QUESTÕES · 11 CONCURSOS · 2013–2024</p>
+      <div class="linha-barra">
+        <div class="rotulo"><span>Organização dos poderes</span><span class="valor mono">38%</span></div>
+        <div class="trilho"><div class="barra" style="--w:38%"></div></div>
+      </div>
+      <div class="linha-barra">
+        <div class="rotulo"><span>Organização do Estado</span><span class="valor mono">21%</span></div>
+        <div class="trilho"><div class="barra" style="--w:21%"></div></div>
+      </div>
+      <div class="linha-barra">
+        <div class="rotulo"><span>Direitos e garantias fundamentais</span><span class="valor mono">18%</span></div>
+        <div class="trilho"><div class="barra" style="--w:18%"></div></div>
+      </div>
+      <div class="linha-barra">
+        <div class="rotulo"><span>Defesa do Estado e segurança pública</span><span class="valor mono">12%</span></div>
+        <div class="trilho"><div class="barra" style="--w:12%"></div></div>
+      </div>
+      <div class="linha-barra apagada">
+        <div class="rotulo"><span>Controle de constitucionalidade</span><span class="valor mono">3%</span></div>
+        <div class="trilho"><div class="barra" style="--w:3%"></div></div>
+      </div>
+      <figcaption class="nota">
+        O cursinho manda você decorar ADI, ADC e ADPF com o mesmo afinco de
+        tudo o mais. Os dados mostram: <strong>3%</strong> das questões.
+        Cada hora tem lugar melhor.
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<section>
+  <div class="miolo">
+    <p class="eyebrow mono">O que você recebe</p>
+    <h2>A camada de inteligência que faltava na sua preparação</h2>
+    <p class="lede">
+      Não somos curso nem apostila. Somos a resposta, baseada em evidência,
+      para a pergunta que decide sua aprovação: <em>o que estudar primeiro?</em>
+    </p>
+    <div class="cartoes">
+      <div class="cartao">
+        <h3>Prioridades com probabilidade</h3>
+        <p>Cada tópico do edital com sua chance real de cair, por concurso e
+        por cargo — com margem de incerteza declarada.</p>
+        <span class="dado">≈ 4 de cada 10 questões · [0.32, 0.44]</span>
+      </div>
+      <div class="cartao">
+        <h3>Raio-X da banca</h3>
+        <p>Proporção de CERTO/ERRADO por tópico, temas que mais anulam e as
+        pegadinhas linguísticas — confirmadas ou desmentidas pelos números.</p>
+        <span class="dado">52% ERRADO na média · 64% com “somente”</span>
+      </div>
+      <div class="cartao">
+        <h3>Plano de estudos em PDF</h3>
+        <p>Suas semanas e horas viram ciclos de estudo priorizados, com
+        revisão contínua embutida e alertas de lei nova por tópico.</p>
+        <span class="dado">12 semanas × 20h → 240h alocadas</span>
+      </div>
+      <div class="cartao">
+        <h3>Transparência auditável</h3>
+        <p>Só provas e gabaritos definitivos oficiais. Extração validada
+        prova a prova. Metodologia aberta — confira qualquer número.</p>
+        <span class="dado">23/23 provas sem divergência</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pegadinha">
+  <div class="miolo prosa">
+    <p class="eyebrow mono vermelha">Comportamento da banca · medido, não intuído</p>
+    <h2>A lenda do “somente” é verdadeira</h2>
+    <div class="numero-grande mono">64%</div>
+    <p>
+      Nas 92 questões oficiais que usam <strong>“somente”, “apenas” ou
+      “exclusivamente”</strong>, o gabarito definitivo é ERRADO em 64% dos
+      casos — contra 52% na média geral. Nas disciplinas jurídicas, passa de
+      70%. A sabedoria do concurseiro veterano, finalmente com intervalo de
+      confiança.
+    </p>
+    <div class="gabarito-grade" role="img"
+      aria-label="Ilustração: de cada 14 questões com esses marcadores, cerca de 9 têm gabarito errado">
+      <div class="celula">C</div><div class="celula errada">E</div>
+      <div class="celula errada">E</div><div class="celula">C</div>
+      <div class="celula errada">E</div><div class="celula errada">E</div>
+      <div class="celula">C</div><div class="celula errada">E</div>
+      <div class="celula errada">E</div><div class="celula">C</div>
+      <div class="celula errada">E</div><div class="celula errada">E</div>
+      <div class="celula">C</div><div class="celula errada">E</div>
+    </div>
+    <p class="legenda-grade mono">DE CADA 14 QUESTÕES COM O MARCADOR, ≈9 SÃO ERRADAS</p>
+  </div>
+</section>
+
+<section id="metodo">
+  <div class="miolo prosa">
+    <p class="eyebrow mono">O método, sem caixa-preta</p>
+    <h2>Para céticos — e concurseiro bom é cético</h2>
+    <ol class="passos">
+      <li><div><strong>Coleta oficial.</strong>
+        <p>Provas, gabaritos definitivos e editais baixados dos sites das
+        próprias bancas. Nenhum scraping de plataforma privada.</p></div></li>
+      <li><div><strong>Extração validada.</strong>
+        <p>Cada questão é separada do PDF e cruzada com o gabarito
+        definitivo. Hoje: 23 de 23 provas sem uma única divergência.</p></div></li>
+      <li><div><strong>Classificação em camadas.</strong>
+        <p>Regras determinísticas (âncoras como “art. 5º”, “Lei 8.112”),
+        modelo estatístico local e revisão humana — que sempre prevalece.
+        Rótulo de baixa confiança fica fora da conta.</p></div></li>
+      <li><div><strong>Predição interpretável.</strong>
+        <p>Frequência ponderada por recência, suavização bayesiana e sinal
+        de mudanças legislativas. Sem rede neural, sem mágica: cada número
+        tem explicação e intervalo de credibilidade.</p></div></li>
+      <li><div><strong>Plano executável.</strong>
+        <p>As probabilidades viram horas de estudo em ciclos semanais —
+        exportadas em PDF para seguir, imprimir e compartilhar.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="miolo prosa">
+    <p class="eyebrow mono">Honestidade de produto</p>
+    <h2>O que este produto não é</h2>
+    <ul class="avisos">
+      <li><strong>Não é curso.</strong> Apontamos o que estudar e em que ordem;
+        a teoria e as questões comentadas continuam com seu material atual.</li>
+      <li><strong>Não é bola de cristal.</strong> É estatística: probabilidades
+        com margem de incerteza — que mostramos sempre, inclusive quando são
+        largas.</li>
+      <li><strong>Não cobre o edital inteiro (ainda).</strong> O nível fino
+        hoje é das disciplinas de Direito — o núcleo comum das carreiras
+        policiais e de tribunais. O resto entra no plano como lembrete.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="comecar">
+  <div class="miolo prosa">
+    <p class="eyebrow mono">Como começar</p>
+    <h2>Rode agora, na sua máquina, de graça</h2>
+    <p>
+      Software 100% local e de código aberto: sem cadastro, sem mensalidade,
+      sem mandar seus dados para lugar nenhum. Três comandos:
+    </p>
+    <div class="terminal" role="region" aria-label="Comandos de instalação">
+      <span class="cmt"># 1. instale as dependências (Python 3.11+)</span><br>
+      pip install -r requirements.txt<br>
+      <span class="cmt"># 2. abra o painel interativo</span><br>
+      streamlit run streamlit_app.py<br>
+      <span class="cmt"># 3. ou gere seu plano direto em PDF</span><br>
+      python -m src.plano.gerador --orgao PF --semanas 12 --horas-semana 20
+    </div>
+    <p style="margin-top:22px">
+      Cobertura atual: <strong>PF, PRF, PCDF, Polícia Penal Federal, ABIN,
+      TSE Unificado e TRF1</strong> — e crescendo a cada concurso publicado.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="miolo">
+    <span><strong>Analisador Preditivo de Bancas</strong> · estatística aplicada a concursos</span>
+    <span>Dados: documentos públicos oficiais das bancas · Sem afiliação com CEBRASPE ou FGV</span>
+  </div>
+</footer>

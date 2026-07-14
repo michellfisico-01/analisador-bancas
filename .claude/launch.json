@@ -10,6 +10,12 @@
         "--server.port", "8501"
       ],
       "port": 8501
+    },
+    {
+      "name": "landing",
+      "runtimeExecutable": ".venv\\Scripts\\python.exe",
+      "runtimeArgs": ["-m", "http.server", "8765", "--directory", "site"],
+      "port": 8765
     }
   ]
 }
