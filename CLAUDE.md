@@ -207,6 +207,18 @@ carreiras jurídicas de entrada.
 - Coluna `disciplina` dos itens ainda NULL — o mapeamento item→disciplina é o primeiro
   passo da Fase 2 (junto com a taxonomia dos editais).
 
+## Publicação (2026-07-14)
+
+- Repositório público: https://github.com/michellfisico-01/analisador-bancas
+  (conta michellfisico-01, branch master).
+- Landing page no GitHub Pages: https://michellfisico-01.github.io/analisador-bancas/
+  (fonte em `docs/index.html` — o Pages gratuito só serve da raiz ou de /docs).
+- **Exceção ao gitignore**: `data/processed/bancas.db` (1,3 MB, derivado e
+  regenerável) é versionado para o Streamlit Community Cloud ter os dados ao
+  clonar o repositório. Tema do app em `.streamlit/config.toml`.
+- Deploy no Streamlit Community Cloud requer login interativo do usuário em
+  share.streamlit.io (app: `streamlit_app.py`, branch master).
+
 ## Estado dos dados (atualizado na Fase 6a, 2026-07-05)
 
 - 42 PDFs oficiais em `data/raw/` (14 provas, 15 gabaritos definitivos, 9 editais).

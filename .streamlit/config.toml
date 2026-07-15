@@ -1,0 +1,6 @@
+# Tema do dashboard (vale localmente e no Streamlit Community Cloud)
+[theme]
+primaryColor = "#2c6e8f"
+
+[browser]
+gatherUsageStats = false
