@@ -9,6 +9,7 @@ priorizados.
 **Piloto**: PF (Agente, Escrivão, Papiloscopista) e PRF, 2013-2021, nas
 disciplinas de Direito Constitucional, Administrativo e Penal — já expandido
 para PCDF, DEPEN, ABIN, TSE Unificado 2024 e TRF1 2024 (FGV).
+**App no ar**: <https://raio-x-de-bancas.streamlit.app/> ·
 **Landing page**: <https://michellfisico-01.github.io/analisador-bancas/>
 **Custo zero**: 100% local, só bibliotecas de código aberto — nenhuma API
 paga, nenhum serviço em nuvem.

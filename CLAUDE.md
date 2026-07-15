@@ -216,8 +216,10 @@ carreiras jurídicas de entrada.
 - **Exceção ao gitignore**: `data/processed/bancas.db` (1,3 MB, derivado e
   regenerável) é versionado para o Streamlit Community Cloud ter os dados ao
   clonar o repositório. Tema do app em `.streamlit/config.toml`.
-- Deploy no Streamlit Community Cloud requer login interativo do usuário em
-  share.streamlit.io (app: `streamlit_app.py`, branch master).
+- Dashboard no Streamlit Community Cloud (deploy feito pelo usuário em
+  2026-07-14): https://raio-x-de-bancas.streamlit.app/ — o subdomínio
+  "analisador-bancas" foi rejeitado pelo filtro de palavrões do Streamlit
+  (substring "anal"), daí o nome alternativo.
 
 ## Estado dos dados (atualizado na Fase 6a, 2026-07-05)
 

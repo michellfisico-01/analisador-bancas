@@ -215,6 +215,7 @@
     padding: 26px 24px 40px; font-size: 12.5px; color: var(--muted);
   }
   footer .miolo { display: flex; flex-wrap: wrap; gap: 10px 40px; justify-content: space-between; }
+  footer a { color: var(--brand); text-decoration-thickness: 1px; }
 
   @media (max-width: 840px) {
     .heroi { grid-template-columns: 1fr; gap: 36px; padding-top: 48px; }
@@ -240,7 +241,7 @@
         probabilidade, margem de incerteza e um plano semanal em PDF.
       </p>
       <div class="botoes">
-        <a class="botao cheio" href="#comecar">Começar agora</a>
+        <a class="botao cheio" href="https://raio-x-de-bancas.streamlit.app/" target="_blank" rel="noopener">Testar o app agora</a>
         <a class="botao vazio" href="#metodo">Ver o método</a>
       </div>
     </div>
@@ -387,10 +388,16 @@
 <section id="comecar">
   <div class="miolo prosa">
     <p class="eyebrow mono">Como começar</p>
-    <h2>Rode agora, na sua máquina, de graça</h2>
+    <h2>Use online agora — ou rode na sua máquina</h2>
     <p>
-      Software 100% local e de código aberto: sem cadastro, sem mensalidade,
-      sem mandar seus dados para lugar nenhum. Três comandos:
+      O painel completo está no ar, de graça e sem cadastro:
+    </p>
+    <div class="botoes" style="margin-bottom:26px">
+      <a class="botao cheio" href="https://raio-x-de-bancas.streamlit.app/" target="_blank" rel="noopener">Abrir o app no navegador</a>
+    </div>
+    <p>
+      Prefere rodar localmente? O software é 100% de código aberto: sem
+      mensalidade, sem mandar seus dados para lugar nenhum. Três comandos:
     </p>
     <div class="terminal" role="region" aria-label="Comandos de instalação">
       <span class="cmt"># 1. instale as dependências (Python 3.11+)</span><br>
@@ -409,7 +416,9 @@
 
 <footer>
   <div class="miolo">
-    <span><strong>Analisador Preditivo de Bancas</strong> · estatística aplicada a concursos</span>
+    <span><strong>Analisador Preditivo de Bancas</strong> · estatística aplicada a concursos ·
+      <a href="https://raio-x-de-bancas.streamlit.app/" target="_blank" rel="noopener">app</a> ·
+      <a href="https://github.com/michellfisico-01/analisador-bancas" target="_blank" rel="noopener">código-fonte</a></span>
     <span>Dados: documentos públicos oficiais das bancas · Sem afiliação com CEBRASPE ou FGV</span>
   </div>
 </footer>
