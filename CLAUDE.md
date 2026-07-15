@@ -221,6 +221,19 @@ carreiras jurídicas de entrada.
   "analisador-bancas" foi rejeitado pelo filtro de palavrões do Streamlit
   (substring "anal"), daí o nome alternativo.
 
+## Projeto PAUSADO (2026-07-14) — plano de retomada
+
+Pausado pelo usuário após crítica de valor: o app mostra só as conclusões
+(percentuais), que parecem "resposta de IA genérica", enquanto o ativo real
+(2.132 questões oficiais segmentadas e classificadas no SQLite) fica escondido.
+Se retomar, NÃO expandir dataset primeiro — atacar nesta ordem:
+1. Banco de questões navegável por tópico no app (dado já existe no banco).
+2. Backtest como prova de valor: treinar só com dados ≤2019 e medir cobertura
+   da priorização na PF 2021 vs estudo pelo edital plano.
+3. Simulado com questões reais sorteadas na proporção do ranking preditivo.
+(Acompanhamento pessoal do usuário ficou de fora por ora: exige persistência
+por usuário e esbarra na restrição de custo zero.)
+
 ## Estado dos dados (atualizado na Fase 6a, 2026-07-05)
 
 - 42 PDFs oficiais em `data/raw/` (14 provas, 15 gabaritos definitivos, 9 editais).
