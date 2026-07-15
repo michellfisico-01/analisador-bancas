@@ -1,13 +1,15 @@
 # Analisador Preditivo de Bancas
 
 Ciência de dados aplicada a provas de concursos públicos brasileiros:
-extrai provas oficiais do CEBRASPE, classifica cada item na taxonomia do
+extrai provas oficiais das bancas (CEBRASPE e FGV), classifica cada item na taxonomia do
 edital e estima **a probabilidade de cada tópico ser cobrado no próximo
 concurso** — com intervalo de incerteza — para gerar planos de estudo
 priorizados.
 
 **Piloto**: PF (Agente, Escrivão, Papiloscopista) e PRF, 2013-2021, nas
-disciplinas de Direito Constitucional, Administrativo e Penal.
+disciplinas de Direito Constitucional, Administrativo e Penal — já expandido
+para PCDF, DEPEN, ABIN, TSE Unificado 2024 e TRF1 2024 (FGV).
+**Landing page**: <https://michellfisico-01.github.io/analisador-bancas/>
 **Custo zero**: 100% local, só bibliotecas de código aberto — nenhuma API
 paga, nenhum serviço em nuvem.
 
@@ -61,7 +63,7 @@ python -m src.classificacao.revisao
 | Etapa | Método |
 |---|---|
 | Coleta | API oficial do CEBRASPE + CDN; só gabaritos definitivos; delays e user-agent identificado |
-| Extração | pdfplumber; segmentação por layout + tipografia + sequência; validação cruzada com o gabarito (14/14 provas sem divergência) |
+| Extração | pdfplumber; segmentação por layout + tipografia + sequência; validação cruzada com o gabarito (23/23 provas sem divergência) |
 | Classificação | Camadas: regras determinísticas (âncoras normativas) → TF-IDF + regressão logística → revisão humana. Confiança e origem registradas por rótulo |
 | Predição | Contagens ponderadas por recência (meia-vida 5 anos) + posterior Dirichlet (prior de Jeffreys) + sinal de mudanças legislativas com curadoria manual; IC de credibilidade 90% |
 | Plano | Horas ∝ peso da disciplina × probabilidade do tópico; ciclos semanais; export Markdown/PDF |
